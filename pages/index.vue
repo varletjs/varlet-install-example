@@ -1,28 +1,35 @@
 <template>
   <div class="app-container">
-    <NuxtLink
-      class="app-component"
-      v-for="page in pages"
-      :to="`/${page}`"
-      :key="page"
-      v-ripple
-    >
-      {{ page }}
-    </NuxtLink>
+
+      <var-cell v-ripple class="app-component"
+                v-for="page in pages"
+                @click="goRoute(page)"
+                :key="page">
+        <template #extra>
+          <var-icon name="chevron-right" size="14" />
+        </template>
+        <template #default>
+          {{ page }}
+        </template>
+      </var-cell>
   </div>
 </template>
 
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import { ref } from 'vue'
+import {useRouter} from "vue-router";
 
 export default defineNuxtComponent({
   setup() {
+    const router = useRouter()
+    const goRoute = (path)=>{
+      router.push(path)
+    }
     const pages = ref(Object
       .keys(import.meta.globEager('./**/index.vue'))
       .map(file => file.replace(/(\/index.vue)|(\.\/)/g, '')))
-
-    return { pages }
+    return { pages,goRoute }
   }
 })
 </script>
@@ -30,10 +37,7 @@ export default defineNuxtComponent({
 <style lang="less">
 .app-container {
   .app-component {
-    display: block;
-    padding: 10px 14px;
-    text-decoration: none;
-    color: #555;
+    text-transform: capitalize;
   }
 }
 </style>

@@ -11,7 +11,11 @@
   </div>
 </template>
 
-<style lang="less">
+<script lang="ts">
+
+</script>
+
+<style lang="less" scoped>
 .example {
   padding: 20px;
 }
