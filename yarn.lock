@@ -708,26 +708,26 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-4.0.1.tgz#8f80dd965ad81f3e1bc26d6f5c727e132721ff40"
   integrity sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==
 
-"@varlet/icons@1.24.6":
-  version "1.24.6"
-  resolved "https://registry.npmjs.org/@varlet/icons/-/icons-1.24.6.tgz#77ec0b471db4e2221ce84784a667f688d9832eda"
-  integrity sha512-LPdbq2nB4+ARWnKgifD+iUHvALjD26hdksi1d7vhAWvfS02UOyDJxGIrW8IZznzkaifyefqLDFBxhG0JKYa7jQ==
+"@varlet/icons@1.24.9":
+  version "1.24.9"
+  resolved "https://registry.npmjs.org/@varlet/icons/-/icons-1.24.9.tgz#250bcd7a4c1c9f2f613a514ac7ddc61b5a8c78c5"
+  integrity sha512-vA+YJre+LfqICDSIVknExHc98yuQL9rSx4KY0xSgqTNUTNZy3xyWvHIRHeDRBwGFxqhwci4cbkvYBb2fvbjl/Q==
   dependencies:
     commander "^6.2.1"
     fs-extra "^9.0.1"
     webfont "^9.0.0"
 
-"@varlet/touch-emulator@^1.24.6":
-  version "1.24.6"
-  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-1.24.6.tgz#ddf237089bb16b2c73e4ab8f7cb42ef1a2669db3"
-  integrity sha512-Ix4u+cq4JCNtXNhrjq64xZkoUoFw/kOyzCsimi4p1/fEoDPlCJ1zON3zMUPJ1KjZ2ZrvfzGCZmQyYLd16H3WdQ==
+"@varlet/touch-emulator@^1.24.9":
+  version "1.24.9"
+  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-1.24.9.tgz#5b041e0fd283fc96425c96366c70f15c3090429d"
+  integrity sha512-v5nnUkHLUQmMo9+StZX6kO1+itzneuWWKrtMlEO7VMl/2LEsIP9CarVO32fTVjDKPTWxU2hEz70jlc5TmhzgBQ==
 
-"@varlet/ui@^1.24.6":
-  version "1.24.6"
-  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.24.6.tgz#29633b59a088bb1483880a086408ca54221a8e7c"
-  integrity sha512-iFQHyvMwXvLwKkjkumJX0EWKdxadTK7BsqvZ3tPsXMv8qJNmC/TPEqpMHZOgrVZCERlnGCyyLpfItUgmr/8PVg==
+"@varlet/ui@^1.24.9":
+  version "1.24.9"
+  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.24.9.tgz#15017ef3093fc18479cfdfabeae7425bae99bc0b"
+  integrity sha512-VErRA9Ix/uRUbtQO3/QiQ8wggDbuqpAmWIi077pXo5Mky1g7o3nUAgmFeiahijWqsughhNks1TpoNU9tagecCQ==
   dependencies:
-    "@varlet/icons" "1.24.6"
+    "@varlet/icons" "1.24.9"
     dayjs "^1.10.4"
     decimal.js "^10.2.1"
 
