@@ -10,7 +10,8 @@
     "@varlet/touch-emulator": "^1.24.9",
     "less": "^4.1.2",
     "nuxt3": "latest",
-    "patch-vue-directive-ssr": "^0.0.1"
+    "patch-vue-directive-ssr": "^0.0.1",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.8",
