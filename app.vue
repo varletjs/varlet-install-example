@@ -36,13 +36,14 @@ import dark from '@varlet/ui/es/themes/dark'
 import { Snackbar, StyleProvider } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
 
-
 export default defineNuxtComponent({
   setup() {
     const router = useRouter()
     const github = get(config, 'github')
     const themesKey = get(config, 'themesKey')
     const deviceTip = get(config, 'deviceTip')
+    const themes = get(config, 'themes')
+    const darkThemes = get(config, 'darkThemes')
     const system = useSystemStore()
     const currentThemes = ref('')
     const showBackIcon = computed(()=>{
@@ -59,12 +60,12 @@ export default defineNuxtComponent({
     const toggleTheme = () => {
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
       $localStorage.set(themesKey, currentThemes.value)
-      StyleProvider(currentThemes.value === 'darkThemes' ? dark : null)
+      StyleProvider(currentThemes.value === 'darkThemes' ? Object.assign(dark,darkThemes) : themes)
     }
 
     onBeforeMount(async () => {
       currentThemes.value = await system.getBrowserThemes(themesKey)
-      StyleProvider(currentThemes.value === 'darkThemes' ? dark : null)
+      StyleProvider(currentThemes.value === 'darkThemes' ? Object.assign(dark,darkThemes) : themes)
       if(!system.isPhone){
         Snackbar(deviceTip)
       }

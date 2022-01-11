@@ -14,5 +14,5 @@ export const useSystemStore = defineStore('system', {
         }
         return currentThemes
       },
-  },
+  }
 })

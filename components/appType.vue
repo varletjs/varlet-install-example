@@ -16,6 +16,7 @@ export default defineNuxtComponent({
 .app-type {
   width: 100%;
   padding: 15px 0;
+  color: var(--color-sub-text);
   font-size: 14px;
 }
 </style>
