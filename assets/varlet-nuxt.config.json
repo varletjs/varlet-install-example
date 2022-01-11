@@ -1,4 +1,5 @@
 {
   "github": "https://github.com/varletjs/varlet-nuxt3-example",
-  "themesKey": "VARLET_THEMES"
+  "themesKey": "VARLET_THEMES",
+  "deviceTip": "Please use a mobile device to open the webpage!!!"
 }

@@ -32,13 +32,14 @@ import { ref,computed } from 'vue'
 import { useSystemStore } from '~/store/system'
 import { $localStorage } from './plugins/init.client'
 import dark from '@varlet/ui/es/themes/dark'
-import { StyleProvider } from '@varlet/ui'
+import { Snackbar, StyleProvider } from '@varlet/ui'
 
 export default defineNuxtComponent({
   setup() {
     const router = useRouter()
     const github = get(config, 'github')
     const themesKey = get(config, 'themesKey')
+    const deviceTip = get(config, 'deviceTip')
     const system = useSystemStore()
     const currentThemes = ref('')
     const showBackIcon = computed(()=>{
@@ -61,6 +62,9 @@ export default defineNuxtComponent({
     onBeforeMount(async () => {
       currentThemes.value = await system.getBrowserThemes(themesKey)
       StyleProvider(currentThemes.value === 'darkThemes' ? dark : null)
+      if(!system.isPhone){
+        Snackbar(deviceTip)
+      }
     })
 
     const back = () => {
