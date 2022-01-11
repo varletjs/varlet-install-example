@@ -25,10 +25,10 @@
 
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
-import { useRoute, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 import config from '~/assets/varlet-nuxt.config.json'
 import { get } from 'lodash-es'
-import { ref, watch } from 'vue'
+import { ref,computed } from 'vue'
 import { useSystemStore } from '~/store/system'
 import { $localStorage } from './plugins/init.client'
 import dark from '@varlet/ui/es/themes/dark'
@@ -36,22 +36,17 @@ import { StyleProvider } from '@varlet/ui'
 
 export default defineNuxtComponent({
   setup() {
-    const route = useRoute()
     const router = useRouter()
     const github = get(config, 'github')
-    const showBackIcon = ref(false)
-    const title = ref('')
     const themesKey = get(config, 'themesKey')
     const system = useSystemStore()
-    const currentThemes = ref(system.getBrowserThemes(themesKey))
-
-    watch(
-      () => route.path,
-      (to: string) => {
-        showBackIcon.value = to !== '/'
-        title.value = to.substr(1)
-      }
-    )
+    const currentThemes = ref('')
+    const showBackIcon = computed(()=>{
+      return !!title.value
+    })
+    const title = computed(()=>{
+      return router.currentRoute.value.path.substr(1)
+    })
 
     const toGithub = () => {
       window.top!.open(github)
@@ -63,13 +58,15 @@ export default defineNuxtComponent({
       StyleProvider(currentThemes.value === 'darkThemes' ? dark : null)
     }
 
-    onBeforeMount(() => {
+    onBeforeMount(async () => {
+      currentThemes.value = await system.getBrowserThemes(themesKey)
       StyleProvider(currentThemes.value === 'darkThemes' ? dark : null)
     })
 
     const back = () => {
-      router.go(-1)
+      router.back()
     }
+
     return { showBackIcon, toGithub, back, title, toggleTheme, currentThemes }
   },
 })
