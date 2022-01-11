@@ -20,7 +20,9 @@
       </template>
     </var-app-bar>
   </header>
-  <NuxtPage />
+  <div class="router-view__block">
+    <NuxtPage />
+  </div>
 </template>
 
 <script lang="ts">
@@ -30,9 +32,10 @@ import config from '~/assets/varlet-nuxt.config.json'
 import { get } from 'lodash-es'
 import { ref,computed } from 'vue'
 import { useSystemStore } from '~/store/system'
-import { $localStorage } from './plugins/init.client'
 import dark from '@varlet/ui/es/themes/dark'
 import { Snackbar, StyleProvider } from '@varlet/ui'
+import { $localStorage } from '~/utils/localStorage'
+
 
 export default defineNuxtComponent({
   setup() {
@@ -89,7 +92,19 @@ body {
   color: var(--color-text);
   background-color: var(--color-body);
 }
+
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  font-weight: bold;
+}
+
 .app-bar {
   text-transform: capitalize;
+}
+
+.router-view__block{
+  padding: 54px 12px 15px;
 }
 </style>

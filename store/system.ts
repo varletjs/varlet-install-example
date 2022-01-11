@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
-
-import { $localStorage } from '~/plugins/init.client'
+import { $localStorage } from '~/utils/localStorage'
 
 export const useSystemStore = defineStore('system', {
   getters: {
