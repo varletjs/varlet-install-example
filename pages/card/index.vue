@@ -1,25 +1,27 @@
 <template>
-  <app-type>Basic Usage</app-type>
-  <var-card :title="title" :description="description" />
+  <div>
+    <app-type>Basic Usage</app-type>
+    <var-card :title="title" :description="description" />
 
-  <app-type>Show Subtitle</app-type>
-  <var-card :title="title" :subtitle="subtitle" :description="description" />
+    <app-type>Show Subtitle</app-type>
+    <var-card :title="title" :subtitle="subtitle" :description="description" />
 
-  <app-type>Show Image</app-type>
-  <var-card :title="title" :subtitle="subtitle" :description="description" :src="src" />
+    <app-type>Show Image</app-type>
+    <var-card :title="title" :subtitle="subtitle" :description="description" :src="src" />
 
-  <app-type>Use Slot</app-type>
-  <var-card :title="title" :subtitle="subtitle" :description="description" :src="src">
-    <template #extra>
-      <var-space>
-        <var-button type="primary">Use Button</var-button>
-        <var-button type="warning">Use Button</var-button>
-      </var-space>
-    </template>
-  </var-card>
+    <app-type>Use Slot</app-type>
+    <var-card :title="title" :subtitle="subtitle" :description="description" :src="src">
+      <template #extra>
+        <var-space>
+          <var-button type="primary">Use Button</var-button>
+          <var-button type="warning">Use Button</var-button>
+        </var-space>
+      </template>
+    </var-card>
 
-  <app-type>Ripple Effect</app-type>
-  <var-card :title="title" :subtitle="subtitle" :description="description" ripple />
+    <app-type>Ripple Effect</app-type>
+    <var-card :title="title" :subtitle="subtitle" :description="description" ripple />
+  </div>
 </template>
 
 <script>
