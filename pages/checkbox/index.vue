@@ -35,17 +35,17 @@
     </var-space>
     <var-space align="center">Current value: {{ groupAction }}</var-space>
 
-    <app-type>Checkbox Validate</app-type>
-    <var-checkbox v-model="validate" :rules="[(v) => v || 'Please check your choices']">
-      Current value: {{ validate }}
+    <app-type>Checkbox Validation</app-type>
+    <var-checkbox v-model="validation" :rules="[(v) => v || 'Please check your choices']">
+      Current value: {{ validation }}
     </var-checkbox>
 
-    <app-type>CheckboxGroup Validate</app-type>
-    <var-checkbox-group v-model="groupValidate" :rules="[(v) => v.length === 2 || 'Please check all']">
+    <app-type>CheckboxGroup Validation</app-type>
+    <var-checkbox-group v-model="groupValidation" :rules="[(v) => v.length === 2 || 'Please check all']">
       <var-checkbox :checked-value="0">Eat</var-checkbox>
       <var-checkbox :checked-value="1">Sleep</var-checkbox>
     </var-checkbox-group>
-    <var-space align="center">Current value: {{ groupValidate }}</var-space>
+    <var-space align="center">Current value: {{ groupValidation }}</var-space>
   </div>
 </template>
 <script lang="ts">
@@ -63,8 +63,8 @@ export default defineNuxtComponent({
       disable: false,
       readonly: false,
       groupAction: [],
-      validate: false,
-      groupValidate: [],
+      validation: false,
+      groupValidation: [],
     })
     return { ...toRefs(data) }
   },
