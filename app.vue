@@ -32,8 +32,7 @@ import config from '~/assets/varlet-nuxt.config.json'
 import { get } from 'lodash-es'
 import { ref,computed } from 'vue'
 import { useSystemStore } from '~/store/system'
-import dark from '@varlet/ui/es/themes/dark'
-import { Snackbar, StyleProvider } from '@varlet/ui'
+import { Snackbar } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
 
 export default defineNuxtComponent({
@@ -60,12 +59,12 @@ export default defineNuxtComponent({
     const toggleTheme = () => {
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
       $localStorage.set(themesKey, currentThemes.value)
-      StyleProvider(currentThemes.value === 'darkThemes' ? Object.assign(dark,darkThemes) : themes)
+      system.setThemes(currentThemes.value as 'themes'|'darkThemes')
     }
 
     onBeforeMount(async () => {
       currentThemes.value = await system.getBrowserThemes(themesKey)
-      StyleProvider(currentThemes.value === 'darkThemes' ? Object.assign(dark,darkThemes) : themes)
+      system.setThemes(currentThemes.value as 'themes'|'darkThemes')
       if(!system.isPhone){
         Snackbar(deviceTip)
       }
