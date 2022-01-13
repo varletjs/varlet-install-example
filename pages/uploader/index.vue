@@ -18,12 +18,15 @@
     <var-uploader readonly v-model="readonlyFiles" />
     <app-type>Remove Preprocessing</app-type>
     <var-uploader v-model="beforeRemovefiles" @before-remove="handleBeforeRemove" />
-    <app-type>{{ pack.style }}</app-type>
+    <app-type>Customize upload styles</app-type>
     <var-uploader v-model="styleFiles">
-      <var-button type="primary">{{ pack.upload }}</var-button>
+      <var-button type="primary">Upload</var-button>
     </var-uploader>
     <app-type>Validate</app-type>
-    <var-uploader :rules="[(v, u) => u.getError(v).length === 0 || pack.validateMessage]" v-model="validateFiles" />
+    <var-uploader
+      :rules="[(v, u) => u.getError(v).length === 0 || 'There is a file that failed to upload']"
+      v-model="validateFiles"
+    />
   </div>
 </template>
 
@@ -31,7 +34,6 @@
 import { defineNuxtComponent } from '#app'
 import { Dialog } from '@varlet/ui'
 import { VarFile } from '@varlet/ui/types/uploader'
-import { pack } from '@varlet/ui/lib/locale'
 export default defineNuxtComponent({
   setup() {
     const values = reactive({
@@ -74,13 +76,7 @@ export default defineNuxtComponent({
       disabledFiles: [],
       readonlyFiles: [],
       beforeRemovefiles: [],
-      styleFiles: [
-        {
-          url: 'https://varlet.gitee.io/varlet-ui/cat.jpg',
-          cover: 'https://varlet.gitee.io/varlet-ui/cat.jpg',
-          state: 'error',
-        },
-      ],
+      styleFiles: [],
       validateFiles: [
         {
           url: 'https://varlet.gitee.io/varlet-ui/cat.jpg',
@@ -100,14 +96,13 @@ export default defineNuxtComponent({
     const handleBeforeRead = (file: VarFile) => file.file.size <= 1024 * 10
     const handleBeforeRemove = async () => {
       const action = await Dialog({
-        title: pack.value.removeTitle,
-        message: pack.value.removeMessage,
+        title: 'Delete or not?',
+        message: 'Cannot be withdrawn after deletion',
       })
 
       return action === 'confirm'
     }
     return {
-      pack,
       ...toRefs(values),
       handleBasicUsageAfterRead,
       handleUploadStateAfterRead,
