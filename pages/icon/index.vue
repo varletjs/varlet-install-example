@@ -48,8 +48,11 @@
 import { Snackbar } from '@varlet/ui'
 import icons from '@varlet/icons'
 import Clipboard from 'clipboard'
+import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
-export default {
+import { onBeforeMount } from '@vue/runtime-core'
+
+export default defineNuxtComponent({
   components: {
     AppType,
   },
@@ -61,7 +64,7 @@ export default {
       name.value = name.value === 'information' ? 'checkbox-marked-circle' : 'information'
     }
 
-    onMounted(() => {
+    onBeforeMount(() => {
       const clipboard = new Clipboard('.example__icon', {
         text: (trigger) => `<var-icon name="${trigger.getAttribute('data-clipboard-text')}" />`,
       })
@@ -78,7 +81,7 @@ export default {
       iconNames,
     }
   },
-}
+})
 </script>
 
 <style lang="less" scoped>
