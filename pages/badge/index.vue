@@ -50,7 +50,7 @@
         <var-chip plain :round="false" color="#009688">Badge</var-chip>
       </var-badge>
     </var-space>
-		
+
     <app-type>Custom Badge Colors</app-type>
     <var-badge color="#6200ea" position="right-top">
       <var-chip plain :round="false" color="#009688">Badge</var-chip>
@@ -63,7 +63,14 @@
   </div>
 </template>
 <script>
-export default {
+import { defineNuxtComponent } from '#app'
+import AppType from '~/components/appType.vue'
+import { ref } from 'vue'
+
+export default defineNuxtComponent({
+  components: {
+    AppType,
+  },
   name: 'BadgeExample',
   setup() {
     const hidden = ref(false)
@@ -81,7 +88,7 @@ export default {
       handleChange,
     }
   },
-}
+})
 </script>
 <style lang="less" scoped>
 .var-badge {

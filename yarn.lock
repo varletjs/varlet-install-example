@@ -708,26 +708,35 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-4.0.1.tgz#8f80dd965ad81f3e1bc26d6f5c727e132721ff40"
   integrity sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==
 
-"@varlet/icons@1.24.11-alpha.1641915594478":
-  version "1.24.11-alpha.1641915594478"
-  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.24.11-alpha.1641915594478.tgz#1bd6480a5c2cda5bec36c9d60af5316eec6d62e1"
-  integrity sha512-8k41yHKWupfav5BBRjd56Tr7Q5i4RkawpSmbZleinteYg7Qgyc94HoZ5mx4QZ0r2gVMkq1eoUJtsVtbGSaywMQ==
+"@varlet/icons@1.24.11-alpha.1642084630469":
+  version "1.24.11-alpha.1642084630469"
+  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.24.11-alpha.1642084630469.tgz#ff2217f96cdeeb3cb43ddd442a381840070b4986"
+  integrity sha512-b+0jCIqmOJNOcaNvocayYF+zUcRjxFp8zTEW96YHu0BdTtI/QhK/KMAZiWRoeYTg3eJTuRqvFzC5NA38/YXMJQ==
   dependencies:
     commander "^6.2.1"
     fs-extra "^9.0.1"
     webfont "^9.0.0"
 
-"@varlet/touch-emulator@^1.24.9":
-  version "1.24.9"
-  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-1.24.9.tgz#5b041e0fd283fc96425c96366c70f15c3090429d"
-  integrity sha512-v5nnUkHLUQmMo9+StZX6kO1+itzneuWWKrtMlEO7VMl/2LEsIP9CarVO32fTVjDKPTWxU2hEz70jlc5TmhzgBQ==
-
-"@varlet/ui@^1.24.11-alpha.1641915594478":
-  version "1.24.11-alpha.1641915594478"
-  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.24.11-alpha.1641915594478.tgz#fcc63534f84f5749fc8ff3c20d09a881d3e5ac54"
-  integrity sha512-uOIG/bMyQEp4B7VJocwpK+twhHqr8mb8HOZAFEo2m+KLNu6EEUpGeJ0sZy58ZGRJ029Dx6l5QClqTkxJoENw8A==
+"@varlet/icons@^1.24.10":
+  version "1.24.10"
+  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.24.10.tgz#2beee7e36edebd19b20bc1ec716fd23f3f1a46b3"
+  integrity sha512-Ug7xXAfHQhUdR1Xnce0+FHf+fj/eX9VL04DC5kOZ59a+I8m34OcLVXnRuJdOXszdIjDJCtTc3yjBetitygRq5A==
   dependencies:
-    "@varlet/icons" "1.24.11-alpha.1641915594478"
+    commander "^6.2.1"
+    fs-extra "^9.0.1"
+    webfont "^9.0.0"
+
+"@varlet/touch-emulator@^1.24.11-alpha.1642084630469":
+  version "1.24.11-alpha.1642084630469"
+  resolved "https://registry.yarnpkg.com/@varlet/touch-emulator/-/touch-emulator-1.24.11-alpha.1642084630469.tgz#8a33531687ac3b31f827919916217808f2333883"
+  integrity sha512-T++Ho1AcxoQetqKvI1Qezen6DRXU5UcdGSm2V9vp2QZZ/kkEZKr9fDAueGLAqcSwrYis0TGzOT8pDwjuX8La6g==
+
+"@varlet/ui@^1.24.11-alpha.1642084630469":
+  version "1.24.11-alpha.1642084630469"
+  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.24.11-alpha.1642084630469.tgz#efcdafc46fbc3a9b5ae00dac68f502b91dfb375e"
+  integrity sha512-0RJpgrhX3fx9mfdqekIYVstPI9WWgkRgpfmTsXZH1PdtN6GazjZXexdW17AhiRbQgQFANKGC+q18SkvpWdBxaA==
+  dependencies:
+    "@varlet/icons" "1.24.11-alpha.1642084630469"
     dayjs "^1.10.4"
     decimal.js "^10.2.1"
 
