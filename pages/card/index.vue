@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="example">
     <app-type>Basic Usage</app-type>
     <var-card :title="title" :description="description" />
 
@@ -25,7 +25,13 @@
 </template>
 
 <script>
+import { defineNuxtComponent } from '#app'
+import AppType from '~/components/appType.vue'
+
 export default defineNuxtComponent({
+  components: {
+    AppType,
+  },
   setup() {
     return {
       title: 'Little Prince',
