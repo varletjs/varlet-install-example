@@ -1,13 +1,17 @@
 <template>
   <div class="example">
     <app-type>Icon Size</app-type>
-    <var-icon name="checkbox-marked-circle" />
-    <var-icon name="checkbox-marked-circle" :size="26" />
+    <var-space>
+      <var-icon name="checkbox-marked-circle" />
+      <var-icon name="checkbox-marked-circle" :size="26" />
+    </var-space>
 
     <app-type>Icon Color</app-type>
-    <var-icon name="checkbox-marked-circle" color="#2979ff" />
-    <var-icon name="checkbox-marked-circle" color="#2979ff" :size="26" />
-
+    <var-space>
+      <var-icon name="checkbox-marked-circle" color="#2979ff" />
+      <var-icon name="checkbox-marked-circle" color="#2979ff" :size="26" />
+    </var-space>
+    
     <app-type>Use Image</app-type>
     <var-icon name="https://varlet.gitee.io/varlet-ui/cat.jpg" :size="32" />
 
