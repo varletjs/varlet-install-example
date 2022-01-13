@@ -2,26 +2,36 @@
   <div class="example">
     <app-type>Basic Usage</app-type>
     <var-uploader v-model="basicUsageFiles" @after-read="handleBasicUsageAfterRead" />
+
     <app-type>File Preview</app-type>
     <var-uploader v-model="filePreviewFiles" />
+
     <app-type>Upload State</app-type>
     <var-uploader v-model="uploadStateFiles" @after-read="handleUploadStateAfterRead" />
+
     <app-type>File Maxlength</app-type>
     <var-uploader v-model="maxlengthFiles" :maxlength="1" />
+
     <app-type>File Size Limit</app-type>
     <var-uploader v-model="sizefiles" :maxsize="1024" @oversize="handleOversize" />
+
     <app-type>Upload Preprocessing</app-type>
     <var-uploader v-model="preprocessingFiles" @before-read="handleBeforeRead" />
+
     <app-type>Disabled</app-type>
     <var-uploader disabled v-model="disabledFiles" />
+
     <app-type>Readonly</app-type>
     <var-uploader readonly v-model="readonlyFiles" />
+
     <app-type>Remove Preprocessing</app-type>
     <var-uploader v-model="beforeRemovefiles" @before-remove="handleBeforeRemove" />
+
     <app-type>Customize upload styles</app-type>
     <var-uploader v-model="styleFiles">
       <var-button type="primary">Upload</var-button>
     </var-uploader>
+
     <app-type>Validate</app-type>
     <var-uploader
       :rules="[(v, u) => u.getError(v).length === 0 || 'There is a file that failed to upload']"

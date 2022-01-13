@@ -33,7 +33,7 @@
     </var-space>
 
     <app-type>Button Size</app-type>
-    <var-space align='center'>
+    <var-space align="center">
       <var-button type="primary">Normal Button</var-button>
       <var-button type="success" size="small">Small Button</var-button>
       <var-button type="warning" size="mini">Mini Button</var-button>
@@ -84,17 +84,17 @@ import { Snackbar } from '@varlet/ui'
 import AppType from '~/components/appType.vue'
 export default defineNuxtComponent({
   components: {
-    AppType
+    AppType,
   },
-  setup(){
-    const handleTouchstart = ()=>{
+  setup() {
+    const handleTouchstart = () => {
       Snackbar.info('Touchstart Success')
     }
-    const handleClick = ()=>{
+    const handleClick = () => {
       Snackbar.success('Click Success')
     }
-    return {handleClick,handleTouchstart}
-  }
+    return { handleClick, handleTouchstart }
+  },
 })
 </script>
 
