@@ -11,7 +11,7 @@
   <var-icon name="https://varlet.gitee.io/varlet-ui/cat.jpg" :size="32" />
 
   <app-type>Events</app-type>
-  <var-icon name="checkbox-marked-circle" color="#2979ff" @click="() => Snackbar.success('点击成功')" />
+  <var-icon name="checkbox-marked-circle" color="#2979ff" @click="() => Snackbar.success('Successful click')" />
 
   <app-type>Icon Animation</app-type>
   <var-icon color="#2979ff" :name="name" :transition="300" :size="30" @click="toggle" />
