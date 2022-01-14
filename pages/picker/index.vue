@@ -20,9 +20,10 @@
 import { Picker, Locale } from '@varlet/ui'
 import AppType from '~/components/appType.vue'
 import area from '../../json/area.json'
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
+import { defineNuxtComponent } from '#app'
 
-export default {
+export default defineNuxtComponent({
   name: 'PickerExample',
   components: {
     AppType,
@@ -61,5 +62,5 @@ export default {
       picker3,
     }
   },
-}
+})
 </script>

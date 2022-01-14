@@ -12,11 +12,11 @@
     <app-type>Custom Style</app-type>
     <var-countdown time="108000000">
       <template #default="timeData">
-        <span class="block">{{ timeData.hours }}</span>
-        <span class="colon">:</span>
-        <span class="block">{{ timeData.minutes }}</span>
-        <span class="colon">:</span>
-        <span class="block">{{ timeData.seconds }}</span>
+          <span class="block">{{ timeData.hours }}</span>
+          <span class="colon">:</span>
+          <span class="block">{{ timeData.minutes }}</span>
+          <span class="colon">:</span>
+          <span class="block">{{ timeData.seconds }}</span>
       </template>
     </var-countdown>
     <app-type>Manual Control</app-type>
@@ -33,8 +33,9 @@
 import AppType from '~/components/appType.vue'
 import { Snackbar } from '@varlet/ui'
 import { ref } from 'vue'
+import { defineNuxtComponent } from '#app'
 
-export default {
+export default defineNuxtComponent({
   name: 'CountdownExample',
   components: {
     AppType,
@@ -58,11 +59,10 @@ export default {
       change,
     }
   },
-}
+})
 </script>
 
 <style scoped>
-
 .block {
   background: #ff9f00;
   color: white;
