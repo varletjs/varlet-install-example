@@ -30,7 +30,7 @@
 
     <app-type>Custom Button</app-type>
     <var-slider v-model="customButton" range active-color="#52af77">
-      <template #button="currentValue">
+      <template #button="{currentValue}">
         <div class="slider-example_block">{{ currentValue }}</div>
       </template>
     </var-slider>
