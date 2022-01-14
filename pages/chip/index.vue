@@ -65,7 +65,6 @@
         </template>
       </var-chip>
     </var-space>
-
   </div>
 </template>
 <script lang="ts">

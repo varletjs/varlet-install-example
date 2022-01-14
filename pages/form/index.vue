@@ -40,7 +40,11 @@
         <var-radio :checked-value="1">Male</var-radio>
         <var-radio :checked-value="2">Female</var-radio>
       </var-radio-group>
-      <var-checkbox-group class="mb" :rules="[(v) => v.length > 0 || 'The select cannot be empty']" v-model="formData.like">
+      <var-checkbox-group
+        class="mb"
+        :rules="[(v) => v.length > 0 || 'The select cannot be empty']"
+        v-model="formData.like"
+      >
         <var-checkbox :checked-value="1">Eat</var-checkbox>
         <var-checkbox :checked-value="2">Sleep</var-checkbox>
         <var-checkbox :checked-value="3">Play game</var-checkbox>
@@ -53,8 +57,21 @@
         <var-counter :rules="[(v) => v > 10 || 'It has to be greater than 10']" v-model="formData.count" />
       </div>
       <var-slider class="mb" :rules="[(v) => v > 10 || 'It has to be greater than 10']" v-model="formData.range" />
-      <var-uploader class="mb" :rules="[(v) => v.length >= 1 || 'Upload at least one picture']" v-model="formData.files" />
+      <var-uploader
+        class="mb"
+        :rules="[(v) => v.length >= 1 || 'Upload at least one picture']"
+        v-model="formData.files"
+      />
     </var-form>
+
+    <app-type>Form Control</app-type>
+    <var-space direction="column">
+      <var-button block type="danger" @click="form.reset()">Empty Form</var-button>
+      <var-button block type="warning" @click="form.resetValidation()">Empty The Validation</var-button>
+      <var-button block type="success" @click="form.validate()">Trigger validation</var-button>
+      <var-button block type="info" @click="disabled = !disabled">Form Disabled</var-button>
+      <var-button block type="primary" @click="readonly = !readonly">Form Readonly</var-button>
+    </var-space>
   </div>
 </template>
 
