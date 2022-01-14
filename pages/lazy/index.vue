@@ -28,8 +28,8 @@ export default defineNuxtComponent({
   setup() {
     const data = reactive({
       lazy: 'https://varlet.gitee.io/varlet-ui/cat.jpg',
-      loading: 'https://xxx.cn/loading.png',
-      error: 'https://xxx.cn/error.png',
+      loading: 'https://varlet.gitee.io/varlet-ui/varlet_icon.png',
+      error: 'https://varlet.gitee.io/varlet-ui/cover.jpg',
     })
     return { ...toRefs(data) }
   },
