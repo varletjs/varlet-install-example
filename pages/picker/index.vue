@@ -9,17 +9,17 @@
 
     <app-type>Component Call</app-type>
     <var-space direction="column" size="large">
-      <var-picker style="margin-bottom: 14px" :columns="columns" />
-      <var-picker style="margin-bottom: 14px" :columns="columns2" />
-      <var-picker style="margin-bottom: 14px" cascade :columns="columns3" />
+      <var-picker style="margin-bottom: 14px" :columns="columns" confirm-button-text='Confirm' cancel-button-text='Cancel' title='Pick It' />
+      <var-picker style="margin-bottom: 14px" :columns="columns2" confirm-button-text='Confirm' cancel-button-text='Cancel' title='Pick It' />
+      <var-picker style="margin-bottom: 14px" cascade :columns="columns3" confirm-button-text='Confirm' cancel-button-text='Cancel' title='Pick It' />
     </var-space>
   </div>
 </template>
 
 <script>
-import { Picker, Locale } from '@varlet/ui'
+import { Picker } from '@varlet/ui'
 import AppType from '~/components/appType.vue'
-import area from '../../json/area.json'
+import area from '~/json/area.json'
 import { ref } from 'vue'
 import { defineNuxtComponent } from '#app'
 
@@ -36,20 +36,33 @@ export default defineNuxtComponent({
       Array.from({ length: 20 }).map((_, index) => index),
     ])
     const columns3 = ref(area)
-    Locale.use('en-US')
+
 
     const picker = async () => {
-      await Picker(columns.value)
+      await Picker({
+        columns:columns.value,
+        title: 'Pick It',
+        confirmButtonText: 'Confirm',
+        cancelButtonText: 'Cancel'
+      })
     }
 
     const picker2 = async () => {
-      await Picker(columns2.value)
+      await Picker({
+        columns:columns2.value,
+        title: 'Pick It',
+        confirmButtonText: 'Confirm',
+        cancelButtonText: 'Cancel'
+      })
     }
 
     const picker3 = async () => {
       await Picker({
         cascade: true,
         columns: columns3.value,
+        title: 'Pick It',
+        confirmButtonText: 'Confirm',
+        cancelButtonText: 'Cancel'
       })
     }
 
