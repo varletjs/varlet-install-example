@@ -14,7 +14,13 @@
     <div class="cat height" v-lazy:background-image="lazy"></div>
 
     <app-type> Inline Attributes </app-type>
-    <img class="cat" v-lazy="lazy" lazy-loading="loading" lazy-error="error" lazy-attempt="3" />
+    <img
+      class="cat maxHeight"
+      v-lazy="lazy1"
+      lazy-loading="https://varlet.gitee.io/varlet-ui/varlet_icon.png"
+      lazy-error="https://varlet.gitee.io/varlet-ui/cover.jpg"
+      lazy-attempt="3"
+    />
   </div>
 </template>
 
@@ -28,8 +34,6 @@ export default defineNuxtComponent({
   setup() {
     const data = reactive({
       lazy: 'https://varlet.gitee.io/varlet-ui/cat.jpg',
-      loading: 'https://varlet.gitee.io/varlet-ui/varlet_icon.png',
-      error: 'https://varlet.gitee.io/varlet-ui/cover.jpg',
     })
     return { ...toRefs(data) }
   },
@@ -44,5 +48,8 @@ export default defineNuxtComponent({
 }
 .height {
   height: 200px;
+}
+.maxHeight {
+  max-height: 200px;
 }
 </style>
