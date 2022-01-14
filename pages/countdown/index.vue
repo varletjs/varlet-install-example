@@ -12,11 +12,11 @@
     <app-type>Custom Style</app-type>
     <var-countdown time="108000000">
       <template #default="timeData">
-        <span class="block">{{ timeData.hours }}</span>
-        <span class="colon">:</span>
-        <span class="block">{{ timeData.minutes }}</span>
-        <span class="colon">:</span>
-        <span class="block">{{ timeData.seconds }}</span>
+          <span class="block">{{ timeData.hours }}</span>
+          <span class="colon">:</span>
+          <span class="block">{{ timeData.minutes }}</span>
+          <span class="colon">:</span>
+          <span class="block">{{ timeData.seconds }}</span>
       </template>
     </var-countdown>
     <app-type>Manual Control</app-type>
