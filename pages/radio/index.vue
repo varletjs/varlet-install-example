@@ -28,7 +28,7 @@
       <var-radio :checked-value="0">Eat</var-radio>
       <var-radio :checked-value="1">Sleep</var-radio>
     </var-radio-group>
-    <var-space align="center">Current value: {{ group }}</var-space>
+    <span class="relation">Current value: {{ group }}</span>
 
     <app-type>Radio Validation</app-type>
     <var-radio v-model="validation" :rules="[(v) => v || 'Please check your choice']">
@@ -40,7 +40,7 @@
       <var-radio :checked-value="0">Eat</var-radio>
       <var-radio :checked-value="1">Sleep</var-radio>
     </var-radio-group>
-    <var-space align="center">Current value: {{ groupValidation }}</var-space>
+    <span class="relation">Current value: {{ groupValidation }}</span>
   </div>
 </template>
 <script lang="ts">
@@ -65,3 +65,9 @@ export default defineNuxtComponent({
   },
 })
 </script>
+<style lang="less" scoped>
+.relation {
+  display: inline-block;
+  margin-top: 8px;
+}
+</style>
