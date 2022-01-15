@@ -1,12 +1,14 @@
 <template>
   <div class="example">
     <app-type> Basic Usage </app-type>
-    <img class="cat" v-lazy="lazy" />
-    <img class="cat" v-lazy="lazy" />
-    <img class="cat" v-lazy="lazy" />
-    <img class="cat" v-lazy="lazy" />
-    <img class="cat" v-lazy="lazy" />
-    <img class="cat" v-lazy="lazy" />
+    <var-space direction="column">
+      <img class="cat" v-lazy="lazy" />
+      <img class="cat" v-lazy="lazy" />
+      <img class="cat" v-lazy="lazy" />
+      <img class="cat" v-lazy="lazy" />
+      <img class="cat" v-lazy="lazy" />
+      <img class="cat" v-lazy="lazy" />
+    </var-space>
 
     <app-type> Background Image Lazy Load </app-type>
     <div class="cat height" v-lazy:background-image="lazy"></div>
