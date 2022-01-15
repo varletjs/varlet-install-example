@@ -35,7 +35,7 @@
   </div>
 </template>
 
-<script>
+<script lang='ts'>
 import { Picker } from '@varlet/ui'
 import AppType from '~/components/appType.vue'
 import area from '~/json/area.json'

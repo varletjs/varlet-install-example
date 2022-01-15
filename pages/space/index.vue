@@ -81,7 +81,8 @@
     </var-space>
 
     <app-type>No Wrap</app-type>
-    <var-space :wrap="false">
+
+    <var-space :wrap="false" class='noWrapBox'>
       <var-button>Button1</var-button>
       <var-button>Button2</var-button>
       <var-button>Button3</var-button>
@@ -94,13 +95,18 @@
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
+
 export default defineNuxtComponent({
   components: {
     AppType,
   },
-  setup() {
-  },
+  setup(){}
 })
 </script>
-<style lang="less" scoped>
+
+<style scoped>
+.noWrapBox{
+  overflow-x: auto;
+}
 </style>
+
