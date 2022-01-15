@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="example">
     <app-type>Basic Usage</app-type>
     <var-steps :active="active">
       <var-step>{{ first }}</var-step>
