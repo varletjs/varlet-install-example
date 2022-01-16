@@ -1,19 +1,17 @@
 <template>
   <div class="example">
     <app-type>Alignment Methods</app-type>
-    <var-space>
-      <var-menu v-model:show="top">
-        <var-button type="primary" @click="top = true">Top Alignment</var-button>
+    <var-menu v-model:show="top">
+      <var-button type="primary" @click="top = true">Top Alignment</var-button>
 
-        <template #menu>
-          <div class="cell-list" :style="{ background: getBgColor() }">
-            <var-cell>Menu Option</var-cell>
-            <var-cell>Menu Option</var-cell>
-            <var-cell>Menu Option</var-cell>
-          </div>
-        </template>
-      </var-menu>
-    </var-space>
+      <template #menu>
+        <div class="cell-list" :style="{ background: getBgColor() }">
+          <var-cell>Menu Option</var-cell>
+          <var-cell>Menu Option</var-cell>
+          <var-cell>Menu Option</var-cell>
+        </div>
+      </template>
+    </var-menu>
 
     <var-space style="margin-top: 130px">
       <var-menu alignment="bottom" v-model:show="bottom">
