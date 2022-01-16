@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <app-type> Basic Usage </app-type>
-    <var-space>
+    <var-space direction='column'>
       <img class="cat" v-lazy="lazy" />
       <img class="cat" v-lazy="lazy" />
       <img class="cat" v-lazy="lazy" />
@@ -18,7 +18,7 @@
       class="cat maxHeight"
       v-lazy="lazy1"
       lazy-loading="https://varlet.gitee.io/varlet-ui/varlet_icon.png"
-      lazy-error="https://varlet.gitee.io/varlet-ui/cover.jpg"
+      :lazy-error="lazy"
       lazy-attempt="3"
     />
   </div>
