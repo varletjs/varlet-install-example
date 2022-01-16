@@ -56,6 +56,7 @@
   </div>
 </template>
 <script lang="ts">
+import { reactive, toRefs } from 'vue'
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 import { Snackbar } from '@varlet/ui'

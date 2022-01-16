@@ -51,7 +51,7 @@ import Clipboard from 'clipboard'
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 import { onBeforeMount } from '@vue/runtime-core'
-
+import { reactive, ref } from 'vue'
 export default defineNuxtComponent({
   components: {
     AppType,

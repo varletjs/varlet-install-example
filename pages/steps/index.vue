@@ -31,7 +31,7 @@
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
-
+import { ref } from 'vue'
 export default defineNuxtComponent({
   components: {
     AppType,
