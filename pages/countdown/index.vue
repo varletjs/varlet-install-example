@@ -29,11 +29,11 @@
   </div>
 </template>
 
-<script>
+<script lang='ts'>
+import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 import { Snackbar } from '@varlet/ui'
 import { ref } from 'vue'
-import { defineNuxtComponent } from '#app'
 
 export default defineNuxtComponent({
   name: 'CountdownExample',

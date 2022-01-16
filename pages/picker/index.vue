@@ -9,14 +9,33 @@
 
     <app-type>Component Call</app-type>
     <var-space direction="column" size="large">
-      <var-picker style="margin-bottom: 14px" :columns="columns" confirm-button-text='Confirm' cancel-button-text='Cancel' title='Pick It' />
-      <var-picker style="margin-bottom: 14px" :columns="columns2" confirm-button-text='Confirm' cancel-button-text='Cancel' title='Pick It' />
-      <var-picker style="margin-bottom: 14px" cascade :columns="columns3" confirm-button-text='Confirm' cancel-button-text='Cancel' title='Pick It' />
+      <var-picker
+        style="margin-bottom: 14px"
+        :columns="columns"
+        confirm-button-text="Confirm"
+        cancel-button-text="Cancel"
+        title="Pick It"
+      />
+      <var-picker
+        style="margin-bottom: 14px"
+        :columns="columns2"
+        confirm-button-text="Confirm"
+        cancel-button-text="Cancel"
+        title="Pick It"
+      />
+      <var-picker
+        style="margin-bottom: 14px"
+        cascade
+        :columns="columns3"
+        confirm-button-text="Confirm"
+        cancel-button-text="Cancel"
+        title="Pick It"
+      />
     </var-space>
   </div>
 </template>
 
-<script>
+<script lang='ts'>
 import { Picker } from '@varlet/ui'
 import AppType from '~/components/appType.vue'
 import area from '~/json/area.json'
@@ -37,22 +56,21 @@ export default defineNuxtComponent({
     ])
     const columns3 = ref(area)
 
-
     const picker = async () => {
       await Picker({
-        columns:columns.value,
+        columns: columns.value,
         title: 'Pick It',
         confirmButtonText: 'Confirm',
-        cancelButtonText: 'Cancel'
+        cancelButtonText: 'Cancel',
       })
     }
 
     const picker2 = async () => {
       await Picker({
-        columns:columns2.value,
+        columns: columns2.value,
         title: 'Pick It',
         confirmButtonText: 'Confirm',
-        cancelButtonText: 'Cancel'
+        cancelButtonText: 'Cancel',
       })
     }
 
@@ -62,7 +80,7 @@ export default defineNuxtComponent({
         columns: columns3.value,
         title: 'Pick It',
         confirmButtonText: 'Confirm',
-        cancelButtonText: 'Cancel'
+        cancelButtonText: 'Cancel',
       })
     }
 

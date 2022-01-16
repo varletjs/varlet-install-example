@@ -41,8 +41,6 @@ export default defineNuxtComponent({
     const github = get(config, 'github')
     const themesKey = get(config, 'themesKey')
     const deviceTip = get(config, 'deviceTip')
-    const themes = get(config, 'themes')
-    const darkThemes = get(config, 'darkThemes')
     const system = useSystemStore()
     const currentThemes = ref('')
     const showBackIcon = computed(()=>{
