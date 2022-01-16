@@ -17,7 +17,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.1.8",
     "@varlet/icons": "^1.24.10",
-    "@varlet/ui": "^1.24.11-alpha.1642084630469",
+    "@varlet/ui": "^1.24.12-alpha.1642320131135",
     "pinia": "^2.0.9"
   }
 }
