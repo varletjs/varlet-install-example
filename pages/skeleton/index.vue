@@ -26,6 +26,7 @@
 </template>
 
 <script lang="ts">
+import { ref } from 'vue'
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 

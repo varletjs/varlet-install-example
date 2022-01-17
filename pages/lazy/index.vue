@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <app-type> Basic Usage </app-type>
-    <var-space direction='column'>
+    <var-space direction="column">
       <img class="cat" v-lazy="lazy" />
       <img class="cat" v-lazy="lazy" />
       <img class="cat" v-lazy="lazy" />
@@ -27,6 +27,7 @@
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
+import { reactive, toRefs } from 'vue'
 export default defineNuxtComponent({
   components: {
     AppType,

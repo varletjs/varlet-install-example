@@ -46,6 +46,7 @@
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
+import { reactive, toRefs } from 'vue'
 export default defineNuxtComponent({
   components: {
     AppType,
