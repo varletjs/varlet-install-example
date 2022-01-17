@@ -13,7 +13,7 @@
       </template>
     </var-menu>
 
-    <var-space style="margin-top: 130px">
+    <div style="margin-top: 130px">
       <var-menu alignment="bottom" v-model:show="bottom">
         <var-button type="primary" @click="bottom = true">Bottom Alignment</var-button>
 
@@ -25,7 +25,7 @@
           </div>
         </template>
       </var-menu>
-    </var-space>
+    </div>
 
     <app-type>Offset</app-type>
 
