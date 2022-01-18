@@ -75,12 +75,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineNuxtComponent } from '#app'
 import { Snackbar } from '@varlet/ui'
 import AppType from '~/components/AppType'
 import { reactive, toRefs } from 'vue'
 
-export default {
+const pack = {
+  text: 'As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains on the carpet.',
+}
+
+export default defineNuxtComponent({
   name: 'PopupExample',
   components: {
     AppType,
@@ -102,7 +107,7 @@ export default {
       Snackbar,
     }
   },
-}
+})
 </script>
 
 <style>
