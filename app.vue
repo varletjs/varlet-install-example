@@ -3,10 +3,10 @@
     <var-app-bar class="app-bar" title-position="left" :title="title">
       <template #left>
         <var-button v-if="showBackIcon" text round color="transparent" text-color="#fff">
-          <var-icon name="chevron-left" :size="28" style="margin-top: 1px" @click="back"/>
+          <var-icon name="chevron-left" :size="28" style="margin-top: 1px" @click="back" />
         </var-button>
         <var-button v-else text round color="transparent" text-color="#fff">
-          <var-icon name="github" :size="28" style="margin-top: 1px" @click="toGithub"/>
+          <var-icon name="github" :size="28" style="margin-top: 1px" @click="toGithub" />
         </var-button>
       </template>
       <template #right>
@@ -21,7 +21,7 @@
     </var-app-bar>
   </header>
   <div class="router-view__block">
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>
 
@@ -72,7 +72,7 @@ export default defineNuxtComponent({
       router.back()
     }
 
-    return {showBackIcon, toGithub, back, title, toggleTheme, currentThemes}
+    return { showBackIcon, toGithub, back, title, toggleTheme, currentThemes }
   },
 })
 </script>

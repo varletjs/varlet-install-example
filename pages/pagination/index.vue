@@ -1,27 +1,22 @@
 <template>
   <div class="example">
     <app-type>Basic Usage</app-type>
-    <div class="transformer">
-      <var-pagination :current="3" :total="120" />
-    </div>
+    <var-pagination :current="3" :total="120" />
+
     <app-type>Hide Size Changer</app-type>
-    <div class="transformer">
-      <var-pagination :current="3" :total="120" :show-size-changer="false" />
-    </div>
+    <var-pagination :current="3" :total="120" :show-size-changer="false" />
+
     <app-type>Show Total</app-type>
-    <div class="transformer">
-      <var-pagination :current="3" :total="120" :show-total="(total) => ` ${total} items`" />
-    </div>
+    <var-pagination :current="3" :total="120" :show-total="(total) => ` ${total} items`" />
+
     <app-type>Disabled</app-type>
-    <div class="transformer">
-      <var-pagination :current="3" :total="120" disabled />
-    </div>
+    <var-pagination :current="3" :total="120" disabled />
   </div>
 </template>
 
 <script lang="ts">
-import AppType from '~/components/AppType'
 import { defineNuxtComponent } from '#app'
+import AppType from '~/components/appType.vue'
 
 export default defineNuxtComponent({
   name: 'PaginationExample',
@@ -30,9 +25,3 @@ export default defineNuxtComponent({
   },
 })
 </script>
-
-<style lang="less" scoped>
-.transformer {
-  transform: translateX(-10px);
-}
-</style>
