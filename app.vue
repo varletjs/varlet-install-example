@@ -28,7 +28,7 @@
 <script lang="ts">
 import config from '~/assets/varlet-nuxt.config.json'
 import { defineNuxtComponent } from '#app'
-import { useRouter } from 'vue-router'
+import { useRouter } from '#imports'
 import { get } from 'lodash-es'
 import { ref, computed } from 'vue'
 import { useSystemStore } from '~/store/system'
@@ -47,7 +47,7 @@ export default defineNuxtComponent({
       return !!title.value
     })
     const title = computed(() => {
-      return router.currentRoute.value.path.substr(1)
+      return router.currentRoute.value.path.substr(1) || 'Home'
     })
 
     const toGithub = () => {
