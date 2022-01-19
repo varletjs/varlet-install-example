@@ -38,7 +38,7 @@
 <script lang='ts'>
 import { Picker } from '@varlet/ui'
 import AppType from '~/components/appType.vue'
-import area from '~/json/area.json'
+import area from '@varlet/ui/json/area.json'
 import { ref } from 'vue'
 import { defineNuxtComponent } from '#app'
 
