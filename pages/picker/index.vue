@@ -12,24 +12,15 @@
       <var-picker
         style="margin-bottom: 14px"
         :columns="columns"
-        confirm-button-text="Confirm"
-        cancel-button-text="Cancel"
-        title="Pick It"
       />
       <var-picker
         style="margin-bottom: 14px"
         :columns="columns2"
-        confirm-button-text="Confirm"
-        cancel-button-text="Cancel"
-        title="Pick It"
       />
       <var-picker
         style="margin-bottom: 14px"
         cascade
         :columns="columns3"
-        confirm-button-text="Confirm"
-        cancel-button-text="Cancel"
-        title="Pick It"
       />
     </var-space>
   </div>
@@ -57,30 +48,17 @@ export default defineNuxtComponent({
     const columns3 = ref(area)
 
     const picker = async () => {
-      await Picker({
-        columns: columns.value,
-        title: 'Pick It',
-        confirmButtonText: 'Confirm',
-        cancelButtonText: 'Cancel',
-      })
+      await Picker(columns.value,)
     }
 
     const picker2 = async () => {
-      await Picker({
-        columns: columns2.value,
-        title: 'Pick It',
-        confirmButtonText: 'Confirm',
-        cancelButtonText: 'Cancel',
-      })
+      await Picker(columns2.value,)
     }
 
     const picker3 = async () => {
       await Picker({
         cascade: true,
         columns: columns3.value,
-        title: 'Pick It',
-        confirmButtonText: 'Confirm',
-        cancelButtonText: 'Cancel',
       })
     }
 
