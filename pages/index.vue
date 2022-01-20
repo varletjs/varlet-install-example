@@ -30,7 +30,7 @@ export default defineNuxtComponent({
 })
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .app-container {
   .app-component {
     text-transform: capitalize;

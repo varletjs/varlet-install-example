@@ -99,13 +99,10 @@ export default defineNuxtComponent({
 })
 </script>
 
-<style>
+<style lang="less" scoped>
 .custom-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-</style>
-
-<style scoped lang="less">
 .mt-10 {
   margin-top: 10px;
 }

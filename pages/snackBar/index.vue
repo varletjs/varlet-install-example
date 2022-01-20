@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <app-type>Component Call</app-type>
-    <var-space direction='column'>
+    <var-space direction="column">
       <var-button type="primary" block @click="changeValue('show1')">Basic Usage</var-button>
       <var-button type="primary" block @click="changeValue('show3')">Multi Line</var-button>
       <var-button type="primary" block @click="changeValue('show2')">Bottom Display</var-button>
@@ -10,15 +10,14 @@
     </var-space>
 
     <app-type>Function Call</app-type>
-    <var-space direction='column'>
-      <var-button type="warning" block @click="createSnackbar()">Basic Usage</var-button>
+    <var-space direction="column">
+      <var-button type="warning" block @click="createSnackbar">Basic Usage</var-button>
       <var-button type="warning" block @click="createSnackbar('time')">Display Duration</var-button>
       <var-button type="warning" block @click="createSnackbar('position')">Bottom Display</var-button>
     </var-space>
 
-
     <app-type>Snackbar Type</app-type>
-    <var-space  direction='column'>
+    <var-space direction="column">
       <var-button type="success" block @click="create('success')">Success</var-button>
       <var-button type="warning" block @click="create('warning')">Warning</var-button>
       <var-button type="info" block @click="create('info')">Info</var-button>
@@ -26,13 +25,7 @@
       <var-button type="primary" block @click="create('loading')">Loading</var-button>
     </var-space>
 
-
-
-
-
-    <var-snackbar v-model:show="show1">
-      Hello,I'm a snackBar!
-    </var-snackbar>
+    <var-snackbar v-model:show="show1"> Hello,I'm a snackBar! </var-snackbar>
 
     <var-snackbar v-model:show="show2" position="bottom">
       Hello,I'm a snackBar!
@@ -48,14 +41,9 @@
       </template>
     </var-snackbar>
 
-    <var-snackbar v-model:show="show4" :duration="1000">
-      Hello,I'm a snackBar!
-    </var-snackbar>
+    <var-snackbar v-model:show="show4" :duration="1000"> Hello,I'm a snackBar! </var-snackbar>
 
-    <var-snackbar v-model:show="show9" :forbid-click="true">
-      Hello,I'm a snackBar!
-    </var-snackbar>
-
+    <var-snackbar v-model:show="show9" :forbid-click="true"> Hello,I'm a snackBar! </var-snackbar>
   </div>
 </template>
 
@@ -82,18 +70,18 @@ export default defineNuxtComponent({
       shows[type] = !shows[type]
     }
 
-    const create = (type)=>{
+    const create = (type) => {
       const text = type === 'loading' ? 'Waiting...' : "Hello,I'm a snackBar!"
-        Snackbar[type](text)
+      Snackbar[type](text)
 
-      if(type==='loading'){
+      if (type === 'loading') {
         setTimeout(() => {
           Snackbar.success('Loaded')
         }, 2000)
       }
     }
 
-    const createSnackbar = (type)=>{
+    const createSnackbar = (type) => {
       if (type === 'time') {
         Snackbar({
           content: "Hello,I'm a snackBar!",
@@ -109,13 +97,11 @@ export default defineNuxtComponent({
       }
 
       if (!type) {
-        Snackbar("Hello,I'm a snackBar!",)
+        Snackbar("Hello,I'm a snackBar!")
       }
     }
 
-    return { changeValue,...toRefs(shows),createSnackbar,create }
+    return { changeValue, ...toRefs(shows), createSnackbar, create }
   },
 })
 </script>
-
-<style></style>

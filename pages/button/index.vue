@@ -97,9 +97,3 @@ export default defineNuxtComponent({
   },
 })
 </script>
-
-<style lang="less" scoped>
-.example {
-  //padding: 0 14px;
-}
-</style>

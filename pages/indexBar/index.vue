@@ -38,7 +38,7 @@ export default defineNuxtComponent({
   },
 })
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .var-index-anchor__example {
   height: 42px;
   display: flex;
