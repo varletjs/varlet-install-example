@@ -7,13 +7,6 @@
       <var-tab>Option3</var-tab>
     </var-tabs>
 
-    <app-type>Named TAB</app-type>
-    <var-tabs v-model:active="named">
-      <var-tab name="Option1">Option1</var-tab>
-      <var-tab name="Option2">Option2</var-tab>
-      <var-tab name="Option3">Option3</var-tab>
-    </var-tabs>
-
     <app-type>Modify Style</app-type>
     <var-tabs
       elevation
@@ -150,7 +143,6 @@ export default defineNuxtComponent({
   setup() {
     const data = reactive({
       basic: 0,
-      named: 'Option1',
       modify: 0,
       disabled: 0,
       scroll: 0,

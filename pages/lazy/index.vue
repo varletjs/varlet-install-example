@@ -12,15 +12,6 @@
 
     <app-type> Background Image Lazy Load </app-type>
     <div class="cat height" v-lazy:background-image="lazy"></div>
-
-    <app-type> Inline Attributes </app-type>
-    <img
-      class="cat maxHeight"
-      v-lazy="lazy"
-      lazy-loading="https://varlet.gitee.io/varlet-ui/varlet_icon.png"
-      :lazy-error="lazy"
-      lazy-attempt="3"
-    />
   </div>
 </template>
 
