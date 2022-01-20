@@ -12,7 +12,7 @@
   </div>
 </template>
 <script lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted } from 'vue'
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 export default defineNuxtComponent({
