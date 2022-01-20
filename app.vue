@@ -30,7 +30,7 @@ import config from '~/assets/varlet-nuxt.config.json'
 import { defineNuxtComponent } from '#app'
 import { useRouter } from '#imports'
 import { get } from 'lodash-es'
-import { ref, computed } from 'vue'
+import { ref, computed, inject } from "vue";
 import { useSystemStore } from '~/store/system'
 import { Snackbar } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
@@ -43,8 +43,9 @@ export default defineNuxtComponent({
     const deviceTip = get(config, 'deviceTip')
     const system = useSystemStore()
     const currentThemes = ref('')
+    const { $theme } = useNuxtApp()
     const showBackIcon = computed(() => {
-      return !!title.value
+      return title.value !== 'Home'
     })
     const title = computed(() => {
       return router.currentRoute.value.path.substr(1) || 'Home'
@@ -56,13 +57,14 @@ export default defineNuxtComponent({
 
     const toggleTheme = () => {
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
+
       $localStorage.set(themesKey, currentThemes.value)
-      system.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
     }
 
     onBeforeMount(async () => {
-      currentThemes.value = await system.getBrowserThemes(themesKey)
-      system.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      currentThemes.value = await $theme.theme.value
+      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
       if (!system.isPhone) {
         Snackbar(deviceTip)
       }

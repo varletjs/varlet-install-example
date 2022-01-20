@@ -708,10 +708,10 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-4.0.1.tgz#8f80dd965ad81f3e1bc26d6f5c727e132721ff40"
   integrity sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==
 
-"@varlet/icons@1.25.0":
-  version "1.25.0"
-  resolved "https://registry.npmjs.org/@varlet/icons/-/icons-1.25.0.tgz#294c0e3d011ccdcf87f4ee4dd8f5884259ad093d"
-  integrity sha512-9FkDduk2aJ70v82tPcnfX5n2EIQf+WRbLbD9/QYUw0e1QUw8JCjLKz+HJIrQ4L2DVKcUVnCtyNHq7sXtEZHAIw==
+"@varlet/icons@1.25.1-alpha.1642669197501":
+  version "1.25.1-alpha.1642669197501"
+  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.25.1-alpha.1642669197501.tgz#74086dc8d3a9caf9d860ee81105ceeca7b0ff186"
+  integrity sha512-cT2NaH3i8h+FRELynFTx4JX6mYg2NZWcyFB7PCecsAsgIzXgkCzZlEwPsEsTR8do04BxTi6wzvvGbvNvRwdwCQ==
   dependencies:
     commander "^6.2.1"
     fs-extra "^9.0.1"
@@ -731,12 +731,12 @@
   resolved "https://registry.yarnpkg.com/@varlet/touch-emulator/-/touch-emulator-1.24.11-alpha.1642084630469.tgz#8a33531687ac3b31f827919916217808f2333883"
   integrity sha512-T++Ho1AcxoQetqKvI1Qezen6DRXU5UcdGSm2V9vp2QZZ/kkEZKr9fDAueGLAqcSwrYis0TGzOT8pDwjuX8La6g==
 
-"@varlet/ui@^1.25.0":
-  version "1.25.0"
-  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.25.0.tgz#1dc26b5a145067e8fdb3eb8cd5a04aa24b49666e"
-  integrity sha512-ZIqT1foKZDz5bysuXmPDmrdUJXlfnMuosdo3NBBNDuYWSDZvWZ3ijYlSGdw6cw34HfNdkLJlNlJ4JDqfpdqDCA==
+"@varlet/ui@^1.25.1-alpha.1642669197501":
+  version "1.25.1-alpha.1642669197501"
+  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.25.1-alpha.1642669197501.tgz#e5ac201d7b5bac0a3d1118eeee49fc37765a6faa"
+  integrity sha512-G3rt3tWRxLv9qMG6q3tUsmeuKdUCz/UhidxGYNnfS9YMrOed9QY/PR20letfrDFaO/9VwBV0Fg9LXNUL3F39aQ==
   dependencies:
-    "@varlet/icons" "1.25.0"
+    "@varlet/icons" "1.25.1-alpha.1642669197501"
     dayjs "^1.10.4"
     decimal.js "^10.2.1"
 
