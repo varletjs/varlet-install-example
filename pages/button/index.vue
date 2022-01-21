@@ -74,6 +74,7 @@
     <var-space>
       <var-button type="success" @click="handleClick">Click</var-button>
       <var-button type="warning" @touchstart="handleTouchstart">Touchstart</var-button>
+      <var-button type="info" @click="handleAutoLoadingClick" auto-loading>Auto Loading</var-button>
     </var-space>
   </div>
 </template>
@@ -93,7 +94,13 @@ export default defineNuxtComponent({
     const handleClick = () => {
       Snackbar.success('Click Success')
     }
-    return { handleClick, handleTouchstart }
+    const handleAutoLoadingClick = () => {
+      return new Promise((resolve) => {
+        setTimeout(resolve, 2000)
+      })
+    }
+
+    return { handleClick, handleTouchstart,handleAutoLoadingClick }
   },
 })
 </script>
