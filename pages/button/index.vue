@@ -91,9 +91,11 @@ export default defineNuxtComponent({
     const handleTouchstart = () => {
       Snackbar.info('Touchstart Success')
     }
+
     const handleClick = () => {
       Snackbar.success('Click Success')
     }
+
     const handleAutoLoadingClick = () => {
       return new Promise((resolve) => {
         setTimeout(resolve, 2000)
