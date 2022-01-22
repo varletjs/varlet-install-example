@@ -76,10 +76,7 @@ export default defineNuxtComponent({
       })
     }
 
-    const t = ref('what')
-
     return {
-      t,
       offsetY,
       menuList,
       goBack,

@@ -8,32 +8,27 @@
     <var-button class="mt-10" type="primary" block @click="right = true">Right Popup</var-button>
     <var-popup v-model:show="center">
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
     <var-popup position="bottom" v-model:show="bottom">
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
     <var-popup position="top" v-model:show="top">
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
     <var-popup position="left" v-model:show="left">
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
     <var-popup position="right" v-model:show="right">
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
 
@@ -41,8 +36,7 @@
     <var-button class="mt-10" type="primary" block @click="overlayClass = true">Overlay Class</var-button>
     <var-popup overlay-class="custom-overlay" v-model:show="overlayClass">
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
     <var-button class="mt-10" type="primary" block @click="overlayStyle = true">Overlay Style</var-button>
@@ -53,8 +47,7 @@
       v-model:show="overlayStyle"
     >
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
 
@@ -68,8 +61,7 @@
       @closed="() => Snackbar.error('closed')"
     >
       <div class="block">
-        As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains
-        on the carpet.
+        {{ text }}
       </div>
     </var-popup>
   </div>
@@ -78,12 +70,8 @@
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import { Snackbar } from '@varlet/ui'
-import AppType from '~/components/AppType'
+import AppType from '~/components/AppType.vue'
 import { reactive, toRefs } from 'vue'
-
-const pack = {
-  text: 'As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains on the carpet.',
-}
 
 export default defineNuxtComponent({
   name: 'PopupExample',
@@ -100,6 +88,7 @@ export default defineNuxtComponent({
       overlayClass: false,
       overlayStyle: false,
       event: false,
+      text: 'As he came into the window. It was the sound of a crescendo. He came into her apartment. He left the bloodstains on the carpet.',
     })
 
     return {
@@ -110,13 +99,10 @@ export default defineNuxtComponent({
 })
 </script>
 
-<style>
+<style lang="less" scoped>
 .custom-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-</style>
-
-<style scoped lang="less">
 .mt-10 {
   margin-top: 10px;
 }

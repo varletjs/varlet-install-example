@@ -3,10 +3,10 @@
     <var-app-bar class="app-bar" title-position="left" :title="title">
       <template #left>
         <var-button v-if="showBackIcon" text round color="transparent" text-color="#fff">
-          <var-icon name="chevron-left" :size="28" style="margin-top: 1px" @click="back"/>
+          <var-icon name="chevron-left" :size="28" style="margin-top: 1px" @click="back" />
         </var-button>
         <var-button v-else text round color="transparent" text-color="#fff">
-          <var-icon name="github" :size="28" style="margin-top: 1px" @click="toGithub"/>
+          <var-icon name="github" :size="28" style="margin-top: 1px" @click="toGithub" />
         </var-button>
       </template>
       <template #right>
@@ -21,14 +21,14 @@
     </var-app-bar>
   </header>
   <div class="router-view__block">
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>
 
 <script lang="ts">
 import config from '~/assets/varlet-nuxt.config.json'
-import { defineNuxtComponent } from '#app'
-import { useRouter } from 'vue-router'
+import { defineNuxtComponent,useNuxtApp } from '#app'
+import { useRouter } from '#imports'
 import { get } from 'lodash-es'
 import { ref, computed } from 'vue'
 import { useSystemStore } from '~/store/system'
@@ -43,11 +43,12 @@ export default defineNuxtComponent({
     const deviceTip = get(config, 'deviceTip')
     const system = useSystemStore()
     const currentThemes = ref('')
+    const { $theme } = useNuxtApp()
     const showBackIcon = computed(() => {
-      return !!title.value
+      return title.value !== 'Home'
     })
     const title = computed(() => {
-      return router.currentRoute.value.path.substr(1)
+      return router.currentRoute.value.path.substr(1) || 'Home'
     })
 
     const toGithub = () => {
@@ -56,13 +57,14 @@ export default defineNuxtComponent({
 
     const toggleTheme = () => {
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
+
       $localStorage.set(themesKey, currentThemes.value)
-      system.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
     }
 
     onBeforeMount(async () => {
-      currentThemes.value = await system.getBrowserThemes(themesKey)
-      system.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      currentThemes.value = await $theme.theme.value
+      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
       if (!system.isPhone) {
         Snackbar(deviceTip)
       }
@@ -72,7 +74,7 @@ export default defineNuxtComponent({
       router.back()
     }
 
-    return {showBackIcon, toGithub, back, title, toggleTheme, currentThemes}
+    return { showBackIcon, toGithub, back, title, toggleTheme, currentThemes }
   },
 })
 </script>

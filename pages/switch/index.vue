@@ -57,4 +57,3 @@ export default defineNuxtComponent({
   },
 })
 </script>
-<style lang="less" scoped></style>
