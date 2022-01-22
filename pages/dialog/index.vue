@@ -18,8 +18,6 @@
       <var-dialog v-model:show="show1" :title="title" :message="message" @before-close="onBeforeClose" />
     </var-space>
 
-
-
     <var-dialog
       v-model:show="show"
       :title="title"
@@ -38,7 +36,6 @@
       <var-cell>{{ message }}</var-cell>
       <var-cell>{{ message }}</var-cell>
     </var-dialog>
-
   </div>
 </template>
 
@@ -111,8 +108,8 @@ export default defineNuxtComponent({
         message: values.message,
         dialogClass: 'dialogClass',
         dialogStyle: {
-          color: '#ff9f00'
-        }
+          color: '#ff9f00',
+        },
       })
     }
 
@@ -125,7 +122,7 @@ export default defineNuxtComponent({
       hideButton,
       onBeforeClose,
       customClass,
-      actions
+      actions,
     }
   },
 })

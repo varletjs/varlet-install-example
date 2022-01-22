@@ -27,10 +27,10 @@
 
 <script lang="ts">
 import config from '~/assets/varlet-nuxt.config.json'
-import { defineNuxtComponent } from '#app'
+import { defineNuxtComponent,useNuxtApp } from '#app'
 import { useRouter } from '#imports'
 import { get } from 'lodash-es'
-import { ref, computed, inject } from "vue";
+import { ref, computed } from 'vue'
 import { useSystemStore } from '~/store/system'
 import { Snackbar } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
