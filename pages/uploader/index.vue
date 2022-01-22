@@ -44,6 +44,7 @@
 import { defineNuxtComponent } from '#app'
 import { Dialog } from '@varlet/ui'
 import { VarFile } from '@varlet/ui/types/uploader'
+import { reactive, toRefs } from 'vue'
 export default defineNuxtComponent({
   setup() {
     const values = reactive({

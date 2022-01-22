@@ -26,11 +26,11 @@
 </template>
 
 <script lang="ts">
-import { defineNuxtComponent } from '#app'
-import { useRouter } from 'vue-router'
 import config from '~/assets/varlet-nuxt.config.json'
+import { defineNuxtComponent } from '#app'
+import { useRouter } from '#imports'
 import { get } from 'lodash-es'
-import { ref,computed } from 'vue'
+import { ref, computed, inject } from "vue";
 import { useSystemStore } from '~/store/system'
 import { Snackbar } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
@@ -41,15 +41,14 @@ export default defineNuxtComponent({
     const github = get(config, 'github')
     const themesKey = get(config, 'themesKey')
     const deviceTip = get(config, 'deviceTip')
-    const themes = get(config, 'themes')
-    const darkThemes = get(config, 'darkThemes')
     const system = useSystemStore()
     const currentThemes = ref('')
-    const showBackIcon = computed(()=>{
-      return !!title.value
+    const { $theme } = useNuxtApp()
+    const showBackIcon = computed(() => {
+      return title.value !== 'Home'
     })
-    const title = computed(()=>{
-      return router.currentRoute.value.path.substr(1)
+    const title = computed(() => {
+      return router.currentRoute.value.path.substr(1) || 'Home'
     })
 
     const toGithub = () => {
@@ -58,14 +57,15 @@ export default defineNuxtComponent({
 
     const toggleTheme = () => {
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
+
       $localStorage.set(themesKey, currentThemes.value)
-      system.setThemes(currentThemes.value as 'themes'|'darkThemes')
+      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
     }
 
     onBeforeMount(async () => {
-      currentThemes.value = await system.getBrowserThemes(themesKey)
-      system.setThemes(currentThemes.value as 'themes'|'darkThemes')
-      if(!system.isPhone){
+      currentThemes.value = await $theme.theme.value
+      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      if (!system.isPhone) {
         Snackbar(deviceTip)
       }
     })
@@ -104,7 +104,7 @@ header {
   text-transform: capitalize;
 }
 
-.router-view__block{
+.router-view__block {
   padding: 54px 12px 15px;
 }
 </style>

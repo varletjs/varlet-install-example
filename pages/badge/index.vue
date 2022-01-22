@@ -60,7 +60,7 @@
     </var-badge>
   </div>
 </template>
-<script>
+<script lang='ts'>
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 import { ref } from 'vue'
