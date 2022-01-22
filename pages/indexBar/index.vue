@@ -12,7 +12,7 @@
   </div>
 </template>
 <script lang="ts">
-import { ref, onMounted, inject, computed, watch } from "vue";
+import { ref, onMounted, watch } from "vue";
 import { defineNuxtComponent } from '#app'
 import AppType from '~/components/appType.vue'
 
@@ -22,8 +22,8 @@ export default defineNuxtComponent({
   },
   setup() {
     const list = ref([])
-    const bgColor = ref('#e7edf7')
-    const color = ref('#2e67ba')
+    const bgColor = ref('')
+    const color = ref('')
     const { $theme } = useNuxtApp()
 
     onMounted(() => {
@@ -32,10 +32,14 @@ export default defineNuxtComponent({
       }
     })
 
-    watch($theme.theme,(newVal)=>{
-      bgColor.value = newVal === 'darkThemes' ? 'rgb(41 42 45)' : '#e7edf7'
-      color.value = newVal === 'darkThemes' ? '#3980e8' : '#2e67ba'
-    })
+    watch(
+      $theme.theme,
+      (newVal) => {
+        bgColor.value = newVal === 'darkThemes' ? 'rgb(41 42 45)' : '#e7edf7'
+        color.value = newVal === 'darkThemes' ? '#3980e8' : '#2e67ba'
+      },
+      { immediate: true }
+    )
 
     const change = (value) => {
       console.log(value)
@@ -50,7 +54,7 @@ export default defineNuxtComponent({
 })
 </script>
 <style lang="less" scoped>
-.var-index-anchor__example {
+:deep(.var-index-anchor__example) {
   height: 42px;
   display: flex;
   align-items: center;
