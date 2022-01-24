@@ -733,7 +733,7 @@
 
 "@varlet/ui@^1.25.1-alpha.1642773514066":
   version "1.25.1-alpha.1642773514066"
-  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.25.1-alpha.1642773514066.tgz#ad01a04b2f0ad68db1b64944ac328f257578c91f"
+  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.25.1-alpha.1642773514066.tgz#ad01a04b2f0ad68db1b64944ac328f257578c91f"
   integrity sha512-FRi4e2vTQgYsvD8O3iaJYEbunyhBebs4ejF2eVnk2P4XWOSQql8OZygQVezaeqTL7kRr/FbExfWxSC917NrGoA==
   dependencies:
     "@varlet/icons" "1.25.1-alpha.1642773514066"
@@ -4917,7 +4917,7 @@ pascalcase@^0.1.1:
 
 patch-vue-directive-ssr@^0.0.1:
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/patch-vue-directive-ssr/-/patch-vue-directive-ssr-0.0.1.tgz#2eac731f59cdb766d4d613bc24e522ded6ff1bb8"
+  resolved "https://registry.npmjs.org/patch-vue-directive-ssr/-/patch-vue-directive-ssr-0.0.1.tgz#2eac731f59cdb766d4d613bc24e522ded6ff1bb8"
   integrity sha512-n84llktHah+EXUGo+RvmTJcAQJQVW0kHHHiJ34ZSLijzhHi32zCMjCc5VAFv4jmdC91bpaYGPk0cDW1D8hQ3GQ==
 
 path-dirname@^1.0.0:

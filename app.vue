@@ -89,6 +89,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
+  transition: color .25s, background-color .25s;
   color: var(--color-text);
   background-color: var(--color-body);
 }
