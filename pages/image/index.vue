@@ -1,9 +1,9 @@
 <template>
   <div class="example">
-    <app-type>{{ pack.basicUsage }}</app-type>
+    <app-type>Basic Usage</app-type>
     <var-image src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
 
-    <app-type>{{ pack.fitMode }}</app-type>
+    <app-type>Fit Mode</app-type>
     <var-space>
       <div class="fit-item">
         <var-image width="85px" height="85px" src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
@@ -31,7 +31,7 @@
       </div>
     </var-space>
 
-    <app-type>{{ pack.setRadius }}</app-type>
+    <app-type>Set Radius</app-type>
     <var-space>
       <var-image
         width="85px"
@@ -45,22 +45,15 @@
       <var-image width="85px" height="85px" fit="cover" radius="50%" src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
     </var-space>
 
-    <app-type>{{ pack.useRipple }}</app-type>
+    <app-type>Use Ripple</app-type>
     <var-image ripple src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
 
-    <app-type>{{ pack.useLazyLoad }}</app-type>
+    <app-type>Use LazyLoad</app-type>
     <var-image lazy src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
   </div>
 </template>
 
 <script>
-const pack = {
-  basicUsage: 'Basic Usage',
-  fitMode: 'Fit Mode',
-  setRadius: 'Set Radius',
-  useRipple: 'Use Ripple',
-  useLazyLoad: 'Use LazyLoad',
-}
 import AppType from '~/components/AppType'
 import { defineNuxtComponent } from '#app'
 
@@ -68,9 +61,6 @@ export default defineNuxtComponent({
   name: 'ImageExample',
   components: {
     AppType,
-  },
-  setup() {
-    return { pack }
   },
 })
 </script>

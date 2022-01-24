@@ -19,17 +19,13 @@
 import AppType from '~/components/AppType'
 import { defineNuxtComponent } from '#app'
 
-const pack = {
-  basicUsage: 'Basic Usage',
-  localSticky: 'Local Sticky',
-}
 export default defineNuxtComponent({
   name: 'StickyExample',
   components: {
     AppType,
   },
   setup() {
-    return { pack }
+    return { pack: { basicUsage: 'Basic Usage', localSticky: 'Local Sticky' } }
   },
 })
 </script>
