@@ -10,7 +10,7 @@
       <var-button type="danger">Danger Button</var-button>
     </var-space>
 
-    <app-type>Theme Color Button</app-type>
+    <app-type>Text Button</app-type>
     <var-space>
       <var-button text outline type="primary">Outline Button</var-button>
       <var-button text type="primary">Plain Text Button</var-button>

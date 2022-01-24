@@ -1,14 +1,14 @@
 <template>
   <div class="example">
-    <app-type>{{ pack.basicUsage }}</app-type>
+    <app-type>Basic Usage</app-type>
     <var-sticky :offset-top="54">
-      <var-button type="primary">{{ pack.basicUsage }}</var-button>
+      <var-button type="primary">Basic Usage</var-button>
     </var-sticky>
 
-    <app-type>{{ pack.localSticky }}</app-type>
+    <app-type>Local Sticky</app-type>
     <div class="scroller">
       <var-sticky>
-        <var-button type="success">{{ pack.localSticky }}</var-button>
+        <var-button type="success">Local Sticky</var-button>
       </var-sticky>
       <div class="block"></div>
     </div>
@@ -23,9 +23,6 @@ export default defineNuxtComponent({
   name: 'StickyExample',
   components: {
     AppType,
-  },
-  setup() {
-    return { pack: { basicUsage: 'Basic Usage', localSticky: 'Local Sticky' } }
   },
 })
 </script>

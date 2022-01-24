@@ -64,16 +64,3 @@ export default defineNuxtComponent({
   },
 })
 </script>
-
-<style scoped lang="less">
-.fit-item {
-  color: #888;
-  text-align: center;
-  margin-right: 11px;
-  margin-bottom: 11px;
-
-  div {
-    margin-bottom: 5px;
-  }
-}
-</style>
