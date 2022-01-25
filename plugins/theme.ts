@@ -1,9 +1,9 @@
+import config from 'assets/varlet-nuxt.config.json'
+import dark from '@varlet/ui/es/themes/dark'
 import { defineNuxtPlugin } from '#app'
 import { $localStorage } from '~/utils/localStorage'
 import { get } from 'lodash-es'
-import config from 'assets/varlet-nuxt.config.json'
 import { StyleProvider, StyleVars } from '@varlet/ui'
-import dark from '@varlet/ui/es/themes/dark'
 import { ref } from 'vue'
 
 type Themes = 'darkThemes' | 'themes'
