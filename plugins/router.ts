@@ -6,5 +6,8 @@ export default defineNuxtPlugin((nuxtApp) => {
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
     });
+    nuxtApp.$router.beforeEach((to)=>{
+      document.title = to.name
+    })
   }
 })
