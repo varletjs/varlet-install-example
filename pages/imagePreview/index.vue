@@ -20,7 +20,8 @@
 </template>
 
 <script>
-import { Snackbar } from '@varlet/ui'
+import { Snackbar, ImagePreview } from '@varlet/ui'
+
 export default defineComponent({
   name: 'ImagePreviewExample',
   setup() {
@@ -30,7 +31,7 @@ export default defineComponent({
 
     const handleCloseEvent = () => {
       Snackbar({
-        content: "The shutdown event was triggered.",
+        content: 'The shutdown event was triggered.',
         duration: 1000,
       })
     }
@@ -43,8 +44,6 @@ export default defineComponent({
         },
       })
     }
-
-    
 
     return {
       preview() {
