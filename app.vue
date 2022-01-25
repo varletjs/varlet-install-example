@@ -83,6 +83,11 @@ export default defineNuxtComponent({
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 
 body {
