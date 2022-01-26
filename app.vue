@@ -63,12 +63,12 @@ export default defineNuxtComponent({
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
 
       $localStorage.set(themesKey, currentThemes.value)
-      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      $theme.setTheme(currentThemes.value as 'themes' | 'darkThemes')
     }
 
     onBeforeMount(async () => {
-      currentThemes.value = await $theme.theme.value
-      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      currentThemes.value = await $theme.currentTheme.value
+      $theme.setTheme(currentThemes.value as 'themes' | 'darkThemes')
       if (!system.isPhone) {
         Snackbar(deviceTip)
       }
