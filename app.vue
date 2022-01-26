@@ -47,7 +47,7 @@ export default defineNuxtComponent({
     const { $theme } = useNuxtApp()
 
     const showBackIcon = computed(() => {
-      return title.value !== '/'
+      return title.value !== 'Index'
     })
 
     const title = computed(() => {
