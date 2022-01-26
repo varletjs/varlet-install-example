@@ -1,11 +1,12 @@
 <template>
   <div class="example">
     <app-type>Alignment Methods</app-type>
+
     <var-menu v-model:show="top">
       <var-button type="primary" @click="top = true">Top Alignment</var-button>
 
       <template #menu>
-        <div class="cell-list" :style="{ background: getBgColor() }">
+        <div class="cell-list" :style="{ background: bgColor }">
           <var-cell>Menu Option</var-cell>
           <var-cell>Menu Option</var-cell>
           <var-cell>Menu Option</var-cell>
@@ -18,7 +19,7 @@
         <var-button type="primary" @click="bottom = true">Bottom Alignment</var-button>
 
         <template #menu>
-          <div class="cell-list" :style="{ background: getBgColor() }">
+          <div class="cell-list" :style="{ background: bgColor }">
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
@@ -34,7 +35,7 @@
         <var-button type="primary" @click="offsetX = true">Offset Right</var-button>
 
         <template #menu>
-          <div class="cell-list" :style="{ background: getBgColor() }">
+          <div class="cell-list" :style="{ background: bgColor }">
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
@@ -46,7 +47,7 @@
         <var-button type="primary" @click="offsetX1 = true">Offset Left</var-button>
 
         <template #menu>
-          <div class="cell-list" :style="{ background: getBgColor() }">
+          <div class="cell-list" :style="{ background: bgColor }">
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
@@ -60,7 +61,7 @@
         <var-button type="primary" @click="offsetY = true">Offset Bottom</var-button>
 
         <template #menu>
-          <div class="cell-list" :style="{ background: getBgColor() }">
+          <div class="cell-list" :style="{ background: bgColor }">
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
@@ -72,7 +73,7 @@
         <var-button type="primary" @click="offsetY1 = true">Offset Top</var-button>
 
         <template #menu>
-          <div class="cell-list" :style="{ background: getBgColor() }">
+          <div class="cell-list" :style="{ background: bgColor }">
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
             <var-cell>Menu Option</var-cell>
@@ -92,7 +93,7 @@
       <var-button type="primary" @click="event = true">Events</var-button>
 
       <template #menu>
-        <div class="cell-list" :style="{ background: getBgColor() }">
+        <div class="cell-list" :style="{ background: bgColor }">
           <var-cell>Menu Option</var-cell>
           <var-cell>Menu Option</var-cell>
           <var-cell>Menu Option</var-cell>
@@ -107,11 +108,8 @@
 <script>
 import { Snackbar } from '@varlet/ui'
 import AppType from '~/components/AppType'
-import { defineNuxtComponent } from '#app'
-import { useSystemStore } from '~/store/system'
-import { reactive, toRefs } from 'vue'
-import config from '~/assets/varlet-nuxt.config.json'
-import { get } from 'lodash-es'
+import { watch, reactive, ref, toRefs } from "vue";
+import { defineNuxtComponent, useNuxtApp } from '#app'
 
 export default defineNuxtComponent({
   name: 'MenuExample',
@@ -119,8 +117,6 @@ export default defineNuxtComponent({
     AppType,
   },
   setup() {
-    const themesKey = get(config, 'themesKey')
-    const system = useSystemStore()
     const values = reactive({
       top: false,
       bottom: false,
@@ -130,13 +126,21 @@ export default defineNuxtComponent({
       offsetY1: false,
       event: false,
     })
+    const { $theme } = useNuxtApp()
+    const bgColor = ref('')
 
-    const getBgColor = () => (system.getBrowserThemes(themesKey) === 'themes' ? '#fff' : '#272727')
+    watch(
+      $theme.currentTheme,
+      (newVal) => {
+        bgColor.value = newVal  === 'themes' ? '#fff' : '#272727'
+      },
+      { immediate: true }
+    )
 
     return {
       ...toRefs(values),
-      getBgColor,
-      Snackbar,
+      bgColor,
+      Snackbar
     }
   },
 })

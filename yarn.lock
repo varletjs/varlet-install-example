@@ -708,10 +708,10 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-4.0.1.tgz#8f80dd965ad81f3e1bc26d6f5c727e132721ff40"
   integrity sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==
 
-"@varlet/icons@1.25.1-alpha.1642773514066":
-  version "1.25.1-alpha.1642773514066"
-  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.25.1-alpha.1642773514066.tgz#27396e54cc0608ce2276989f1f2061b3e51ae45d"
-  integrity sha512-x5IXsLKrK3uTkabrGARVKt+pIedjN71UiYWVkadjyrVS8cYGExDV0so3nkk3/fHT3DzRAiHniUk0IcxQz75Ciw==
+"@varlet/icons@1.25.1-alpha.1643124613252":
+  version "1.25.1-alpha.1643124613252"
+  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.25.1-alpha.1643124613252.tgz#e5f1c6ead18354ceb9bbbd4edcb4a701b7e2b143"
+  integrity sha512-3UaHtrNVCpw2n4tpkqIMZCRRchB4mmyY3pN/IWX3k9ZwPjk2J/rHjJnsUTACzzDuc1s6bB9ou/c6WdIPK4hD+g==
   dependencies:
     commander "^6.2.1"
     fs-extra "^9.0.1"
@@ -731,12 +731,12 @@
   resolved "https://registry.yarnpkg.com/@varlet/touch-emulator/-/touch-emulator-1.24.11-alpha.1642084630469.tgz#8a33531687ac3b31f827919916217808f2333883"
   integrity sha512-T++Ho1AcxoQetqKvI1Qezen6DRXU5UcdGSm2V9vp2QZZ/kkEZKr9fDAueGLAqcSwrYis0TGzOT8pDwjuX8La6g==
 
-"@varlet/ui@^1.25.1-alpha.1642773514066":
-  version "1.25.1-alpha.1642773514066"
-  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.25.1-alpha.1642773514066.tgz#ad01a04b2f0ad68db1b64944ac328f257578c91f"
-  integrity sha512-FRi4e2vTQgYsvD8O3iaJYEbunyhBebs4ejF2eVnk2P4XWOSQql8OZygQVezaeqTL7kRr/FbExfWxSC917NrGoA==
+"@varlet/ui@^1.25.1-alpha.1643124613252":
+  version "1.25.1-alpha.1643124613252"
+  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.25.1-alpha.1643124613252.tgz#17d3df19055c60ce905dbfe9497ab39a95dbdb3b"
+  integrity sha512-+iah6IljVsixyO27hTnZ6EM34WJKymPdDuCwMIui4wZqcxD5iNo+lSsLKrL6kl6H7BKfb8Ttwlnma6fJhCwVHA==
   dependencies:
-    "@varlet/icons" "1.25.1-alpha.1642773514066"
+    "@varlet/icons" "1.25.1-alpha.1643124613252"
     dayjs "^1.10.4"
     decimal.js "^10.2.1"
 
@@ -4917,7 +4917,7 @@ pascalcase@^0.1.1:
 
 patch-vue-directive-ssr@^0.0.1:
   version "0.0.1"
-  resolved "https://registry.npmjs.org/patch-vue-directive-ssr/-/patch-vue-directive-ssr-0.0.1.tgz#2eac731f59cdb766d4d613bc24e522ded6ff1bb8"
+  resolved "https://registry.yarnpkg.com/patch-vue-directive-ssr/-/patch-vue-directive-ssr-0.0.1.tgz#2eac731f59cdb766d4d613bc24e522ded6ff1bb8"
   integrity sha512-n84llktHah+EXUGo+RvmTJcAQJQVW0kHHHiJ34ZSLijzhHi32zCMjCc5VAFv4jmdC91bpaYGPk0cDW1D8hQ3GQ==
 
 path-dirname@^1.0.0:

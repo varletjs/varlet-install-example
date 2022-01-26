@@ -33,7 +33,7 @@ export default defineNuxtComponent({
     })
 
     watch(
-      $theme.theme,
+      $theme.currentTheme,
       (newVal) => {
         bgColor.value = newVal === 'darkThemes' ? 'rgb(41 42 45)' : '#e7edf7'
         color.value = newVal === 'darkThemes' ? '#3980e8' : '#2e67ba'

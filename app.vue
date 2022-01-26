@@ -27,7 +27,7 @@
 
 <script lang="ts">
 import config from '~/assets/varlet-nuxt.config.json'
-import { defineNuxtComponent,useNuxtApp } from '#app'
+import { defineNuxtComponent, useNuxtApp } from '#app'
 import { useRouter } from '#imports'
 import { get } from 'lodash-es'
 import { ref, computed } from 'vue'
@@ -59,12 +59,12 @@ export default defineNuxtComponent({
       currentThemes.value = currentThemes.value === 'darkThemes' ? 'themes' : 'darkThemes'
 
       $localStorage.set(themesKey, currentThemes.value)
-      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      $theme.setTheme(currentThemes.value as 'themes' | 'darkThemes')
     }
 
     onBeforeMount(async () => {
-      currentThemes.value = await $theme.theme.value
-      $theme.setThemes(currentThemes.value as 'themes' | 'darkThemes')
+      currentThemes.value = await $theme.currentTheme.value
+      $theme.setTheme(currentThemes.value as 'themes' | 'darkThemes')
       if (!system.isPhone) {
         Snackbar(deviceTip)
       }
@@ -94,7 +94,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
-  transition: color .25s, background-color .25s;
+  transition: color 0.25s, background-color 0.25s;
   color: var(--color-text);
   background-color: var(--color-body);
 }
