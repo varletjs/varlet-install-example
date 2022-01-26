@@ -27,13 +27,14 @@
 
 <script lang="ts">
 import config from '~/assets/varlet-nuxt.config.json'
-import { defineNuxtComponent,useNuxtApp } from '#app'
+import { defineNuxtComponent, useNuxtApp } from '#app'
 import { useRouter } from '#imports'
 import { get } from 'lodash-es'
 import { ref, computed } from 'vue'
 import { useSystemStore } from '~/store/system'
 import { Snackbar } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
+import { strCaseUper } from '~/utils/string'
 
 export default defineNuxtComponent({
   setup() {
@@ -44,11 +45,14 @@ export default defineNuxtComponent({
     const system = useSystemStore()
     const currentThemes = ref('')
     const { $theme } = useNuxtApp()
+
     const showBackIcon = computed(() => {
       return title.value !== 'Home'
     })
+
     const title = computed(() => {
-      return router.currentRoute.value.path.substr(1) || 'Home'
+      const path = router.currentRoute.value.path
+      return strCaseUper(path.substring(1, path.length).split('-')) || 'Home'
     })
 
     const toGithub = () => {
@@ -94,7 +98,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
-  transition: color .25s, background-color .25s;
+  transition: color 0.25s, background-color 0.25s;
   color: var(--color-text);
   background-color: var(--color-body);
 }

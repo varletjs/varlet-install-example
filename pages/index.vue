@@ -5,7 +5,7 @@
         <var-icon name="chevron-right" size="14" />
       </template>
       <template #default>
-        {{ page }}
+        {{ strCaseUper(page.split('-')) }}
       </template>
     </var-cell>
   </div>
@@ -15,6 +15,7 @@
 import { defineNuxtComponent } from '#app'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { strCaseUper } from '~/utils/string'
 
 export default defineNuxtComponent({
   setup() {
@@ -28,7 +29,7 @@ export default defineNuxtComponent({
       Object.keys(import.meta.globEager('./**/index.vue')).map((file) => file.replace(/(\/index.vue)|(\.\/)/g, ''))
     )
 
-    return { pages, to }
+    return { pages, to, strCaseUper }
   },
 })
 </script>
@@ -36,9 +37,5 @@ export default defineNuxtComponent({
 <style lang="less" scoped>
 .app-container {
   padding: 10px 0;
-
-  .app-component {
-    text-transform: capitalize;
-  }
 }
 </style>
