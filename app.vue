@@ -34,7 +34,7 @@ import { ref, computed } from 'vue'
 import { useSystemStore } from '~/store/system'
 import { Snackbar } from '@varlet/ui'
 import { $localStorage } from '~/utils/localStorage'
-import { strCaseUper } from '~/utils/string'
+import { pascalCase } from '~/utils/pascalCase'
 
 export default defineNuxtComponent({
   setup() {
@@ -47,12 +47,11 @@ export default defineNuxtComponent({
     const { $theme } = useNuxtApp()
 
     const showBackIcon = computed(() => {
-      return title.value !== 'Home'
+      return title.value !== '/'
     })
 
     const title = computed(() => {
-      const path = router.currentRoute.value.path
-      return strCaseUper(path.substring(1, path.length).split('-')) || 'Home'
+      return pascalCase(router.currentRoute.value.name as string)
     })
 
     const toGithub = () => {

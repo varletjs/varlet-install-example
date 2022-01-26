@@ -1,11 +1,11 @@
 <template>
   <div class="app-container">
-    <var-cell v-ripple class="app-component" v-for="page in pages" @click="to(page)" :key="page">
+    <var-cell v-ripple class="app-component" v-for="page in pages" @click="to(page.path)" :key="page">
       <template #extra>
         <var-icon name="chevron-right" size="14" />
       </template>
       <template #default>
-        {{ strCaseUper(page.split('-')) }}
+        {{page.name}}
       </template>
     </var-cell>
   </div>
@@ -15,7 +15,7 @@
 import { defineNuxtComponent } from '#app'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { strCaseUper } from '~/utils/string'
+import { pascalCase } from '~/utils/pascalCase'
 
 export default defineNuxtComponent({
   setup() {
@@ -26,10 +26,16 @@ export default defineNuxtComponent({
     }
 
     const pages = ref(
-      Object.keys(import.meta.globEager('./**/index.vue')).map((file) => file.replace(/(\/index.vue)|(\.\/)/g, ''))
+      Object.keys(import.meta.globEager('./**/index.vue')).map((file) => {
+        const path:string = file.replace(/(\/index.vue)|(\.\/)/g, '')
+        return {
+          path,
+          name:pascalCase(path)
+        }
+      })
     )
 
-    return { pages, to, strCaseUper }
+    return { pages, to }
   },
 })
 </script>
