@@ -42,9 +42,9 @@
 <script lang="ts">
 import { defineNuxtComponent } from '#app'
 import { Dialog, Snackbar } from '@varlet/ui'
-import { reactive } from 'nuxt3/dist/app/compat/capi'
+import { toRefs, reactive } from 'vue'
 import AppType from '~/components/appType.vue'
-import { toRefs } from 'vue'
+
 export default defineNuxtComponent({
   components: {
     AppType,
