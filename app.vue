@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import config from '~/assets/varlet-nuxt.config.json'
+import config from '~/varlet.config.json'
 import { defineNuxtComponent, useNuxtApp } from '#app'
 import { useRouter } from '#imports'
 import { get } from 'lodash-es'
