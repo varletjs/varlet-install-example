@@ -51,7 +51,8 @@ export default defineNuxtComponent({
     })
 
     const title = computed(() => {
-      return pascalCase(router.currentRoute.value.name as string)
+      const name: string = router.currentRoute.value.name ?? ''
+      return pascalCase(name)
     })
 
     const toGithub = () => {
