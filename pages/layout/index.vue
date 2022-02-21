@@ -49,6 +49,55 @@
       <var-col class="col" :span="8">span: 8</var-col>
       <var-col class="col" :span="8">span: 8</var-col>
     </var-row>
+    <app-type>Responsive Layout</app-type>
+    <var-row :gutter="10">
+      <var-col class="col" :xs="8" :sm="6" :md="4" :lg="3" :xl="1">1</var-col>
+      <var-col class="col" :xs="4" :sm="6" :md="8" :lg="9" :xl="11">2</var-col>
+      <var-col class="col" :xs="4" :sm="6" :md="8" :lg="9" :xl="11">3</var-col>
+      <var-col class="col" :xs="8" :sm="6" :md="4" :lg="3" :xl="1">4</var-col>
+    </var-row>
+    <var-row :gutter="10">
+      <var-col
+        class="col"
+        :xs="{ span: 12, offset: 6 }"
+        :sm="{ span: 6 }"
+        :md="{ span: 4, offset: 4 }"
+        :lg="{ span: 3, offset: 3 }"
+        :xl="{ span: 2, offset: 2 }"
+      >
+        1
+      </var-col>
+      <var-col
+        class="col"
+        :xs="{ span: 12, offset: 6 }"
+        :sm="{ span: 6 }"
+        :md="{ span: 4, offset: 4 }"
+        :lg="{ span: 3, offset: 3 }"
+        :xl="{ span: 2, offset: 2 }"
+      >
+        2
+      </var-col>
+      <var-col
+        class="col"
+        :xs="{ span: 12, offset: 6 }"
+        :sm="{ span: 6 }"
+        :md="{ span: 4, offset: 4 }"
+        :lg="{ span: 3, offset: 3 }"
+        :xl="{ span: 2, offset: 2 }"
+      >
+        3
+      </var-col>
+      <var-col
+        class="col"
+        :xs="{ span: 12, offset: 6 }"
+        :sm="{ span: 6 }"
+        :md="{ span: 4, offset: 4 }"
+        :lg="{ span: 3, offset: 3 }"
+        :xl="{ span: 2, offset: 2 }"
+      >
+        4
+      </var-col>
+    </var-row>
   </div>
 </template>
 <script lang="ts">
