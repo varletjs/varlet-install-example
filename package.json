@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.5",
-    "@varlet/touch-emulator": "^1.24.11-alpha.1642084630469",
     "clipboard": "^2.0.8",
     "less": "^4.1.2",
     "nuxt3": "latest",
@@ -16,8 +15,9 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.8",
-    "@varlet/icons": "^1.24.10",
-    "@varlet/ui": "^1.25.1-alpha.1643124613252",
+    "@varlet/icons": "latest",
+    "@varlet/ui": "latest",
+    "@varlet/touch-emulator": "latest",
     "pinia": "^2.0.9"
   }
 }

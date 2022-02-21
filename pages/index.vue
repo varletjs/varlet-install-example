@@ -30,7 +30,7 @@ export default defineNuxtComponent({
         const path:string = file.replace(/(\/index.vue)|(\.\/)/g, '')
         return {
           path,
-          name:pascalCase(path)
+          name: pascalCase(path)
         }
       })
     )
