@@ -49,9 +49,9 @@
     </var-bottom-navigation>
 
     <app-type>Fab</app-type>
-    <var-bottom-navigation v-model="fab" style="margin-top: 10px">
+    <var-bottom-navigation v-model="fab" @fab-click="isEven = !isEven" style="margin-top: 10px">
       <template #fab>
-        <div class="fab_example" @click="isEven = !isEven">
+        <div class="fab_example">
           <var-icon name="plus" color="#fff" size="24" />
         </div>
       </template>
