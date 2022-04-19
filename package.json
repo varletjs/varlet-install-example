@@ -16,8 +16,8 @@
   "dependencies": {
     "@pinia/nuxt": "^0.1.8",
     "@varlet/icons": "latest",
-    "@varlet/ui": "latest",
     "@varlet/touch-emulator": "latest",
+    "@varlet/ui": "latest",
     "pinia": "^2.0.9"
   }
 }

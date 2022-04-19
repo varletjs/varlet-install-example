@@ -746,7 +746,16 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-4.0.1.tgz#8f80dd965ad81f3e1bc26d6f5c727e132721ff40"
   integrity sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==
 
-"@varlet/icons@1.26.1", "@varlet/icons@latest":
+"@varlet/icons@1.27.5":
+  version "1.27.5"
+  resolved "https://registry.yarnpkg.com/@varlet/icons/-/icons-1.27.5.tgz#131b406a2af75dca8e471a18375c146e785274c6"
+  integrity sha512-OLRS3T9b+9DKXc+1Ygsb8ma7NY9wFIkNE1fNIauhZJa+ewbf4boZQvzPailzQkCjGse4fYLB/jUW749fxZlM1Q==
+  dependencies:
+    commander "^6.2.1"
+    fs-extra "^9.0.1"
+    webfont "^9.0.0"
+
+"@varlet/icons@latest":
   version "1.26.1"
   resolved "https://registry.npmjs.org/@varlet/icons/-/icons-1.26.1.tgz#f8a60c3037cc5940e979f6929f09300dd07f8e08"
   integrity sha512-eMxxcsfUyNRJx0ZwQS2nb4GKpYeKmON9Ty8ZkxElit59ZpBb1BfStfH4f46exCngxJibAaWeMn59a2eEMEKYCg==
@@ -761,11 +770,11 @@
   integrity sha512-Z5rBY6aLURcEqYLchpFuwrZbhVfwSLNVn0R8Fdwj0CdnDzKJITxChkC85iemqlH4C9/GELCu+NybjUdV3sRprQ==
 
 "@varlet/ui@latest":
-  version "1.26.1"
-  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.26.1.tgz#70a83cf598cfb3b8698be885fab31549ab19a379"
-  integrity sha512-nQOkukt7uPEZaWGDX/1ofC5YFB0fvlUK/LrQi7VRP2HJLl8EriGbLgLsJ9RiIKCVRzqCrRh0NynMNcLDv2i/uA==
+  version "1.27.5"
+  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.27.5.tgz#63a2320331de71a5a7ff582f3158ea1bee33c84d"
+  integrity sha512-tgPvmnWeH7yteLhzrwIQqrJOyCgsOFaypa3ab1/x4Zy3XsRgnJERaXW9bNM0QbCwrKKY/GRG/xMotNWtY3eSWg==
   dependencies:
-    "@varlet/icons" "1.26.1"
+    "@varlet/icons" "1.27.5"
     dayjs "^1.10.4"
     decimal.js "^10.2.1"
 
