@@ -18,6 +18,7 @@
     "@varlet/icons": "latest",
     "@varlet/touch-emulator": "latest",
     "@varlet/ui": "latest",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.0.9"
   }
 }
