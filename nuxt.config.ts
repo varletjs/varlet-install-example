@@ -1,7 +1,10 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  buildModules: ['@pinia/nuxt']
+  modules: ['@pinia/nuxt'],
+  build: {
+    transpile: ['@varlet/ui']
+  }
 })
 

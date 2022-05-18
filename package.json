@@ -1,16 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.5",
     "clipboard": "^2.0.8",
     "less": "^4.1.2",
-    "nuxt3": "latest",
-    "patch-vue-directive-ssr": "^0.0.1",
+    "nuxt": "3.0.0-rc.3",
     "prettier": "^2.5.1"
   },
   "dependencies": {
@@ -19,6 +19,6 @@
     "@varlet/touch-emulator": "latest",
     "@varlet/ui": "latest",
     "lodash-es": "^4.17.21",
-    "pinia": "^2.0.9"
+    "pinia": "^2.0.14"
   }
 }
