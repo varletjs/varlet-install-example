@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <app-type>Basic Usage</app-type>
-    <var-bottom-navigation v-model="basicUsage">
+    <var-bottom-navigation v-model:active="basicUsage">
       <var-bottom-navigation-item label="label" icon="home" />
       <var-bottom-navigation-item label="label" icon="magnify" />
       <var-bottom-navigation-item label="label" icon="heart" />
@@ -9,7 +9,7 @@
     </var-bottom-navigation>
 
     <app-type>Match by name</app-type>
-    <var-bottom-navigation v-model="matchByName">
+    <var-bottom-navigation v-model:active="matchByName">
       <var-bottom-navigation-item name="home" label="label" icon="home" />
       <var-bottom-navigation-item name="search" label="label" icon="magnify" />
       <var-bottom-navigation-item name="heart" label="label" icon="heart" />
@@ -17,7 +17,7 @@
     </var-bottom-navigation>
 
     <app-type>Show Badge</app-type>
-    <var-bottom-navigation v-model="showBadge">
+    <var-bottom-navigation v-model:active="showBadge">
       <var-bottom-navigation-item label="label" icon="home" />
       <var-bottom-navigation-item label="label" icon="magnify" badge />
       <var-bottom-navigation-item label="label" icon="heart" :badge="badgeProps" />
@@ -25,7 +25,7 @@
     </var-bottom-navigation>
 
     <app-type>Custom Color</app-type>
-    <var-bottom-navigation active-color="#ba68c8" v-model="customColor">
+    <var-bottom-navigation active-color="#ba68c8" v-model:active="customColor">
       <var-bottom-navigation-item label="label" icon="home" />
       <var-bottom-navigation-item label="label" icon="magnify" />
       <var-bottom-navigation-item label="label" icon="heart" />
@@ -33,7 +33,7 @@
     </var-bottom-navigation>
 
     <app-type>Change Event</app-type>
-    <var-bottom-navigation v-model="changeEvent" @change="handleChange">
+    <var-bottom-navigation v-model:active="changeEvent" @change="handleChange">
       <var-bottom-navigation-item label="label" icon="home" />
       <var-bottom-navigation-item label="label" icon="magnify" />
       <var-bottom-navigation-item label="label" icon="heart" />
@@ -41,7 +41,7 @@
     </var-bottom-navigation>
 
     <app-type>Click Event</app-type>
-    <var-bottom-navigation v-model="clickEvent">
+    <var-bottom-navigation v-model:active="clickEvent">
       <var-bottom-navigation-item @click="handleClick" label="label" icon="home" />
       <var-bottom-navigation-item @click="handleClick" label="label" icon="magnify" />
       <var-bottom-navigation-item @click="handleClick" label="label" icon="heart" />
@@ -49,7 +49,7 @@
     </var-bottom-navigation>
 
     <app-type>Fab</app-type>
-    <var-bottom-navigation v-model="fab" @fab-click="isEven = !isEven" style="margin-top: 10px">
+    <var-bottom-navigation v-model:active="fab" @fab-click="isEven = !isEven" style="margin-top: 10px">
       <template #fab>
         <div class="fab_example">
           <var-icon name="plus" color="#fff" size="24" />
