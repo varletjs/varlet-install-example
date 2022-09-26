@@ -6,4 +6,3 @@ nuxt.d.ts
 .env
 .idea
 .DS_Store
-*.lock

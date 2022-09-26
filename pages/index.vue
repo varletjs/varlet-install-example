@@ -1,47 +1,19 @@
 <template>
-  <div class="app-container">
-    <var-cell v-ripple class="app-component" v-for="page in pages" @click="to(page.path)" :key="page">
-      <template #extra>
-        <var-icon name="chevron-right" size="14" />
-      </template>
-      <template #default>
-        {{page.name}}
-      </template>
-    </var-cell>
-  </div>
+  <var-menu>
+    <var-button type="primary">Hello varlet and nuxt3</var-button>
+
+    <template #menu>
+      <var-cell>Cell 1</var-cell>
+      <var-cell>Cell 2</var-cell>
+      <var-cell>Cell 3</var-cell>
+    </template>
+  </var-menu>
 </template>
 
-<script lang="ts">
-import { defineNuxtComponent } from '#app'
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { pascalCase } from '~/utils/pascalCase'
-
-export default defineNuxtComponent({
-  setup() {
-    const router = useRouter()
-
-    const to = (path) => {
-      router.push(path)
-    }
-
-    const pages = ref(
-      Object.keys(import.meta.globEager('./**/index.vue')).map((file) => {
-        const path:string = file.replace(/(\/index.vue)|(\.\/)/g, '')
-        return {
-          path,
-          name: pascalCase(path)
-        }
-      })
-    )
-
-    return { pages, to }
-  },
-})
-</script>
-
-<style lang="less" scoped>
-.app-container {
-  padding: 10px 0;
+<style>
+body {
+  transition: background-color .25s;
+  color: var(--color-text);
+  background-color: var(--color-body);
 }
 </style>

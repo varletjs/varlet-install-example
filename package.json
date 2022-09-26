@@ -7,18 +7,11 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@types/lodash-es": "^4.17.5",
-    "clipboard": "^2.0.8",
-    "less": "^4.1.2",
-    "nuxt": "3.0.0-rc.3",
+    "nuxt": "3.0.0-rc.11",
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.1.8",
-    "@varlet/icons": "latest",
-    "@varlet/touch-emulator": "latest",
-    "@varlet/ui": "latest",
-    "lodash-es": "^4.17.21",
-    "pinia": "^2.0.14"
+    "@varlet/touch-emulator": "2.0.0-alpha.1664036886956",
+    "@varlet/ui": "2.0.0-alpha.1664036886956"
   }
 }
