@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { Snackbar } from '@varlet/ui'
 
-function sayHello() {
+function handleClick() {
   Snackbar('Hello')
 }
 </script>
 
 <template>
-  <var-button type="primary" @click="sayHello">Say Hello</var-button>
+  <var-button type="primary" @click="handleClick">Say Hello</var-button>
 </template>
 
 <style>
