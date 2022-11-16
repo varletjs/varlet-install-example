@@ -1,6 +1,6 @@
 import { defineNuxtPlugin } from '#app'
 import Varlet, { StyleProvider, Themes } from '@varlet/ui'
-import '@varlet/ui/es/style'
+import '@varlet/ui/es/style.js'
 import '@varlet/touch-emulator'
 
 export default defineNuxtPlugin((nuxtApp) => {
