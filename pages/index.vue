@@ -1,13 +1,13 @@
-<template>
-  <var-menu>
-    <var-button type="primary">Hello varlet and nuxt3</var-button>
+<script setup lang="ts">
+import { Snackbar } from '@varlet/ui'
 
-    <template #menu>
-      <var-cell>Cell 1</var-cell>
-      <var-cell>Cell 2</var-cell>
-      <var-cell>Cell 3</var-cell>
-    </template>
-  </var-menu>
+function sayHello() {
+  Snackbar('Hello')
+}
+</script>
+
+<template>
+  <var-button type="primary" @click="sayHello">Say Hello</var-button>
 </template>
 
 <style>
