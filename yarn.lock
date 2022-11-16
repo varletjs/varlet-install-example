@@ -653,10 +653,10 @@
   resolved "https://registry.npmjs.org/@varlet/shared/-/shared-2.2.1.tgz#6bab9d3ce308d7f5ca10b082e4b43973c346697b"
   integrity sha512-tGBwn0Mw88kK9eQ674l/WpIw/ycFpQitYvww7mK1KMpU+yAy3d+d+RqTImCCxJ0meifsmCi1AnfgIFoWKuFgwg==
 
-"@varlet/touch-emulator@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-2.1.0.tgz#e4b1a48d263994290121fa74890c8b4080db2d23"
-  integrity sha512-FNzzXctsiK663qMdPsJtv439G/fa4lnKkgvjWKEKGQ111iPMuPVIznB62YBTDNH/4kAdf/S/fDCs+wKXQ24ivA==
+"@varlet/touch-emulator@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-2.2.1.tgz#8e792a5cb9714759705ea1b55bfaa4e5ca55a33f"
+  integrity sha512-fG7vnwhev68ipIKwAv/kHyoJ5tGQVsHjEoni9xpfpDWw82utPf7knQRxYXOjhTwJeOFf7fUSIukm8BviE3XHLg==
 
 "@varlet/ui@^2.2.1":
   version "2.2.1"
