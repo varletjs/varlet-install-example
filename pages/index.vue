@@ -7,7 +7,9 @@ function handleClick() {
 </script>
 
 <template>
-  <var-button type="primary" @click="handleClick">Say Hello</var-button>
+  <var-tooltip content="Say Hello">
+    <var-button type="primary" @click="handleClick">Say Hello</var-button>
+  </var-tooltip>
 </template>
 
 <style>
