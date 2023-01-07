@@ -639,33 +639,33 @@
   dependencies:
     "@types/node" "*"
 
-"@varlet/icons@2.5.0":
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/@varlet/icons/-/icons-2.5.0.tgz#6439a7ee62ad11cc67cbcedd5631f934b2d7b655"
-  integrity sha512-EbKCnACrQW8PoKEEgezTTOq6/3el3ztlNbAPxDgXu8CdE6yzZ2oN9XbkXa5ouAxeg96iiE/slPCxDJGCLG1ATg==
+"@varlet/icons@2.5.6":
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/@varlet/icons/-/icons-2.5.6.tgz#7b99dd82108025c40e61e709c9f7f998b5f50a12"
+  integrity sha512-cGaKzIO7VpH6nSYDeRPkA4ss0IvU1SKstBoiP4XYtIFWMSEKpWbvXZ0lzrLccVvIP/yRuCzY3CdLdd/kWVlOBg==
   dependencies:
     commander "^6.2.1"
     fs-extra "^9.0.1"
     webfont "^9.0.0"
 
-"@varlet/shared@2.5.0":
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/@varlet/shared/-/shared-2.5.0.tgz#e20a155ded696354fc1f40edb0b6a61fde04899a"
-  integrity sha512-ZIm8gUF24/5ydWlkiuQeq69y7/17IBBVVSIlojarHQHGNn/2gqdQeYopjw0N7wZ4u2ZQLg6d4f/8T2HoeU2JDg==
+"@varlet/shared@2.5.6":
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/@varlet/shared/-/shared-2.5.6.tgz#f7570546f8a9c08f91239c54906610f91cb27f72"
+  integrity sha512-vcbck7zjJ1bQEeW7A6eEocAhJ5zM2ILgAo2AIJS5qStuPZChfDVbu/7nq62xyiLtycFOLOiCqKadO2mUQwjrrg==
 
-"@varlet/touch-emulator@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-2.5.0.tgz#f1f1d19e71c75837d6cc28ac6084a67af6b49be5"
-  integrity sha512-v13ovFYvQ2Bi67Ggb87caDVtTv3pKMNKHykBRgbhd99mi5MS0E0tWCrApRCWJuatylryM8K3RBDs4LiKS8m0Dg==
+"@varlet/touch-emulator@^2.5.6":
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-2.5.6.tgz#3ad58238e1451c96c0a3f58f92b5178efaf4eb9a"
+  integrity sha512-91Uz/JMRdi1Ynf8FYl987hlcQXXlv0NS45h+jW7dXw972SiSdduxOiKRGxeSG9FPeXZb9hSOPJm5uO7i+w/OJA==
 
-"@varlet/ui@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-2.5.0.tgz#6683c235203467e0aa08979489088402bc834f91"
-  integrity sha512-/gwV5VPvihP8CsmHD+aWtFDq7mj9m7WWaq4UF9ZvZFbrP5p5xwk4d35c1WdO6lxmVI7zJsFI1OqrjCUwqCYq3A==
+"@varlet/ui@^2.5.6":
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/@varlet/ui/-/ui-2.5.6.tgz#2151c8c4ebcb186baa5b76e1874f6758f1005cf9"
+  integrity sha512-qprHbzC1KsAX2GjgHMqY8IPWh0gkRGI1Tz0js/TajnOhn1h79BsDPVIUAJ/8O8Pe5bB3paTt/gDjKZqZwxkgCA==
   dependencies:
     "@popperjs/core" "^2.11.6"
-    "@varlet/icons" "2.5.0"
-    "@varlet/shared" "2.5.0"
+    "@varlet/icons" "2.5.6"
+    "@varlet/shared" "2.5.6"
     dayjs "^1.10.4"
     decimal.js "^10.2.1"
 
