@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "var-ext-icon";
+  src: url('./iconfont.ttf') format('truetype');
+}
+
+.var-ext-icon {
+  font-family: "var-ext-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.var-ext-icon-a:before {
+  content: "\e621";
+}
+
+.var-ext-icon-b:before {
+  content: "\e620";
+}
+

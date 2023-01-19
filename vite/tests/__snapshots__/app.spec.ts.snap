@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`test App.vue mount 1`] = `
+"<div class=\\"var-tooltip\\"><button class=\\"var-button var--box var-button--normal var--inline-flex var-button--default var-elevation--2\\" type=\\"button\\">
+    <!--v-if-->
+    <div class=\\"var-button__content\\"> Say Hello <i class=\\"var-icon var-icon--set var-icon-xml\\" style=\\"transition: transform 0ms;\\"></i><i class=\\"var-icon var-ext-icon var-ext-icon--set var-ext-icon-a\\" style=\\"transition: transform 0ms;\\"></i></div>
+  </button>
+  <!--teleport start-->
+  <!--teleport end-->
+</div>"
+`;
