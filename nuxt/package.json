@@ -1,4 +1,5 @@
 {
+  "name": "varlet-install-example-nuxt",
   "private": true,
   "scripts": {
     "build": "nuxt build",
