@@ -1,0 +1,24 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^2.0.0",
+    "@varlet/ui": "2.7.0-alpha.1674118781235",
+    "astro": "^2.0.2",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@varlet/touch-emulator": "2.7.0-alpha.1674118781235",
+    "unplugin-auto-import": "^0.12.2",
+    "unplugin-vue-components": "^0.22.12"
+  }
+}

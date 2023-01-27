@@ -1,9 +1,13 @@
+import vue from '@astrojs/vue';
 import components from 'unplugin-vue-components/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineConfig } from 'astro/config';
 
-export default defineNuxtConfig({
+// https://astro.build/config
+export default defineConfig({
+  integrations: [vue()],
+
   vite: {
     ssr: {
       noExternal: ['@varlet/ui']
@@ -13,11 +17,9 @@ export default defineNuxtConfig({
       components({
         resolvers: [VarletUIResolver()]
       }),
-      
       autoImport({
-        resolvers: [VarletUIResolver({ autoImport: true })],
+        resolvers: [VarletUIResolver({ autoImport: true })]
       })
     ]
   }
-})
-
+});
