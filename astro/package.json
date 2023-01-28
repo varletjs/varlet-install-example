@@ -11,9 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@varlet/ui": "2.7.0",
-    "@varlet/touch-emulator": "2.7.0",
     "@astrojs/vue": "^2.0.0",
+    "@varlet/touch-emulator": "2.7.1",
+    "@varlet/ui": "2.7.1",
     "astro": "^2.0.2",
     "vue": "^3.2.45"
   },

@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@varlet/touch-emulator': ^2.7.0
-  '@varlet/ui': ^2.7.0
+  '@varlet/touch-emulator': ^2.7.1
+  '@varlet/ui': ^2.7.1
   '@vue/cli-plugin-babel': ~5.0.0
   '@vue/cli-plugin-typescript': ~5.0.0
   '@vue/cli-service': ~5.0.0
@@ -13,8 +13,8 @@ specifiers:
   vue: ^3.2.13
 
 dependencies:
-  '@varlet/touch-emulator': 2.7.0
-  '@varlet/ui': 2.7.0_vue@3.2.45
+  '@varlet/touch-emulator': 2.7.1
+  '@varlet/ui': 2.7.1_vue@3.2.45
   core-js: 3.27.2
   vue: 3.2.45
 
@@ -1560,8 +1560,8 @@ packages:
       '@types/node': 18.11.18
     dev: true
 
-  /@varlet/icons/2.7.0:
-    resolution: {integrity: sha512-gJVqkkEaGe9COyz0TGIrkjbgXbaqC+ri3KG5U/KC0OmUDDTWgJHoCzw11XdaDAHY3TytTWPD3E5gnuGV7p/ZNw==}
+  /@varlet/icons/2.7.1:
+    resolution: {integrity: sha512-fhrE3q769dBx7Ef9Ad36W1jpxcl0B3lKRGwwi8CGPXRvBDHveQPlzRWvolTqDTvohAgXPNcH2pHKlomK/0oLrg==}
     hasBin: true
     dependencies:
       commander: 6.2.1
@@ -1572,22 +1572,22 @@ packages:
       - supports-color
     dev: false
 
-  /@varlet/shared/2.7.0:
-    resolution: {integrity: sha512-iw9xb2uXJwEcnXMfcgsSymAKpC+zOhrrX6MKyaW0iRfvHByIuxq9tKjiJwiFgsp5anZW0Z2KJD2XXnrw9C5bcw==}
+  /@varlet/shared/2.7.1:
+    resolution: {integrity: sha512-E831P5BDovBqFIchaCrMntpSDRnDJhs8staDCk2MfdFWuPykiYykHmftmtnVxYZ0lCM1Gt7PDrpFupCi9hLyXw==}
     dev: false
 
-  /@varlet/touch-emulator/2.7.0:
-    resolution: {integrity: sha512-p1AUTNVRDxdJIKtC7/TyMkqk1h19Nl2zqrS0lUm0iRMsa7KrWyKBVdHCz/suPzOehJaRZ4+2gwpUzD8WMi/Zvw==}
+  /@varlet/touch-emulator/2.7.1:
+    resolution: {integrity: sha512-HuhqUZFDDGyIY29GcclY5N3yfPnQfPk8iAMdQwzp0K3EfVjAGj3kf4ngi9dCWDma5VQOAVsiqop/ta2lyPwbEg==}
     dev: false
 
-  /@varlet/ui/2.7.0_vue@3.2.45:
-    resolution: {integrity: sha512-u8Dkxw2Y6gRr7zrSNxlJnrEfZXZr5sbL8g3SRs5WBzPO9NheBaRffidNMfw5g4yixqCvTiPApAQGx5TNslqYkg==}
+  /@varlet/ui/2.7.1_vue@3.2.45:
+    resolution: {integrity: sha512-VNBtn4ktAAVJffrssbs0FzELzMSW6QYpLX6dyDjLhDglwDVXOEQjk9zHN5z2y8Ufk/6bbXHW6qZ3Z4Sj9PaGJw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.7.0
-      '@varlet/shared': 2.7.0
+      '@varlet/icons': 2.7.1
+      '@varlet/shared': 2.7.1
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.45
@@ -3770,7 +3770,7 @@ packages:
       es-to-primitive: 1.2.1
       function-bind: 1.1.1
       function.prototype.name: 1.1.5
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
       get-symbol-description: 1.0.0
       globalthis: 1.0.3
       gopd: 1.0.1
@@ -3807,7 +3807,7 @@ packages:
     resolution: {integrity: sha512-g3OMbtlwY3QewlqAiMLI47KywjWZoEytKr8pf6iTC8uJq5bIAH52Z9pnQ8pVL6whrCto53JZDuUIsifGeLorTg==}
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
       has: 1.0.3
       has-tostringtag: 1.0.0
     dev: false
@@ -4266,6 +4266,14 @@ packages:
       has: 1.0.3
       has-symbols: 1.0.3
 
+  /get-intrinsic/1.2.0:
+    resolution: {integrity: sha512-L049y6nFOuom5wGyRc3/gdTLO94dySVKRACj1RmJZBQXlbTMhtNIgkWkUHq+jYmZvKf14EW1EoJnnjbmoHij0Q==}
+    dependencies:
+      function-bind: 1.1.1
+      has: 1.0.3
+      has-symbols: 1.0.3
+    dev: false
+
   /get-stream/4.1.0:
     resolution: {integrity: sha512-GMat4EJ5161kIy2HevLlr4luNjBgvmj413KaQA7jt4V8B4RDsfpHk7WQ9GVqfYyyx8OS/L66Kox+rJRNklLK7w==}
     engines: {node: '>=6'}
@@ -4283,7 +4291,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
     dev: false
 
   /get-value/2.0.6:
@@ -4373,7 +4381,7 @@ packages:
   /gopd/1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
     dependencies:
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
     dev: false
 
   /graceful-fs/4.2.10:
@@ -4674,7 +4682,7 @@ packages:
     resolution: {integrity: sha512-tA8URYccNzMo94s5MQZgH8NB/XTa6HsOo0MLfXTKKEnHVVdegzaQoFZ7Jp44bdvLvY2waT5dc+j5ICEswhi7UQ==}
     engines: {node: '>= 0.4'}
     dependencies:
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
       has: 1.0.3
       side-channel: 1.0.4
     dev: false
@@ -4707,7 +4715,7 @@ packages:
     resolution: {integrity: sha512-ASfLknmY8Xa2XtB4wmbz13Wu202baeA18cJBCeCy0wXUHZF0IPyVEXqKEcd+t2fNSLLL1vC6k7lxZEojNbISXQ==}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
       is-typed-array: 1.1.10
     dev: false
 
@@ -6698,7 +6706,7 @@ packages:
     resolution: {integrity: sha512-JBUUzyOgEwXQY1NuPtvcj/qcBDbDmEvWufhlnXZIm75DEHp+afM1r1ujJpJsV/gSM4t59tpDyPi1sd6ZaPFfsA==}
     dependencies:
       call-bind: 1.0.2
-      get-intrinsic: 1.1.3
+      get-intrinsic: 1.2.0
       is-regex: 1.1.4
     dev: false
 
