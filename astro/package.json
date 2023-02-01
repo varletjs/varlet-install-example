@@ -5,15 +5,15 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui"
   },
   "dependencies": {
     "@astrojs/vue": "^2.0.0",
-    "@varlet/touch-emulator": "2.7.1",
-    "@varlet/ui": "2.7.1",
+    "@varlet/touch-emulator": "^2.7.3",
+    "@varlet/ui": "^2.7.3",
     "astro": "^2.0.2",
     "vue": "^3.2.45"
   },

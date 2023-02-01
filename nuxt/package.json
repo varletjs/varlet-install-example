@@ -5,7 +5,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui"
   },
   "devDependencies": {
     "nuxt": "^3.0.0",
@@ -14,7 +15,7 @@
     "unplugin-vue-components": "^0.23.0"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.7.1",
-    "@varlet/ui": "^2.7.1"
+    "@varlet/touch-emulator": "^2.7.3-alpha.1675236177820",
+    "@varlet/ui": "^2.7.3-alpha.1675236177820"
   }
 }

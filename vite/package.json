@@ -7,11 +7,12 @@
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.7.1",
-    "@varlet/ui": "^2.7.1",
+    "@varlet/touch-emulator": "^2.7.3",
+    "@varlet/ui": "^2.7.3",
     "vue": "^3.2.41"
   },
   "devDependencies": {
