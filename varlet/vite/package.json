@@ -1,5 +1,5 @@
 {
-  "name": "varlet-install-example-vite",
+  "name": "varlet-install-example-varlet-vite",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "bump:vite": "pnpm --dir ./vite bump",
-    "bump:astro": "pnpm --dir ./astro bump",
-    "bump:nuxt": "pnpm --dir ./nuxt bump",
-    "bump:vue-cli": "pnpm --dir ./vue-cli dev",
-    "dev:vite": "pnpm --dir ./vite dev",
-    "dev:astro": "pnpm --dir ./astro dev",
-    "dev:nuxt": "pnpm --dir ./nuxt dev",
-    "dev:vue-cli": "pnpm --dir ./vue-cli dev",
+    "bump:vite": "pnpm --dir ./varlet/vite bump",
+    "bump:astro": "pnpm --dir ./varlet/astro bump",
+    "bump:nuxt": "pnpm --dir ./varlet/nuxt bump",
+    "bump:vue-cli": "pnpm --dir ./varlet/vue-cli dev",
+    "dev:vite": "pnpm --dir ./varlet/vite dev",
+    "dev:astro": "pnpm --dir ./varlet/astro dev",
+    "dev:nuxt": "pnpm --dir ./varlet/nuxt dev",
+    "dev:vue-cli": "pnpm --dir ./varlet/vue-cli dev",
     "bump": "pnpm bump:vite & pnpm bump:astro & pnpm:nuxt & pnpm bump:vue-cli"
   }
 }
