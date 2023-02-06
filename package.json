@@ -11,6 +11,7 @@
     "dev:astro": "pnpm --dir ./astro dev",
     "dev:nuxt": "pnpm --dir ./nuxt dev",
     "dev:vue-cli": "pnpm --dir ./vue-cli dev",
+    "bootstrap": "pnpm --dir ./vite install & pnpm --dir ./astro install & pnpm --dir ./nuxt install & pnpm --dir ./vue-cli install",
     "bump": "pnpm bump:vite & pnpm bump:astro & pnpm:nuxt & pnpm bump:vue-cli"
   }
 }
