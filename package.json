@@ -6,7 +6,7 @@
     "bump:vite": "pnpm --dir ./vite bump",
     "bump:astro": "pnpm --dir ./astro bump",
     "bump:nuxt": "pnpm --dir ./nuxt bump",
-    "bump:vue-cli": "pnpm --dir ./vue-cli dev",
+    "bump:vue-cli": "pnpm --dir ./vue-cli bump",
     "dev:vite": "pnpm --dir ./vite dev",
     "dev:astro": "pnpm --dir ./astro dev",
     "dev:nuxt": "pnpm --dir ./nuxt dev",
