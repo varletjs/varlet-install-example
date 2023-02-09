@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/vue': ^2.0.0
-  '@varlet/touch-emulator': ^2.7.4
-  '@varlet/ui': ^2.7.4
+  '@varlet/touch-emulator': ^2.7.5
+  '@varlet/ui': ^2.7.5
   astro: ^2.0.2
   unplugin-auto-import: ^0.12.2
   unplugin-vue-components: ^0.23.0
@@ -11,8 +11,8 @@ specifiers:
 
 dependencies:
   '@astrojs/vue': 2.0.0_astro@2.0.2+vue@3.2.45
-  '@varlet/touch-emulator': 2.7.4
-  '@varlet/ui': 2.7.4_vue@3.2.45
+  '@varlet/touch-emulator': 2.7.5
+  '@varlet/ui': 2.7.5_vue@3.2.45
   astro: 2.0.2
   vue: 3.2.45
 
@@ -858,26 +858,26 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: false
 
-  /@varlet/icons/2.7.4:
-    resolution: {integrity: sha512-6o4lJrfFKCzWF+fzQvRxnOPU/Rcvh1e2B9PgSkd4qTMDqq/Hv4BbxqYf/JSgsTk0/fkyTro/QrBGGDT8WWbjCg==}
+  /@varlet/icons/2.7.5:
+    resolution: {integrity: sha512-9cRkVq16+xpdqlm+kMKANesNPs3rlXtFKuO1RZY8UHDHMXIeS0Q5GbjAGaQNbEV/hMG7/qeknlngWZVUms++sg==}
     dev: false
 
-  /@varlet/shared/2.7.4:
-    resolution: {integrity: sha512-Kz4W7/gxt+63h3SarQEQCFj/8v3yguvWAYrx/ujp4HcvC4GTp2Lx1DaxmhpotdHe4HsCIeKPTshbdZL0Myq29Q==}
+  /@varlet/shared/2.7.5:
+    resolution: {integrity: sha512-acdVZURa4ZWiFOcSq8qDr12FEyrNjUKh+G1nP0rQioUFh/rTmEodILKPqav8YTn4CyT5jTOJR4qVe5JJ1btquw==}
     dev: false
 
-  /@varlet/touch-emulator/2.7.4:
-    resolution: {integrity: sha512-Itc17ec9BfGMvZBvIJ1fMMF4fevL3sBDwsxT0FWK55JsoBS4rZH/52rNVxPADqpt+nqCC6EIGdh8sJGhup/nqQ==}
+  /@varlet/touch-emulator/2.7.5:
+    resolution: {integrity: sha512-QfoFa+88+ZHyL0Ievki9mHOp52DSTXSDOU+pdFtRrqRstd96IybExl1pyggzQbXSoz1Ob8IL3h1e7s7it1qZQQ==}
     dev: false
 
-  /@varlet/ui/2.7.4_vue@3.2.45:
-    resolution: {integrity: sha512-/EIiu45TZokDyr9QrUYSloI9CE3YkwssidbJ0ZGj/xEf+TXwuE1njQvHo+wh88lpu1nvrKPvD7y6ZBNFXxCKpQ==}
+  /@varlet/ui/2.7.5_vue@3.2.45:
+    resolution: {integrity: sha512-mu/EtrJYNrDlsQHsyZWNed4iSAptFnK5ItzKNKgE1f/vGzYvBl33FuhZnY56l+IZFb8dcTsksDkIfHQ5vtElkA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.7.4
-      '@varlet/shared': 2.7.4
+      '@varlet/icons': 2.7.5
+      '@varlet/shared': 2.7.5
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.45
