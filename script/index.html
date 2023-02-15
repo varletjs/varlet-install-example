@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varlet Install Example Script </title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@varlet/touch-emulator/iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@varlet/ui/umd/varlet.js"></script>
+    <script>
+      const app = Vue.createApp({
+        template: `
+<var-tooltip content="Say Hello">
+  <var-button @click="handleClick">
+    Say Hello
+    <var-icon name="xml" />
+  </var-button>
+</var-tooltip>
+`,
+        setup() {
+          const handleClick = () => {
+            Varlet.Snackbar('Hello')
+          }
+
+          return {
+            handleClick
+          }
+        }
+      }) 
+
+      app.use(Varlet).mount('#app')
+    </script>
+  </body>
+</html>
