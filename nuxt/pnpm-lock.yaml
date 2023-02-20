@@ -1,16 +1,16 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@varlet/touch-emulator': ^2.8.2
-  '@varlet/ui': ^2.8.2
+  '@varlet/touch-emulator': ^2.8.3
+  '@varlet/ui': ^2.8.3
   nuxt: ^3.0.0
   prettier: ^2.5.1
   unplugin-auto-import: ^0.11.4
   unplugin-vue-components: ^0.23.0
 
 dependencies:
-  '@varlet/touch-emulator': 2.8.2
-  '@varlet/ui': 2.8.2
+  '@varlet/touch-emulator': 2.8.3
+  '@varlet/ui': 2.8.3
 
 devDependencies:
   nuxt: 3.0.0
@@ -879,26 +879,26 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@varlet/icons/2.8.2:
-    resolution: {integrity: sha512-/rnxLQoAVDIjOuO1rwtVjO04eOoggQFMXymx/p5QzphczkhPMOFVBHQHwyrHcyQE18yWA/wyPqHg8Qf3Z9zxPg==}
+  /@varlet/icons/2.8.3:
+    resolution: {integrity: sha512-5XFzb7lU2U+lMM9oYRRJlNkQqEAM8ucny0W7JYRh3xayvDOxygycOQO68Td5X12KJJ5e8FvttInsLdh+Gc9R6g==}
     dev: false
 
-  /@varlet/shared/2.8.2:
-    resolution: {integrity: sha512-TUFcOIaw9u2SPs4hd5WIHzyubH6Ru5rnC7RcnLmm4HQYDAEYfHpvWzqBe0PNv5s7gNeBbVNAhuNR1BZacUucSQ==}
+  /@varlet/shared/2.8.3:
+    resolution: {integrity: sha512-+3Huajf5w/gT3erX+Vog8RbvDMbRckWcjlox0YTamEt/mHd73B028TWwnfvqDRIU9c5K71T8h+45rA8FVV2miA==}
     dev: false
 
-  /@varlet/touch-emulator/2.8.2:
-    resolution: {integrity: sha512-tKX/j48aFXhYQrj6j+78iZK+DFMAlwE39pX/4nWHoXXPFEihuSzfpWvRK7ofcv5iTW6jU1/0mKAnhvVIQGgUZg==}
+  /@varlet/touch-emulator/2.8.3:
+    resolution: {integrity: sha512-ICbNn68PXWwmrxCEITZ/8D4ad3VPsGhXyka1A4U0wjdHI2ieViW+ANokimzXL3vN4KdWXeE8mmEo4CUsaLAoXQ==}
     dev: false
 
-  /@varlet/ui/2.8.2:
-    resolution: {integrity: sha512-r5dcWCyJp0OiFEXboCvbHGH3kghaCV3shSTc8mNPftzgCcoRZU2xnzKBdxRV0xEdglCWEVcNJZ4fZSm8Op9ucQ==}
+  /@varlet/ui/2.8.3:
+    resolution: {integrity: sha512-IZmwHScbW9P4CLVdlglt0ATCm1Obk+mylw9VLUmvnv69O38EGVetRsPfp0xZcSHojBnVoW1vZJb+HpBpE7fK3A==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.8.2
-      '@varlet/shared': 2.8.2
+      '@varlet/icons': 2.8.3
+      '@varlet/shared': 2.8.3
       dayjs: 1.11.7
       decimal.js: 10.4.3
     dev: false
