@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@varlet/touch-emulator": "^2.8.4",
-    "@varlet/ui": "2.8.4-alpha.1677162733176",
+    "@varlet/ui": "2.8.4",
     "vue": "^3.2.41"
   },
   "devDependencies": {
