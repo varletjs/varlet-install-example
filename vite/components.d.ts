@@ -9,6 +9,10 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
+    VarInput: typeof import('@varlet/ui')['_InputComponent']
     VarTooltip: typeof import('@varlet/ui')['_TooltipComponent']
+  }
+  export interface ComponentCustomProperties {
+    vRipple: typeof import('@varlet/ui')['_RippleComponent']
   }
 }

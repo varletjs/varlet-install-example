@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@varlet/touch-emulator': ^2.8.3
-  '@varlet/ui': ^2.8.3
+  '@varlet/touch-emulator': ^2.8.4
+  '@varlet/ui': ^2.8.4
   '@vue/cli-plugin-babel': ~5.0.0
   '@vue/cli-plugin-typescript': ~5.0.0
   '@vue/cli-service': ~5.0.0
@@ -13,8 +13,8 @@ specifiers:
   vue: ^3.2.13
 
 dependencies:
-  '@varlet/touch-emulator': 2.8.3
-  '@varlet/ui': 2.8.3_vue@3.2.45
+  '@varlet/touch-emulator': 2.8.4
+  '@varlet/ui': 2.8.4_vue@3.2.45
   core-js: 3.27.2
   vue: 3.2.45
 
@@ -1591,26 +1591,26 @@ packages:
       '@types/node': 18.11.18
     dev: true
 
-  /@varlet/icons/2.8.3:
-    resolution: {integrity: sha512-5XFzb7lU2U+lMM9oYRRJlNkQqEAM8ucny0W7JYRh3xayvDOxygycOQO68Td5X12KJJ5e8FvttInsLdh+Gc9R6g==}
+  /@varlet/icons/2.8.4:
+    resolution: {integrity: sha512-5FeZ5RpxeJ8cId5nWKEgmDr67P+CuXBmImLKtLz0t2lxMoFN1ZXPPW0OsBHy7Wd566ZS7OibgN1QwSgS4RojSA==}
     dev: false
 
-  /@varlet/shared/2.8.3:
-    resolution: {integrity: sha512-+3Huajf5w/gT3erX+Vog8RbvDMbRckWcjlox0YTamEt/mHd73B028TWwnfvqDRIU9c5K71T8h+45rA8FVV2miA==}
+  /@varlet/shared/2.8.4:
+    resolution: {integrity: sha512-fRRG70TR0nA8MCZPHLshH2mew/gLl9yc7BWB5CuvDwanJaq9/A/OzHxVBSw+rxZKSsV28ikvSjQ1z1K9uideZA==}
     dev: false
 
-  /@varlet/touch-emulator/2.8.3:
-    resolution: {integrity: sha512-ICbNn68PXWwmrxCEITZ/8D4ad3VPsGhXyka1A4U0wjdHI2ieViW+ANokimzXL3vN4KdWXeE8mmEo4CUsaLAoXQ==}
+  /@varlet/touch-emulator/2.8.4:
+    resolution: {integrity: sha512-q68lhHZQZGkqdG4lPVBN0n2NxaWBElTHaALrODnjt20w1S11+l+x2Pn/G8DtpLI2go70OElrznNYXu+aa41T1Q==}
     dev: false
 
-  /@varlet/ui/2.8.3_vue@3.2.45:
-    resolution: {integrity: sha512-IZmwHScbW9P4CLVdlglt0ATCm1Obk+mylw9VLUmvnv69O38EGVetRsPfp0xZcSHojBnVoW1vZJb+HpBpE7fK3A==}
+  /@varlet/ui/2.8.4_vue@3.2.45:
+    resolution: {integrity: sha512-wu7DSPhBiysxipFuV+aZL3LbwK9oZ2UeHxhC6HTnpNPDalvUrNpYK+q6EHIXV6XQDRA4Xye3PTyoJ502qI6Eeg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.8.3
-      '@varlet/shared': 2.8.3
+      '@varlet/icons': 2.8.4
+      '@varlet/shared': 2.8.4
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.45
