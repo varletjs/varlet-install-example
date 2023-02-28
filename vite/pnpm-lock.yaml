@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^16.11.68
-  '@varlet/touch-emulator': ^2.8.4
+  '@varlet/touch-emulator': ^2.8.5
   '@varlet/ui': 2.8.4
   '@vitejs/plugin-vue': ^4.0.0
   '@vue/test-utils': ^2.2.7
@@ -18,7 +18,7 @@ specifiers:
   vue-tsc: ^1.0.8
 
 dependencies:
-  '@varlet/touch-emulator': 2.8.4
+  '@varlet/touch-emulator': 2.8.5
   '@varlet/ui': 2.8.4_vue@3.2.45
   vue: 3.2.45
 
@@ -608,8 +608,8 @@ packages:
     resolution: {integrity: sha512-fRRG70TR0nA8MCZPHLshH2mew/gLl9yc7BWB5CuvDwanJaq9/A/OzHxVBSw+rxZKSsV28ikvSjQ1z1K9uideZA==}
     dev: false
 
-  /@varlet/touch-emulator/2.8.4:
-    resolution: {integrity: sha512-q68lhHZQZGkqdG4lPVBN0n2NxaWBElTHaALrODnjt20w1S11+l+x2Pn/G8DtpLI2go70OElrznNYXu+aa41T1Q==}
+  /@varlet/touch-emulator/2.8.5:
+    resolution: {integrity: sha512-TkKq/6rI/PTNaCCFrc7peAMeEHqlp7DinQZ81zZYfNuiZFXYWay9HZX92xrsgpI+IpsNWdjv3T7nvyFN1N64/Q==}
     dev: false
 
   /@varlet/ui/2.8.4_vue@3.2.45:
