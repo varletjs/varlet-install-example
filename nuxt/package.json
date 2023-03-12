@@ -12,10 +12,10 @@
     "nuxt": "^3.0.0",
     "prettier": "^2.5.1",
     "unplugin-auto-import": "^0.11.4",
-    "unplugin-vue-components": "^0.23.0"
+    "unplugin-vue-components": "^0.24.1"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.8.6",
-    "@varlet/ui": "^2.8.6"
+    "@varlet/touch-emulator": "^2.9.0",
+    "@varlet/ui": "^2.9.0"
   }
 }
