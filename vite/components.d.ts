@@ -9,12 +9,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     copy: typeof import('./src/components/router-stack/RouterStackView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterNavigationContainer: typeof import('./src/components/router-navigation/RouterStack.vue')['default']
     RouterNavigationView: typeof import('./src/components/router-navigation/RouterStack.vue')['default']
-    RouterStack: typeof import('./src/components/router-stack/RouterStack.vue')['default']
-    RouterStackView: typeof import('./src/components/router-stack/RouterStackView.vue')['default']
+    RouterStack: typeof import('./src/components/RouterStack.vue')['default']
+    RouterStackView: typeof import('./src/components/RouterStackView.vue')['default']
     RouterView: typeof import('vue-router')['RouterView']
     VarAppBar: typeof import('@varlet/ui')['_AppBarComponent']
     VarBackTop: typeof import('@varlet/ui')['_BackTopComponent']

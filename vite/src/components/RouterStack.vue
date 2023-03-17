@@ -3,18 +3,18 @@
 import context from '@varlet/ui/es/context/index.mjs'
 import { useParent, useChildren } from '@varlet/use'
 import { watch, ref, nextTick } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+
+defineProps({
+  keepAlive: {
+    type: Boolean,
+    default: true,
+  },
+})
 
 const stack = ref<HTMLElement>()
-const router = useRouter()
-const route = useRoute()
 const showParent = ref(true)
 const { length, bindChildren } = useChildren<any, any>('ROUTER_STACK')
 const { bindParent } = useParent<any, any>('ROUTER_STACK')
-
-function back() {
-  router.back()
-}
 
 bindChildren({})
 bindParent?.({})
@@ -45,30 +45,18 @@ context.zIndex += 1
 
 <template>
   <div class="router-stack" ref="stack" :style="{ zIndex: context.zIndex }">
-    <header class="router-stack-header" :style="{ zIndex: context.zIndex }">
-      <var-app-bar :title="route.meta.title" title-position="center">
-        <template #left>
-          <var-button
-            color="transparent"
-            text-color="#fff"
-            round
-            text
-            @click="back"
-          >
-            <var-icon name="chevron-left" :size="30" />
-          </var-button>
-        </template>
-      </var-app-bar>
-    </header>
-    <div class="router-stack-parent" v-show="showParent">
+    <app-header />
+
+    <keep-alive v-if="keepAlive">
+      <div class="router-stack-parent" v-if="showParent">
+        <slot />
+      </div>
+    </keep-alive>
+    <div class="router-stack-parent" v-show="showParent" v-else>
       <slot />
     </div>
 
-    <router-view v-slot="{ Component }">
-      <transition name="fade">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <router-stack-view />
   </div>
 </template>
 
@@ -83,26 +71,8 @@ context.zIndex += 1
   color: var(--color-text);
   background-color: var(--color-body);
 
-  &-header {
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-  }
-
   &-parent {
     padding-top: 54px;
   }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateX(20%);
 }
 </style>

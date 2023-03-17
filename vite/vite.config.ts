@@ -1,6 +1,7 @@
 import vue from '@vitejs/plugin-vue'
 import components from 'unplugin-vue-components/vite'
 import autoImport from 'unplugin-auto-import/vite'
+import pages from 'vite-plugin-pages'
 import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { fileURLToPath, URL } from 'node:url'
@@ -19,7 +20,9 @@ export default defineConfig({
     
     autoImport({
       resolvers: [VarletUIResolver({ autoImport: true })],
-    })
+    }),
+
+    pages()
   ],
 
   resolve: {

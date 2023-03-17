@@ -22,7 +22,7 @@ function load() {
 }
 
 function handleClick(path: string) {
-  router.push(`/home/list/${path}`)
+  router.push(`/layout/home/list/${path}`)
 }
 </script>
 
@@ -40,7 +40,7 @@ function handleClick(path: string) {
         </var-cell>
       </var-list>
 
-      <var-space>
+      <var-space style="margin-top: 10px">
         <var-button type="primary" @click="handleClick('detail-one')">To Detail One</var-button>
         <var-button type="warning" @click="handleClick('detail-two')">To Detail Two</var-button>
       </var-space>
