@@ -67,7 +67,8 @@ context.zIndex += 1
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   color: var(--color-text);
   background-color: var(--color-body);
 
