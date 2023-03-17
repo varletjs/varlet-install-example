@@ -1,17 +1,5 @@
-<script setup lang="ts">
-function handleClick() {
-  Snackbar('Hello')
-}
-</script>
-
 <template>
-  <var-tooltip content="Say Hello">
-    <var-button @click="handleClick">
-      Say Hello
-      <var-icon name="xml" />
-      <var-icon namespace="var-ext-icon" name="a" />
-    </var-button>
-  </var-tooltip>
+  <router-view />
 </template>
 
 <style>
