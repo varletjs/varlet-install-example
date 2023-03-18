@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // @ts-ignore
-import context from '@varlet/ui/es/context/index.mjs'
+import { Context } from '@varlet/ui'
 import { useParent, useChildren } from '@varlet/use'
 import { watch, ref, nextTick } from 'vue'
 
@@ -9,6 +9,9 @@ defineProps({
     type: Boolean,
     default: true,
   },
+  animation: {
+    type: String,
+  }
 })
 
 const stack = ref<HTMLElement>()
@@ -40,11 +43,11 @@ watch(
   }
 )
 
-context.zIndex += 1
+Context.zIndex += 1
 </script>
 
 <template>
-  <div class="router-stack" ref="stack" :style="{ zIndex: context.zIndex }">
+  <div class="router-stack" ref="stack" :style="{ zIndex: Context.zIndex }">
     <app-header />
 
     <keep-alive v-if="keepAlive">
@@ -56,7 +59,13 @@ context.zIndex += 1
       <slot />
     </div>
 
-    <router-stack-view />
+    <router-stack-view
+      :animation="animation"
+      @push="$emit('push')"
+      @pushed="$emit('pushed')"
+      @pop="$emit('pop')"
+      @popped="$emit('popped')"
+    />
   </div>
 </template>
 

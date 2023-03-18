@@ -6,6 +6,10 @@ const router = useRouter()
 function handleClick() {
   router.push('/layout/home/list')
 }
+
+function log(msg: string) {
+  console.log(msg)
+}
 </script>
 
 <template>
@@ -15,5 +19,11 @@ function handleClick() {
     </var-tooltip>
   </div>
 
-  <router-stack-view />
+  <router-stack-view
+    animation="slide-y"
+    @push="log('push')"
+    @pushed="log('pushed')"
+    @pop="log('pop')"
+    @popped="log('popped')"
+  />
 </template>

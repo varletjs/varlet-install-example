@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // @ts-ignore
-import context from '@varlet/ui/es/context/index.mjs'
+import { Context } from '@varlet/ui'
 import { useRoute, useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -12,7 +12,7 @@ function back() {
 </script>
 
 <template>
-  <header class="app-header" :style="{ zIndex: context.zIndex }">
+  <header class="app-header" :style="{ zIndex: Context.zIndex }">
     <var-app-bar :title="route.meta.title" title-position="center">
       <template #left>
         <var-button
