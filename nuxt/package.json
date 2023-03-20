@@ -15,7 +15,7 @@
     "unplugin-vue-components": "^0.24.1"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.9.1",
-    "@varlet/ui": "^2.9.1"
+    "@varlet/touch-emulator": "^2.9.2",
+    "@varlet/ui": "^2.9.2"
   }
 }

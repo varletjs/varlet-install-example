@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// @ts-ignore
 import { Context } from '@varlet/ui'
 import { useParent, useChildren } from '@varlet/use'
 import { watch, ref, nextTick } from 'vue'

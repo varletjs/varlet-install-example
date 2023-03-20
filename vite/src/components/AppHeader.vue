@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// @ts-ignore
 import { Context } from '@varlet/ui'
 import { useRoute, useRouter } from 'vue-router'
 
