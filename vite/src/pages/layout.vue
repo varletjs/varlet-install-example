@@ -15,10 +15,6 @@ const active = ref(0)
       <var-bottom-navigation-item label="Label" icon="magnify" />
       <var-bottom-navigation-item label="Label" icon="heart" />
       <var-bottom-navigation-item label="Label" icon="account-circle" />
-
-      <template #fab>
-        <var-icon name="heart" />
-      </template>
     </var-bottom-navigation>
   </div>
 </template>
@@ -26,5 +22,7 @@ const active = ref(0)
 <style lang="less" scoped>
 .layout {
   padding: 70px 16px ;
+  overflow-y: auto;
+  height: 100vh;
 }
 </style>

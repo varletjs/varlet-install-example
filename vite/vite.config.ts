@@ -15,7 +15,7 @@ export default defineConfig({
     visualizer({ open: true }),
 
     components({
-      resolvers: [VarletUIResolver()]
+      resolvers: [VarletUIResolver()],
     }),
     
     autoImport({

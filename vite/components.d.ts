@@ -10,34 +10,18 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
-    copy: typeof import('./src/components/router-stack/RouterStackView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
-    RouterNavigationContainer: typeof import('./src/components/router-navigation/RouterStack.vue')['default']
-    RouterNavigationView: typeof import('./src/components/router-navigation/RouterStack.vue')['default']
     RouterStack: typeof import('./src/components/RouterStack.vue')['default']
     RouterStackView: typeof import('./src/components/RouterStackView.vue')['default']
     RouterView: typeof import('vue-router')['RouterView']
     VarAppBar: typeof import('@varlet/ui')['_AppBarComponent']
-    VarBackTop: typeof import('@varlet/ui')['_BackTopComponent']
     VarBottomNavigation: typeof import('@varlet/ui')['_BottomNavigationComponent']
     VarBottomNavigationItem: typeof import('@varlet/ui')['_BottomNavigationItemComponent']
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
     VarCell: typeof import('@varlet/ui')['_CellComponent']
-    VarCollapse: typeof import('@varlet/ui')['_CollapseComponent']
-    VarCollapseItem: typeof import('@varlet/ui')['_CollapseItemComponent']
-    VarFab: typeof import('@varlet/ui')['_FabComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
-    VarInput: typeof import('@varlet/ui')['_InputComponent']
     VarList: typeof import('@varlet/ui')['_ListComponent']
-    VarMenu: typeof import('@varlet/ui')['_MenuComponent']
-    VarPaper: typeof import('@varlet/ui')['_PaperComponent']
-    VarRadio: typeof import('@varlet/ui')['_RadioComponent']
-    VarRadioGroup: typeof import('@varlet/ui')['_RadioGroupComponent']
     VarSpace: typeof import('@varlet/ui')['_SpaceComponent']
     VarTooltip: typeof import('@varlet/ui')['_TooltipComponent']
-  }
-  export interface ComponentCustomProperties {
-    vHover: typeof import('@varlet/ui')['_HoverComponent']
-    vRipple: typeof import('@varlet/ui')['_RippleComponent']
   }
 }
