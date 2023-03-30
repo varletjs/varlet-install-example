@@ -21,7 +21,7 @@ function handleIndexBarChange(index: string | number) {
 watch(
   () => active.value,
   (newValue) => {
-    indexBar.value!.scrollTo(newValue)
+    indexBar.value!.scrollTo(newValue, { event: false })
   }
 )
 
@@ -33,6 +33,8 @@ onMounted(() => {
 </script>
 
 <template>
+  <app-header />
+  
   <var-pull-refresh v-model="isRefresh" @refresh="refresh">
     <div class="search">
       <var-input

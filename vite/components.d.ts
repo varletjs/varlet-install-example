@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     VarBottomNavigation: typeof import('@varlet/ui')['_BottomNavigationComponent']
     VarBottomNavigationItem: typeof import('@varlet/ui')['_BottomNavigationItemComponent']
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
+    VarCard: typeof import('@varlet/ui')['_CardComponent']
     VarCell: typeof import('@varlet/ui')['_CellComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
     VarIndexAnchor: typeof import('@varlet/ui')['_IndexAnchorComponent']
@@ -27,7 +28,9 @@ declare module '@vue/runtime-core' {
     VarPullRefresh: typeof import('@varlet/ui')['_PullRefreshComponent']
     VarSpace: typeof import('@varlet/ui')['_SpaceComponent']
     VarTab: typeof import('@varlet/ui')['_TabComponent']
+    VarTabItem: typeof import('@varlet/ui')['_TabItemComponent']
     VarTabs: typeof import('@varlet/ui')['_TabsComponent']
+    VarTabsItems: typeof import('@varlet/ui')['_TabsItemsComponent']
     VarTooltip: typeof import('@varlet/ui')['_TooltipComponent']
   }
 }

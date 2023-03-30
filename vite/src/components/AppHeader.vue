@@ -14,15 +14,21 @@ function back() {
   <header class="app-header" :style="{ zIndex: Context.zIndex }">
     <var-app-bar :title="route.meta.title" title-position="center">
       <template #left>
-        <var-button
-          color="transparent"
-          text-color="#fff"
-          round
-          text
-          @click="back"
-        >
-          <var-icon name="chevron-left" :size="30" />
-        </var-button>
+        <slot name="left">
+          <var-button
+            color="transparent"
+            text-color="#fff"
+            round
+            text
+            @click="back"
+          >
+            <var-icon name="chevron-left" :size="30" />
+          </var-button>
+        </slot>
+      </template>
+
+      <template #content>
+        <slot name="content" />
       </template>
     </var-app-bar>
   </header>
