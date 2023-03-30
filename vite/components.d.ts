@@ -20,8 +20,14 @@ declare module '@vue/runtime-core' {
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
     VarCell: typeof import('@varlet/ui')['_CellComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
+    VarIndexAnchor: typeof import('@varlet/ui')['_IndexAnchorComponent']
+    VarIndexBar: typeof import('@varlet/ui')['_IndexBarComponent']
+    VarInput: typeof import('@varlet/ui')['_InputComponent']
     VarList: typeof import('@varlet/ui')['_ListComponent']
+    VarPullRefresh: typeof import('@varlet/ui')['_PullRefreshComponent']
     VarSpace: typeof import('@varlet/ui')['_SpaceComponent']
+    VarTab: typeof import('@varlet/ui')['_TabComponent']
+    VarTabs: typeof import('@varlet/ui')['_TabsComponent']
     VarTooltip: typeof import('@varlet/ui')['_TooltipComponent']
   }
 }

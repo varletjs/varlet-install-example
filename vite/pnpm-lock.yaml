@@ -2,9 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^16.11.68
-  '@varlet/touch-emulator': ^2.9.2
-  '@varlet/ui': 2.9.3-alpha.1679397366672
-  '@varlet/use': ^2.9.2
+  '@varlet/touch-emulator': ^2.9.3
+  '@varlet/ui': 2.9.4-alpha.1680108425588
+  '@varlet/use': ^2.9.3
   '@vitejs/plugin-vue': ^4.0.0
   '@vue/test-utils': ^2.2.7
   '@vue/tsconfig': ^0.1.3
@@ -22,9 +22,9 @@ specifiers:
   vue-tsc: ^1.0.8
 
 dependencies:
-  '@varlet/touch-emulator': 2.9.2
-  '@varlet/ui': 2.9.3-alpha.1679397366672_vue@3.2.47
-  '@varlet/use': 2.9.2_vue@3.2.47
+  '@varlet/touch-emulator': 2.9.3
+  '@varlet/ui': 2.9.4-alpha.1680108425588_vue@3.2.47
+  '@varlet/use': 2.9.3_vue@3.2.47
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -347,51 +347,51 @@ packages:
     resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
     dev: true
 
-  /@varlet/icons/2.9.3-alpha.1679397366672:
-    resolution: {integrity: sha512-WjlFtYIZr0SsZBsTAQqbRhUm3PTaTthQ8Vf/OhawCO9r9ufK9YyUXZ80qhvR3o7MtdS/Dyi6y8RoCsQSp66PsA==}
+  /@varlet/icons/2.9.4-alpha.1680108425588:
+    resolution: {integrity: sha512-YTZnD72I4ERNdHVC1EZSpzsm6K0vFV8JlrRkrb3464UL0TFvvgqo1ByQ7B0SAdVC8kZYVt35olNv3airejrYtA==}
     dev: false
 
-  /@varlet/shared/2.9.2:
-    resolution: {integrity: sha512-ci6iEHpK9ez4OCON8Cv+jBP2rkMn2gczFM3qPw1/LPjw+X/AqZM8uVm/pPQlVepvR12v8LSTJNOI8eLl0RZnWA==}
+  /@varlet/shared/2.9.3:
+    resolution: {integrity: sha512-2S8wRB2Dw5GZci14XTSuE0o4xSOQOlGJ7YU27vLPNAA4qszdUJY8uh/0FvskGjIq72j8NUIip+QN8TqinmCZ3g==}
     dev: false
 
-  /@varlet/shared/2.9.3-alpha.1679397366672:
-    resolution: {integrity: sha512-kOFlqwR1bv4Ekyolw2k6IcnI8cftuZNJ//rBZvO8QN9jkc2T1a6f1ji5CCgsa7hgmASnswI548CVry8UyqM+OA==}
+  /@varlet/shared/2.9.4-alpha.1680108425588:
+    resolution: {integrity: sha512-CzF3ZWQ592V9LxXqmAcUlF6X4G4ZeIbVpXge2z+UNv6WxiMM1zDABtSUDWxeuJkRYM+CnXeMCl51Y61NdrR4AQ==}
     dev: false
 
-  /@varlet/touch-emulator/2.9.2:
-    resolution: {integrity: sha512-YM3Vdjh1bgSo8XLzfZHn1TmeANLEoGofhTNIOfWev9F+KFo9xJI6SpvhD/U/EHyWj2Wu19XPDvyvJAgLZ1e9kw==}
+  /@varlet/touch-emulator/2.9.3:
+    resolution: {integrity: sha512-uPzZ7XqDVe8RBBbOwnZbnULHkvCXHJsBM4IVyts5V/hxYU1hq58FhD6AVw/2iIfCmC+jC71c6czTKqM7j67LJQ==}
     dev: false
 
-  /@varlet/ui/2.9.3-alpha.1679397366672_vue@3.2.47:
-    resolution: {integrity: sha512-yd7HKSUdoVLWyEWdGwm+GB80WhGzmZk/MgsBWFwyIOHUAG0lSuB2WJo2sO1M7Qs1CdV39ZObd6MIS0xRdh/XTA==}
+  /@varlet/ui/2.9.4-alpha.1680108425588_vue@3.2.47:
+    resolution: {integrity: sha512-z5ZSwL/8AS4vADrjRXJ67TFxIOPH419Fog1ipQBXinGTCi7PkZ9N1aNHvOssjoTkA7BOHGknag9jvpBAWDz+mw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.9.3-alpha.1679397366672
-      '@varlet/shared': 2.9.3-alpha.1679397366672
-      '@varlet/use': 2.9.3-alpha.1679397366672_vue@3.2.47
+      '@varlet/icons': 2.9.4-alpha.1680108425588
+      '@varlet/shared': 2.9.4-alpha.1680108425588
+      '@varlet/use': 2.9.4-alpha.1680108425588_vue@3.2.47
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.47
     dev: false
 
-  /@varlet/use/2.9.2_vue@3.2.47:
-    resolution: {integrity: sha512-0bpkgOHN6EfEEe84qNJ1tQUEJ3yww9egSxzM+F8Yirsvu7i+OTjT39zLHPwwpcWmeCZ6YOLN5a5FJCp+CyZOeA==}
+  /@varlet/use/2.9.3_vue@3.2.47:
+    resolution: {integrity: sha512-WWWj9tsC1Vl2XPxQktuuvYv5PHP5fooIBuGO7yDWTRWSbyTkn34SPcXKaryuGv0O2wpDf2KOE27qWOlTGMAUIQ==}
     peerDependencies:
       vue: 3.2.25
     dependencies:
-      '@varlet/shared': 2.9.2
+      '@varlet/shared': 2.9.3
       vue: 3.2.47
     dev: false
 
-  /@varlet/use/2.9.3-alpha.1679397366672_vue@3.2.47:
-    resolution: {integrity: sha512-Ci7GihPeNuZQLcoW3YVyquQYwbg3iUQIMfp7dpKQpm3wCmyS91ELaUGLThgzWbxArgG5k242WlvENqgHqorU7A==}
+  /@varlet/use/2.9.4-alpha.1680108425588_vue@3.2.47:
+    resolution: {integrity: sha512-NAM1r3h4dIOTtEcO/cxrWeBeSA4Y2o61JoOYO0uzz/UK/u2hfTasq7XKy5iEy4z2XXElbesmMnT+3c9klioQsg==}
     peerDependencies:
       vue: 3.2.25
     dependencies:
-      '@varlet/shared': 2.9.3-alpha.1679397366672
+      '@varlet/shared': 2.9.4-alpha.1680108425588
       vue: 3.2.47
     dev: false
 

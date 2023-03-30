@@ -11,9 +11,9 @@
     "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/use"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.9.2",
-    "@varlet/ui": "2.9.3-alpha.1679397366672",
-    "@varlet/use": "^2.9.2",
+    "@varlet/touch-emulator": "^2.9.3",
+    "@varlet/ui": "2.9.4-alpha.1680108425588",
+    "@varlet/use": "^2.9.3",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
