@@ -12,7 +12,7 @@ function back() {
 
 <template>
   <header class="app-header" :style="{ zIndex: Context.zIndex }">
-    <var-app-bar :title="route.meta.title" title-position="center">
+    <var-app-bar safe-area-top :title="route.meta.title" title-position="center">
       <template #left>
         <slot name="left">
           <var-button

@@ -4,7 +4,7 @@
 
 <style>
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
