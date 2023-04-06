@@ -36,7 +36,7 @@ function handleClick(path: string) {
 
       <var-list style="margin-top: 14px" :finished="finished" v-model:loading="loading" @load="load">
         <var-cell :key="item" v-for="item in list">
-          列表项: {{ item }}
+          List Item: {{ item }}
         </var-cell>
       </var-list>
 
