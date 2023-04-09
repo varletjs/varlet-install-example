@@ -117,8 +117,8 @@ onMounted(() => {
     padding: 0 12px;
     font-size: 14px;
     transition: all 0.25s;
-    background: rgb(41, 42, 45);
-    color: rgb(57, 128, 232);
+    background: var(--bottom-navigation-background-color);
+    color: var(--color-primary);
   }
 }
 </style>
