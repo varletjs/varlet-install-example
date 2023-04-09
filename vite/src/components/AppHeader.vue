@@ -27,6 +27,10 @@ function back() {
         </slot>
       </template>
 
+      <template #right>
+        <slot name="right" />
+      </template>
+
       <template #content>
         <slot name="content" />
       </template>

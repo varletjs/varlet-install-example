@@ -9,7 +9,7 @@ const active = ref('/layout/home')
 watch(
   () => active.value,
   (newValue) => {
-    router.push(newValue)
+    router.replace(newValue)
   }
 )
 

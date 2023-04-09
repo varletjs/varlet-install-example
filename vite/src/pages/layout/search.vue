@@ -33,16 +33,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <app-header />
-  
-  <var-pull-refresh v-model="isRefresh" @refresh="refresh">
-    <div class="search">
+  <app-header>
+    <template #right>
       <var-input
+        class="search-input"
         placeholder="Search something..."
+        :hint="false"
         v-model="keyword"
         clearable
       />
+    </template>
+  </app-header>
 
+  <var-pull-refresh v-model="isRefresh" @refresh="refresh">
+    <div class="search">
       <div class="search-container">
         <var-tabs
           class="search-tabs"
@@ -84,10 +88,13 @@ onMounted(() => {
 
 <style scoped lang="less">
 .search {
+  &-input {
+    width: 334px;
+  }
+
   &-container {
     display: flex;
-    margin-top: 20px;
-    height: calc(100vh - 210px);
+    height: calc(100vh - 134px);
   }
 
   &-tabs {
