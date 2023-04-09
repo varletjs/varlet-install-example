@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { IndexBar } from '@varlet/ui'
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const keyword = ref('')
 const list = ref<string[]>([])
@@ -14,16 +14,13 @@ function refresh() {
   }, 2000)
 }
 
+function handleTabsChange(active: string | number) {
+  indexBar.value!.scrollTo(active, { event: false })
+}
+
 function handleIndexBarChange(index: string | number) {
   active.value = index as string
 }
-
-watch(
-  () => active.value,
-  (newValue) => {
-    indexBar.value!.scrollTo(newValue, { event: false })
-  }
-)
 
 onMounted(() => {
   for (let i = 0; i < 26; i++) {
@@ -53,6 +50,7 @@ onMounted(() => {
           layout-direction="vertical"
           indicator-position="reverse"
           v-model:active="active"
+          @change="handleTabsChange"
         >
           <var-tab
             class="search-tab"
@@ -89,7 +87,7 @@ onMounted(() => {
 <style scoped lang="less">
 .search {
   &-input {
-    width: 334px;
+    width: 314px;
   }
 
   &-container {
@@ -117,6 +115,7 @@ onMounted(() => {
     display: flex;
     align-items: center;
     padding: 0 12px;
+    font-size: 14px;
     transition: all 0.25s;
     background: rgb(41, 42, 45);
     color: rgb(57, 128, 232);

@@ -26,6 +26,7 @@ declare module '@vue/runtime-core' {
     VarInput: typeof import('@varlet/ui')['_InputComponent']
     VarList: typeof import('@varlet/ui')['_ListComponent']
     VarPullRefresh: typeof import('@varlet/ui')['_PullRefreshComponent']
+    VarResult: typeof import('@varlet/ui')['_ResultComponent']
     VarSpace: typeof import('@varlet/ui')['_SpaceComponent']
     VarTab: typeof import('@varlet/ui')['_TabComponent']
     VarTabItem: typeof import('@varlet/ui')['_TabItemComponent']

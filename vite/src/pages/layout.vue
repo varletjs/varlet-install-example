@@ -17,7 +17,8 @@ watch(
   () => route.path,
   (newValue) => {
     active.value = newValue
-  }
+  },
+  { immediate: true }
 )
 </script>
 

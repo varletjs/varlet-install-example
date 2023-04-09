@@ -22,7 +22,7 @@ function back() {
             text
             @click="back"
           >
-            <var-icon name="chevron-left" :size="30" />
+            <var-icon class="app-header-icon" name="chevron-left" />
           </var-button>
         </slot>
       </template>
@@ -44,5 +44,9 @@ function back() {
   top: 0;
   left: 0;
   position: fixed;
+
+  &-icon {
+    font-size: 30px;
+  }
 }
 </style>

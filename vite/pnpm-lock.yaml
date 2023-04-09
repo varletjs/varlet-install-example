@@ -36,6 +36,9 @@ devDependencies:
   less:
     specifier: ^4.1.3
     version: 4.1.3
+  postcss-px-to-viewport:
+    specifier: ^1.1.1
+    version: 1.1.1
   rollup-plugin-visualizer:
     specifier: ^5.9.0
     version: 5.9.0
@@ -1531,6 +1534,11 @@ packages:
     resolution: {integrity: sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==}
     dev: true
 
+  /object-assign@4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /object-inspect@1.12.3:
     resolution: {integrity: sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==}
     dev: true
@@ -1631,6 +1639,13 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.1.0
       pathe: 1.0.0
+    dev: true
+
+  /postcss-px-to-viewport@1.1.1:
+    resolution: {integrity: sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ==}
+    dependencies:
+      object-assign: 4.1.1
+      postcss: 8.4.21
     dev: true
 
   /postcss@8.4.21:
