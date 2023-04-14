@@ -21,12 +21,18 @@ const isMobile = ref(
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   transition: background-color 0.25s, color 0.25s;
   color: var(--color-text);
   background-color: var(--color-body);
   overflow: hidden;
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 </style>
 
