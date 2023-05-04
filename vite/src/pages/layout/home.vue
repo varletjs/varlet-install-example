@@ -5,6 +5,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const active = ref(0)
 const isRefresh = ref(false)
+const items = ref()
 
 function refresh() {
   setTimeout(() => {
@@ -35,7 +36,7 @@ function handleClick() {
 
   <div class="home">
     <var-pull-refresh v-model="isRefresh" @refresh="refresh">
-      <var-tabs-items v-model:active="active">
+      <var-tabs-items ref="items" v-model:active="active">
         <var-tab-item class="home-tab-item">
           <var-space class="home-tab-item-space" direction="column" size="large">
             <var-card

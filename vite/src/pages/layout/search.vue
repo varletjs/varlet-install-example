@@ -37,12 +37,13 @@ onMounted(() => {
         placeholder="Search something..."
         :hint="false"
         v-model="keyword"
+        size="small"
         clearable
       />
     </template>
   </app-header>
 
-  <var-pull-refresh v-model="isRefresh" @refresh="refresh">
+  <var-pull-refresh  v-model="isRefresh" @refresh="refresh">
     <div class="search">
       <div class="search-container">
         <var-tabs
