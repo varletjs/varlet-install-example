@@ -2,11 +2,11 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.10.1
-    version: 2.10.1
+    specifier: ^2.10.2
+    version: 2.10.2
   '@varlet/ui':
-    specifier: ^2.10.1
-    version: 2.10.1(vue@3.2.45)
+    specifier: ^2.10.2
+    version: 2.10.2(vue@3.2.45)
   core-js:
     specifier: ^3.8.3
     version: 3.27.2
@@ -1732,38 +1732,38 @@ packages:
       '@types/node': 18.11.18
     dev: true
 
-  /@varlet/icons@2.10.1:
-    resolution: {integrity: sha512-XRMdaFB4kr8yvuns4IQz+tGswPgM699LC+Glb5vnOH0fuv1bu/alfa1C0X1OdIyX9fmM8/QqAlujCSeULZkh7Q==}
+  /@varlet/icons@2.10.2:
+    resolution: {integrity: sha512-evX5F6DCUPkcZ8ZiQ+GXcHHvw9Q2+2GFUZnSjLCp00U6+k2mpVYvJm9y5AT69ewQMg4vPLxrkT9nvjOF4F4RPg==}
     dev: false
 
-  /@varlet/shared@2.10.1:
-    resolution: {integrity: sha512-jnZQf6JSnsaO+0Obnd60Lt8aaH5f0dOQxXpYbVKnS8KITmh0LNntSUzuuAaImZTy0u4YjXsmMxVAkGVNhxEtkg==}
+  /@varlet/shared@2.10.2:
+    resolution: {integrity: sha512-bmWAsdVRlH0XSJayvxSlupsnjTSnoby+4fi9CoRygwhW5oBRFRNYZW/4X+3GQVzZX41uMN55oC32ghpQKgssaQ==}
     dev: false
 
-  /@varlet/touch-emulator@2.10.1:
-    resolution: {integrity: sha512-oPahyaVeyYDf58CAE1l8+smarxTPDKqLqt4JBriU27kFNZdc4Y9Z9cISWSqlRlCGEH1DODMIBjPvvV5+mdmrZg==}
+  /@varlet/touch-emulator@2.10.2:
+    resolution: {integrity: sha512-9LnH9QfDNxwWugPViE0Pjo7rmLNtmR5l53RBuLQMfC6XW0kOxpXn4u8uL5Mk7/OKVimsCYAQmcLF/tCX7OwDsA==}
     dev: false
 
-  /@varlet/ui@2.10.1(vue@3.2.45):
-    resolution: {integrity: sha512-MddpOO3umvthWrF2qr0HGkKPNTGg5jIBexh7TOzbwnVBbpCJFD4qLkrc5j/ZkD+MLQvnnrAYj6j8LEmOYpF8fA==}
+  /@varlet/ui@2.10.2(vue@3.2.45):
+    resolution: {integrity: sha512-h0sbEcDYxxzRbsqAQop+Kb6rEowiB6zm+qyNJUXi5XTmf2blZlqrn2Fq+S3Cn2/m43pOli5iOn23xXZAVOE08Q==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.10.1
-      '@varlet/shared': 2.10.1
-      '@varlet/use': 2.10.1(vue@3.2.45)
+      '@varlet/icons': 2.10.2
+      '@varlet/shared': 2.10.2
+      '@varlet/use': 2.10.2(vue@3.2.45)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.45
     dev: false
 
-  /@varlet/use@2.10.1(vue@3.2.45):
-    resolution: {integrity: sha512-uCSVqj5OLAKQycmcA/e2Tl4obAXTFCf2B1C6KRTTACiPJThBhZ7cc985Tsl3lC7bNvLzrMXNZQkXyyUvfyo+7Q==}
+  /@varlet/use@2.10.2(vue@3.2.45):
+    resolution: {integrity: sha512-HZbSqSQnLcInNZapT3mFcK/kqWmR9GjwuuT5PT8N4IZy6isFT0MWvvW0zcnw0O1YpQufI8pMdRyJu/XHq/TFpA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.10.1
+      '@varlet/shared': 2.10.2
       vue: 3.2.45
     dev: false
 
@@ -2772,8 +2772,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001482
-      electron-to-chromium: 1.4.382
+      caniuse-lite: 1.0.30001485
+      electron-to-chromium: 1.4.385
       node-releases: 2.0.10
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
     dev: true
@@ -2841,8 +2841,8 @@ packages:
     resolution: {integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==}
     dev: true
 
-  /caniuse-lite@1.0.30001482:
-    resolution: {integrity: sha512-F1ZInsg53cegyjroxLNW9DmrEQ1SuGRTO1QlpA0o2/6OpQ0gFeDRoq1yFmnr8Sakn9qwwt9DmbxHB6w167OSuQ==}
+  /caniuse-lite@1.0.30001485:
+    resolution: {integrity: sha512-8aUpZ7sjhlOyiNsg+pgcrTTPUXKh+rg544QYHSvQErljVEKJzvkYkCR/hUFeeVoEfTToUtY9cUKNRC7+c45YkA==}
     dev: true
 
   /case-sensitive-paths-webpack-plugin@2.4.0:
@@ -3640,8 +3640,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: true
 
-  /electron-to-chromium@1.4.382:
-    resolution: {integrity: sha512-czMavlW52VIPgutbVL9JnZIZuFijzsG1ww/1z2Otu1r1q+9Qe2bTsH3My3sZarlvwyqHM6+mnZfEnt2Vr4dsIg==}
+  /electron-to-chromium@1.4.385:
+    resolution: {integrity: sha512-L9zlje9bIw0h+CwPQumiuVlfMcV4boxRjFIWDcLfFqTZNbkwOExBzfmswytHawObQX4OUhtNv8gIiB21kOurIg==}
     dev: true
 
   /emoji-regex@8.0.0:

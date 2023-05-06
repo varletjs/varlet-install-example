@@ -2,14 +2,14 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.10.1
-    version: 2.10.1
+    specifier: ^2.10.2
+    version: 2.10.2
   '@varlet/ui':
     specifier: 2.10.1
     version: 2.10.1(vue@3.2.47)
   '@varlet/use':
-    specifier: ^2.10.1
-    version: 2.10.1(vue@3.2.47)
+    specifier: ^2.10.2
+    version: 2.10.2(vue@3.2.47)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -375,8 +375,12 @@ packages:
     resolution: {integrity: sha512-jnZQf6JSnsaO+0Obnd60Lt8aaH5f0dOQxXpYbVKnS8KITmh0LNntSUzuuAaImZTy0u4YjXsmMxVAkGVNhxEtkg==}
     dev: false
 
-  /@varlet/touch-emulator@2.10.1:
-    resolution: {integrity: sha512-oPahyaVeyYDf58CAE1l8+smarxTPDKqLqt4JBriU27kFNZdc4Y9Z9cISWSqlRlCGEH1DODMIBjPvvV5+mdmrZg==}
+  /@varlet/shared@2.10.2:
+    resolution: {integrity: sha512-bmWAsdVRlH0XSJayvxSlupsnjTSnoby+4fi9CoRygwhW5oBRFRNYZW/4X+3GQVzZX41uMN55oC32ghpQKgssaQ==}
+    dev: false
+
+  /@varlet/touch-emulator@2.10.2:
+    resolution: {integrity: sha512-9LnH9QfDNxwWugPViE0Pjo7rmLNtmR5l53RBuLQMfC6XW0kOxpXn4u8uL5Mk7/OKVimsCYAQmcLF/tCX7OwDsA==}
     dev: false
 
   /@varlet/ui@2.10.1(vue@3.2.47):
@@ -399,6 +403,15 @@ packages:
       vue: ^3.2.0
     dependencies:
       '@varlet/shared': 2.10.1
+      vue: 3.2.47
+    dev: false
+
+  /@varlet/use@2.10.2(vue@3.2.47):
+    resolution: {integrity: sha512-HZbSqSQnLcInNZapT3mFcK/kqWmR9GjwuuT5PT8N4IZy6isFT0MWvvW0zcnw0O1YpQufI8pMdRyJu/XHq/TFpA==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@varlet/shared': 2.10.2
       vue: 3.2.47
     dev: false
 
