@@ -10,7 +10,7 @@ const isMobile = ref(
 
 <template>
   <router-view v-if="isMobile" />
-  
+
   <div class="result-container" v-else>
     <var-result class="result" type="warning" title="Warning" description="Please use mobile visit..." />
   </div>

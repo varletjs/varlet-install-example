@@ -43,7 +43,9 @@ function handleClick() {
               title="Dangerous"
               subtitle="The girl was dangerous"
               description="The way she came into the place I knew right then and there.There was something different about this girl.The way she moved her hair her face her lines.Divinity in motion as she stalked the room.I could feel the aura of her presence.Every head turned feeling passion and lust.The girl was persuasive the girl I could not trust.The girl was bad.The girl was dangerous."
+              ripple
               v-for="i in 5"
+              @click="handleClick"
             />
           </var-space>
         </var-tab-item>
@@ -54,7 +56,9 @@ function handleClick() {
               subtitle="The girl was dangerous"
               description="The way she came into the place I knew right then and there.There was something different about this girl.The way she moved her hair her face her lines.Divinity in motion as she stalked the room.I could feel the aura of her presence.Every head turned feeling passion and lust.The girl was persuasive the girl I could not trust.The girl was bad.The girl was dangerous."
               src="https://varlet.gitee.io/varlet-ui/cat.jpg"
+              ripple
               v-for="i in 5"
+              @click="handleClick"
             >
               <template #extra>
                 <var-space>
@@ -72,7 +76,9 @@ function handleClick() {
               subtitle="The way she came into the place I knew right then and there.There was something different about this girl.The way she moved her hair her face her lines.Divinity in motion as she stalked the room.I could feel the aura of her presence.Every head turned feeling passion and lust.The girl was persuasive the girl I could not trust.The girl was bad.The girl was dangerous."
               src="https://varlet.gitee.io/varlet-ui/cat.jpg"
               layout="row"
+              ripple
               v-for="i in 10"
+              @click="handleClick"
             >
               <template #extra>
                 <var-button text round>
