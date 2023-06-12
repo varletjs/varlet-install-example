@@ -1,12 +1,16 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.11.2
-    version: 2.11.2
+    specifier: ^2.11.5
+    version: 2.11.5
   '@varlet/ui':
-    specifier: ^2.11.2
-    version: 2.11.2(vue@3.3.4)
+    specifier: ^2.11.5
+    version: 2.11.5(vue@3.3.4)
 
 devDependencies:
   nuxt:
@@ -238,12 +242,17 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/helper-string-parser@7.21.5:
-    resolution: {integrity: sha512-5pTUx3hAJaZIdW99sJ6ZUUgWq/Y+Hja7TowEnLNMm1VivRgZQL3vpBY3qUACVsvw+yQU6+YgfBVmcbLaZtrA1w==}
+  /@babel/helper-string-parser@7.22.5:
+    resolution: {integrity: sha512-mM4COjgZox8U+JcXQwPijIZLElkgEpO5rsERVDJTc2qfCDfERyob6k5WegS14SX18IIjv+XD+GrqNumY5JRCDw==}
     engines: {node: '>=6.9.0'}
 
   /@babel/helper-validator-identifier@7.19.1:
     resolution: {integrity: sha512-awrNfaMtnHUr653GgGEs++LlAvW6w+DcPrOliSMXWCKo597CwL5Acf/wWdNkf/tfEQE3mjkeD1YOVZOUV/od1w==}
+    engines: {node: '>=6.9.0'}
+    dev: true
+
+  /@babel/helper-validator-identifier@7.22.5:
+    resolution: {integrity: sha512-aJXu+6lErq8ltp+JhkJUfk1MTGyuA4v7f3pA+BJ5HLfNC6nAQ0Cpi9uOquUj8Hehg0aUiHzWQbOVJGao6ztBAQ==}
     engines: {node: '>=6.9.0'}
 
   /@babel/helper-validator-option@7.21.0:
@@ -287,12 +296,12 @@ packages:
       '@babel/types': 7.21.4
     dev: true
 
-  /@babel/parser@7.22.4:
-    resolution: {integrity: sha512-VLLsx06XkEYqBtE5YGPwfSGwfrjnyPP5oiGty3S8pQLFDFLaS8VwWSIxkTXpcvr5zeYLE6+MBNl2npl/YnfofA==}
+  /@babel/parser@7.22.5:
+    resolution: {integrity: sha512-DFZMC9LJUG9PLOclRC32G63UXwzqS2koQC8dkx+PLdmt1xSePYpbT/NbsrJy8Q/muXz7o/h/d4A7Fuyixm559Q==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      '@babel/types': 7.22.4
+      '@babel/types': 7.22.5
 
   /@babel/plugin-syntax-jsx@7.18.6(@babel/core@7.21.4):
     resolution: {integrity: sha512-6mmljtAedFGTWu2p/8WIORGwy+61PLgOMPOdazc7YoJ9ZCWUyFy3A6CpPkRKLKD1ToAesxX8KGEViAiLo9N+7Q==}
@@ -369,12 +378,12 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@babel/types@7.22.4:
-    resolution: {integrity: sha512-Tx9x3UBHTTsMSW85WB2kphxYQVvrZ/t1FxD88IpSgIjiUJlCm9z+xWIDwyo1vffTwSqteqyznB8ZE9vYYk16zA==}
+  /@babel/types@7.22.5:
+    resolution: {integrity: sha512-zo3MIHGOkPOfoRXitsgHLjEXmlDaD/5KU1Uzuc9GNiZPhSqVxVRtxuPaSBZDsYZ9qV88AjtMtWW7ww98loJ9KA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-string-parser': 7.21.5
-      '@babel/helper-validator-identifier': 7.19.1
+      '@babel/helper-string-parser': 7.22.5
+      '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
   /@cloudflare/kv-asset-handler@0.3.0:
@@ -1019,38 +1028,38 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /@varlet/icons@2.11.2:
-    resolution: {integrity: sha512-PhD2SpNXhU9lVTAw3MM2kQPfLLAgCrOXhBVAQxG07pVSl0BA1CPNKM2HCZ7Zy3ZmeXV/hm5nXegnHV14Zdma/Q==}
+  /@varlet/icons@2.11.5:
+    resolution: {integrity: sha512-62HW2QbVT+V+T2wjG3TKI5jMChMf+IAjhU6NsERxkvt3i7Cm2ziZLh3BeFzuf5cuM00qBSF/iRzWgpyadLYqUg==}
     dev: false
 
-  /@varlet/shared@2.11.2:
-    resolution: {integrity: sha512-BYqr+s+BWcO7bY1F7CQ54hLXJpS6P2/McqzQ2WSVC2+a8ikp2ILFyqaHgrHsdeGPKw37KrB6hAi0ByeR9ertZg==}
+  /@varlet/shared@2.11.5:
+    resolution: {integrity: sha512-kET1tG3JCIXAYjXmxQ8N1MArMNdLCqtsX2xbz1e7a3A0vIkX22TI4qUZ+XXwO32L1ogsyWflc+O4BTft8ZLv3Q==}
     dev: false
 
-  /@varlet/touch-emulator@2.11.2:
-    resolution: {integrity: sha512-qt41pNR6eZJd28uhvtomR45Uuih7og+859Z+TbsU4KwuukghWY+ktPqbwZLsQ678N1PBsS9hQg6UPa6aTMqYfw==}
+  /@varlet/touch-emulator@2.11.5:
+    resolution: {integrity: sha512-shBwcx9KBA8PpHvwZ2UK5oN0Xqhj6etDvzjeTzVbPOoTdLTuiSkr0bx44nY1De771m21tj3NJgsVgJscXJdyrA==}
     dev: false
 
-  /@varlet/ui@2.11.2(vue@3.3.4):
-    resolution: {integrity: sha512-fMHM7vt8gePq/7o28K9Q/Kaochf93G9vdRHpUFXQJerMWtwdLN1Lzl5us/nspSvldScGD9EFt4m8SViFSfoTcw==}
+  /@varlet/ui@2.11.5(vue@3.3.4):
+    resolution: {integrity: sha512-7FPe+xW7q3F71f6JAZWdCY4ZM2Vxe86caGqlCKsZ5BEfvJSPEVEvrr5jRyK4x82/C+fWH3WKNvGyq4oJMbuQyg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.7
-      '@varlet/icons': 2.11.2
-      '@varlet/shared': 2.11.2
-      '@varlet/use': 2.11.2(vue@3.3.4)
+      '@varlet/icons': 2.11.5
+      '@varlet/shared': 2.11.5
+      '@varlet/use': 2.11.5(vue@3.3.4)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.3.4
     dev: false
 
-  /@varlet/use@2.11.2(vue@3.3.4):
-    resolution: {integrity: sha512-vxtJMtj9kWJV8XQvUd7RBib+2wUtShK2iJcTL4ZFSOUeHYniLK3ymTuZn/EPMzN2K8Us83fAHgMdyW3KalKyIQ==}
+  /@varlet/use@2.11.5(vue@3.3.4):
+    resolution: {integrity: sha512-YQyuWnMvHyNx3sOlgnqBAMqtWAjn/mIB7yt8Zz59tiVaHieiA+POqSvJ7gHahziq/AdvzVsvz4XSj7TKGacv0w==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.11.2
+      '@varlet/shared': 2.11.5
       vue: 3.3.4
     dev: false
 
@@ -1135,7 +1144,7 @@ packages:
   /@vue/compiler-core@3.3.4:
     resolution: {integrity: sha512-cquyDNvZ6jTbf/+x+AgM2Arrp6G4Dzbb0R64jiG804HRMfRiFXWI6kqUVqZ6ZR0bQhIoQjB4+2bhNtVwndW15g==}
     dependencies:
-      '@babel/parser': 7.22.4
+      '@babel/parser': 7.22.5
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
       source-map-js: 1.0.2
@@ -1171,7 +1180,7 @@ packages:
   /@vue/compiler-sfc@3.3.4:
     resolution: {integrity: sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==}
     dependencies:
-      '@babel/parser': 7.22.4
+      '@babel/parser': 7.22.5
       '@vue/compiler-core': 3.3.4
       '@vue/compiler-dom': 3.3.4
       '@vue/compiler-ssr': 3.3.4
@@ -1212,7 +1221,7 @@ packages:
   /@vue/reactivity-transform@3.3.4:
     resolution: {integrity: sha512-MXgwjako4nu5WFLAjpBnCj/ieqcjE2aJBINUNQzkZQfzIZA4xn+0fV1tIYBJvvva3N3OvKGofRLvQIwEQPpaXw==}
     dependencies:
-      '@babel/parser': 7.22.4
+      '@babel/parser': 7.22.5
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
