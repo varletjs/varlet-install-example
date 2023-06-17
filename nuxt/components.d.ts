@@ -12,7 +12,9 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
-    VarDialog: typeof import('@varlet/ui')['_DialogComponent']
+    VarPopup: typeof import('@varlet/ui')['_PopupComponent']
+    VarSwipe: typeof import('@varlet/ui')['_SwipeComponent']
+    VarSwipeItem: typeof import('@varlet/ui')['_SwipeItemComponent']
     VarTooltip: typeof import('@varlet/ui')['_TooltipComponent']
   }
 }

@@ -9,11 +9,11 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0(@babel/core@7.22.5)(astro@2.0.2)(vite@4.3.9)(vue@3.2.45)
   '@varlet/touch-emulator':
-    specifier: ^2.11.5
-    version: 2.11.5
+    specifier: ^2.11.7
+    version: 2.11.7
   '@varlet/ui':
-    specifier: ^2.11.5
-    version: 2.11.5(vue@3.2.45)
+    specifier: ^2.11.7
+    version: 2.11.7(vue@3.2.45)
   astro:
     specifier: ^2.0.2
     version: 2.0.2
@@ -267,7 +267,7 @@ packages:
       '@babel/compat-data': 7.22.5
       '@babel/core': 7.22.5
       '@babel/helper-validator-option': 7.22.5
-      browserslist: 4.21.7
+      browserslist: 4.21.9
       lru-cache: 5.1.1
       semver: 6.3.0
     dev: false
@@ -1258,38 +1258,38 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: false
 
-  /@varlet/icons@2.11.5:
-    resolution: {integrity: sha512-62HW2QbVT+V+T2wjG3TKI5jMChMf+IAjhU6NsERxkvt3i7Cm2ziZLh3BeFzuf5cuM00qBSF/iRzWgpyadLYqUg==}
+  /@varlet/icons@2.11.7:
+    resolution: {integrity: sha512-1qd6LhoMQuHkVaNrYWHEH8di+wqlL9BHvYXZq1HcT6XKTZzEpKmR/IsUE4qFpx+EmFh6Jb3ksFsgc6A+LhDEeQ==}
     dev: false
 
-  /@varlet/shared@2.11.5:
-    resolution: {integrity: sha512-kET1tG3JCIXAYjXmxQ8N1MArMNdLCqtsX2xbz1e7a3A0vIkX22TI4qUZ+XXwO32L1ogsyWflc+O4BTft8ZLv3Q==}
+  /@varlet/shared@2.11.7:
+    resolution: {integrity: sha512-Qxv0j4YXFEWEE/VIOx1JlgdRF2aKcVoZ7S4R3TNAd76UxRDHydd51ZNiFEnGDn2HlqMCth1vm0aM4YDgnQHiZQ==}
     dev: false
 
-  /@varlet/touch-emulator@2.11.5:
-    resolution: {integrity: sha512-shBwcx9KBA8PpHvwZ2UK5oN0Xqhj6etDvzjeTzVbPOoTdLTuiSkr0bx44nY1De771m21tj3NJgsVgJscXJdyrA==}
+  /@varlet/touch-emulator@2.11.7:
+    resolution: {integrity: sha512-DkNwxmiIW2FoOjGYholf9JgYjLAATbx8pDH0f70dbFtXCCvIXvlr+ViGfvKFkb9w88BAHGf8QJ9vld7baVF/6A==}
     dev: false
 
-  /@varlet/ui@2.11.5(vue@3.2.45):
-    resolution: {integrity: sha512-7FPe+xW7q3F71f6JAZWdCY4ZM2Vxe86caGqlCKsZ5BEfvJSPEVEvrr5jRyK4x82/C+fWH3WKNvGyq4oJMbuQyg==}
+  /@varlet/ui@2.11.7(vue@3.2.45):
+    resolution: {integrity: sha512-YuagnuCVIKjTcl8qB8SOKhk1ny4jl57Fqkivo/qQ1HS/Wq1zusj5hu8zL2uj9uS/K3NBuu9bqUcKbJKqoPJA2A==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.11.5
-      '@varlet/shared': 2.11.5
-      '@varlet/use': 2.11.5(vue@3.2.45)
+      '@varlet/icons': 2.11.7
+      '@varlet/shared': 2.11.7
+      '@varlet/use': 2.11.7(vue@3.2.45)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.45
     dev: false
 
-  /@varlet/use@2.11.5(vue@3.2.45):
-    resolution: {integrity: sha512-YQyuWnMvHyNx3sOlgnqBAMqtWAjn/mIB7yt8Zz59tiVaHieiA+POqSvJ7gHahziq/AdvzVsvz4XSj7TKGacv0w==}
+  /@varlet/use@2.11.7(vue@3.2.45):
+    resolution: {integrity: sha512-HXPiwgD3jJWb99ukw4iMHP7RE3+2bs74xr8Lvgg7adNpfCbIvmWwbldSg3zTWf4GeR7BLX5oh270DGJMBqRgoQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.11.5
+      '@varlet/shared': 2.11.7
       vue: 3.2.45
     dev: false
 
@@ -1632,15 +1632,15 @@ packages:
       update-browserslist-db: 1.0.10(browserslist@4.21.4)
     dev: false
 
-  /browserslist@4.21.7:
-    resolution: {integrity: sha512-BauCXrQ7I2ftSqd2mvKHGo85XR0u7Ru3C/Hxsy/0TkfCtjrmAbPdzLGasmoiBxplpDXlPvdjX9u7srIMfgasNA==}
+  /browserslist@4.21.9:
+    resolution: {integrity: sha512-M0MFoZzbUrRU4KNfCrDLnvyE7gub+peetoTid3TBIqtunaDJyXlwhakT+/VkvSXcfIzFfK/nkCs4nmyTmxdNSg==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001499
-      electron-to-chromium: 1.4.427
+      caniuse-lite: 1.0.30001503
+      electron-to-chromium: 1.4.433
       node-releases: 2.0.12
-      update-browserslist-db: 1.0.11(browserslist@4.21.7)
+      update-browserslist-db: 1.0.11(browserslist@4.21.9)
     dev: false
 
   /buffer@6.0.3:
@@ -1666,8 +1666,8 @@ packages:
     resolution: {integrity: sha512-CPB+UL9XMT/Av+pJxCKGhdx+yg1hzplvFJQlJ2n68PyQGMz9L/E2zCyLdOL8uasbouTUgnPl+y0tccI/se+BEw==}
     dev: false
 
-  /caniuse-lite@1.0.30001499:
-    resolution: {integrity: sha512-IhoQqRrW6WiecFcfZgoJS1YLEN1/HR1vHP5WNgjCARRW7KUNToHHTX3FrwCM+y4zkRa48D9rE90WFYc2IWhDWQ==}
+  /caniuse-lite@1.0.30001503:
+    resolution: {integrity: sha512-Sf9NiF+wZxPfzv8Z3iS0rXM1Do+iOy2Lxvib38glFX+08TCYYYGR5fRJXk4d77C4AYwhUjgYgMsMudbh2TqCKw==}
     dev: false
 
   /ccount@2.0.1:
@@ -1872,8 +1872,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: false
 
-  /electron-to-chromium@1.4.427:
-    resolution: {integrity: sha512-HK3r9l+Jm8dYAm1ctXEWIC+hV60zfcjS9UA5BDlYvnI5S7PU/yytjpvSrTNrSSRRkuu3tDyZhdkwIczh+0DWaw==}
+  /electron-to-chromium@1.4.433:
+    resolution: {integrity: sha512-MGO1k0w1RgrfdbLVwmXcDhHHuxCn2qRgR7dYsJvWFKDttvYPx6FNzCGG0c/fBBvzK2LDh3UV7Tt9awnHnvAAUQ==}
     dev: false
 
   /emmet@2.3.6:
@@ -3277,8 +3277,8 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /rollup@3.25.0:
-    resolution: {integrity: sha512-FnJkNRst2jEZGw7f+v4hFo6UTzpDKrAKcHZWcEfm5/GJQ5CK7wgb4moNLNAe7npKUev7yQn1AY/YbZRIxOv6Qg==}
+  /rollup@3.25.1:
+    resolution: {integrity: sha512-tywOR+rwIt5m2ZAWSe5AIJcTat8vGlnPFAv15ycCrw33t6iFsXZ6mzHVFh2psSjxQPmI+xgzMZZizUAukBI4aQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3748,13 +3748,13 @@ packages:
       picocolors: 1.0.0
     dev: false
 
-  /update-browserslist-db@1.0.11(browserslist@4.21.7):
+  /update-browserslist-db@1.0.11(browserslist@4.21.9):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
-      browserslist: 4.21.7
+      browserslist: 4.21.9
       escalade: 3.1.1
       picocolors: 1.0.0
     dev: false
@@ -3857,7 +3857,7 @@ packages:
     dependencies:
       esbuild: 0.17.19
       postcss: 8.4.24
-      rollup: 3.25.0
+      rollup: 3.25.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: false

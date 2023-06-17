@@ -10,13 +10,13 @@
     "bump": "pnpm update @varlet/touch-emulator @varlet/ui"
   },
   "devDependencies": {
-    "nuxt": "^3.3.3",
+    "nuxt": "^3.5.3",
     "prettier": "^2.5.1",
     "unplugin-auto-import": "^0.11.4",
     "unplugin-vue-components": "^0.24.1"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.11.5",
-    "@varlet/ui": "^2.11.5"
+    "@varlet/touch-emulator": "^2.11.8",
+    "@varlet/ui": "^2.11.8"
   }
 }
