@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.11.7
-    version: 2.11.7
+    specifier: ^2.12.1
+    version: 2.12.1
   '@varlet/ui':
-    specifier: ^2.11.7
-    version: 2.11.7(vue@3.2.45)
+    specifier: ^2.12.1
+    version: 2.12.1(vue@3.2.45)
   core-js:
     specifier: ^3.8.3
     version: 3.27.2
@@ -1773,38 +1773,38 @@ packages:
       '@types/node': 18.11.18
     dev: true
 
-  /@varlet/icons@2.11.7:
-    resolution: {integrity: sha512-1qd6LhoMQuHkVaNrYWHEH8di+wqlL9BHvYXZq1HcT6XKTZzEpKmR/IsUE4qFpx+EmFh6Jb3ksFsgc6A+LhDEeQ==}
+  /@varlet/icons@2.12.1:
+    resolution: {integrity: sha512-Sc0JULHyWrQlloU5K9I06ynctpiHizv5quu51tr00BUCr7xfhdd0tTBvVvUeFcEkNWp+dWXwXLTLFEWo/0FmhA==}
     dev: false
 
-  /@varlet/shared@2.11.7:
-    resolution: {integrity: sha512-Qxv0j4YXFEWEE/VIOx1JlgdRF2aKcVoZ7S4R3TNAd76UxRDHydd51ZNiFEnGDn2HlqMCth1vm0aM4YDgnQHiZQ==}
+  /@varlet/shared@2.12.1:
+    resolution: {integrity: sha512-L5sBFVWMmEpff8ZydZvQmMM5AhAQTRbePB++nAZHZL2n7vTyiWh7Qk7ctf/fjU8b6/pSx+QlxMGo9yHe+vkFUQ==}
     dev: false
 
-  /@varlet/touch-emulator@2.11.7:
-    resolution: {integrity: sha512-DkNwxmiIW2FoOjGYholf9JgYjLAATbx8pDH0f70dbFtXCCvIXvlr+ViGfvKFkb9w88BAHGf8QJ9vld7baVF/6A==}
+  /@varlet/touch-emulator@2.12.1:
+    resolution: {integrity: sha512-cGUVICHkkrm1LEXpGZE1YIGfS1Cc6AQMw5pWfX6ddfPW68ZLVFX2YCUJ3hVYwwmFTiFNYQGCLl81mkdh286DXw==}
     dev: false
 
-  /@varlet/ui@2.11.7(vue@3.2.45):
-    resolution: {integrity: sha512-YuagnuCVIKjTcl8qB8SOKhk1ny4jl57Fqkivo/qQ1HS/Wq1zusj5hu8zL2uj9uS/K3NBuu9bqUcKbJKqoPJA2A==}
+  /@varlet/ui@2.12.1(vue@3.2.45):
+    resolution: {integrity: sha512-zpsEiUUKgytqsaQyfnsAQiaI33J272j0SittHx+v8TY9OkL6sPKW2CInDesfxrIL4aMjaBmiT6f/Ut6LUgxE9w==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.6
-      '@varlet/icons': 2.11.7
-      '@varlet/shared': 2.11.7
-      '@varlet/use': 2.11.7(vue@3.2.45)
+      '@varlet/icons': 2.12.1
+      '@varlet/shared': 2.12.1
+      '@varlet/use': 2.12.1(vue@3.2.45)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.45
     dev: false
 
-  /@varlet/use@2.11.7(vue@3.2.45):
-    resolution: {integrity: sha512-HXPiwgD3jJWb99ukw4iMHP7RE3+2bs74xr8Lvgg7adNpfCbIvmWwbldSg3zTWf4GeR7BLX5oh270DGJMBqRgoQ==}
+  /@varlet/use@2.12.1(vue@3.2.45):
+    resolution: {integrity: sha512-ASI1eATWvE2qoXoVy0fX/tnPqH0gkpjIoI/mhweqnl8vxIS4QbOV1P0RoKzFlihopeDpiNYygahridXOuI9uLg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.11.7
+      '@varlet/shared': 2.12.1
       vue: 3.2.45
     dev: false
 
@@ -2813,8 +2813,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001503
-      electron-to-chromium: 1.4.433
+      caniuse-lite: 1.0.30001509
+      electron-to-chromium: 1.4.447
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
     dev: true
@@ -2882,8 +2882,8 @@ packages:
     resolution: {integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==}
     dev: true
 
-  /caniuse-lite@1.0.30001503:
-    resolution: {integrity: sha512-Sf9NiF+wZxPfzv8Z3iS0rXM1Do+iOy2Lxvib38glFX+08TCYYYGR5fRJXk4d77C4AYwhUjgYgMsMudbh2TqCKw==}
+  /caniuse-lite@1.0.30001509:
+    resolution: {integrity: sha512-2uDDk+TRiTX5hMcUYT/7CSyzMZxjfGu0vAUjS2g0LSD8UoXOv0LtpH4LxGMemsiPq6LCVIUjNwVM0erkOkGCDA==}
     dev: true
 
   /case-sensitive-paths-webpack-plugin@2.4.0:
@@ -3681,8 +3681,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: true
 
-  /electron-to-chromium@1.4.433:
-    resolution: {integrity: sha512-MGO1k0w1RgrfdbLVwmXcDhHHuxCn2qRgR7dYsJvWFKDttvYPx6FNzCGG0c/fBBvzK2LDh3UV7Tt9awnHnvAAUQ==}
+  /electron-to-chromium@1.4.447:
+    resolution: {integrity: sha512-sxX0LXh+uL41hSJsujAN86PjhrV/6c79XmpY0TvjZStV6VxIgarf8SRkUoUTuYmFcZQTemsoqo8qXOGw5npWfw==}
     dev: true
 
   /emoji-regex@8.0.0:
