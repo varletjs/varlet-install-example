@@ -19,6 +19,7 @@ export default defineConfig({
     }),
     
     autoImport({
+      imports: ['vue'],
       resolvers: [VarletUIResolver({ autoImport: true })],
     }),
 
