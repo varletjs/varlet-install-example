@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.14.2
-    version: 2.14.2
+    specifier: ^2.15.0
+    version: 2.15.0
   '@varlet/ui':
-    specifier: ^2.14.2
-    version: 2.14.2(vue@3.2.47)
+    specifier: ^2.15.0
+    version: 2.15.0(vue@3.2.47)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -362,38 +362,38 @@ packages:
     resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
     dev: true
 
-  /@varlet/icons@2.14.2:
-    resolution: {integrity: sha512-Azx/QoCM9y1kvELW7ZBYdUiAGFXAQFLtzYi9E0bU0rZ8jDzy91euU6xH5Z7FB5nb82FAiXcq8zd5TtLdC04fhQ==}
+  /@varlet/icons@2.15.0:
+    resolution: {integrity: sha512-rGFXhSYTTA3qV5QnREF6Gp5KEdtigr34fxFR2IRKtkhSAHK9FXxuu5mz7/YKlQdVC0JwmS6+LtjmLh+aQMG75Q==}
     dev: false
 
-  /@varlet/shared@2.14.2:
-    resolution: {integrity: sha512-SGgVD5vxoMjnJaxIKDxuhhlkVXy7UbCrHQ0RCquwHGJgvWKVLi0bwNaZl7Bp7A9QSDDVUqn/xc8kJvm6x+IrzA==}
+  /@varlet/shared@2.15.0:
+    resolution: {integrity: sha512-K/i/h44MW8AJ7XezNJcNUVjvu+fl1O2WHRzhWcH5hh8OvkIG8Eg3FQTJ1VFLHgUFMXY3uwSQGPPfpvFLSGjbrQ==}
     dev: false
 
-  /@varlet/touch-emulator@2.14.2:
-    resolution: {integrity: sha512-SiuzJCgYrUSXFASi/U7E2cR9JZvu2qAuYYpxlQr8ZMPZ4PCKqNDOItodpUkZiplUqUT64QpeP4TDAaCnMP+6RA==}
+  /@varlet/touch-emulator@2.15.0:
+    resolution: {integrity: sha512-CcggivqvgWYThDzTFHqUEkxw6TijSUt91cf+napVaXFlx+gvwAsLcuVneZzFv9ZqTlU3YBpjjabNdW7XErgdsA==}
     dev: false
 
-  /@varlet/ui@2.14.2(vue@3.2.47):
-    resolution: {integrity: sha512-iCmO13R/Iff2EXd1cunUFhGBHryEWJr232Osj2SxKFQGCUVzZjZgGw453F3mE4QadOQu/WRmRLSuslxYqFqy5w==}
+  /@varlet/ui@2.15.0(vue@3.2.47):
+    resolution: {integrity: sha512-8Nb516470ShC7c2Nf64S9x7DdSkjuYYbLYbXnX77imm9MkEsoqKeKqgkqpJttPyEOUE+hTjFwQAoNqtsV9QhDg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.7
-      '@varlet/icons': 2.14.2
-      '@varlet/shared': 2.14.2
-      '@varlet/use': 2.14.2(vue@3.2.47)
+      '@varlet/icons': 2.15.0
+      '@varlet/shared': 2.15.0
+      '@varlet/use': 2.15.0(vue@3.2.47)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.47
     dev: false
 
-  /@varlet/use@2.14.2(vue@3.2.47):
-    resolution: {integrity: sha512-AUwDMFI3TmH/s7V6oMJzgKTB56P/w9ccRWDoIP3j2RsxhhyshKoC5I4cI/V8PFn8vbfQrV0Qijo2/of02BGGhA==}
+  /@varlet/use@2.15.0(vue@3.2.47):
+    resolution: {integrity: sha512-GY7HGxvmE/NgyQLjHpZrclm0rNxx1YvApf8WW7BcUv22M1W/DOiZaeOGzAW26p9IpG4hTI9yKh+KVwUZ39aj6Q==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.14.2
+      '@varlet/shared': 2.15.0
       vue: 3.2.47
     dev: false
 
@@ -686,7 +686,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /cliui@8.0.1:
@@ -759,6 +759,7 @@ packages:
 
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    requiresBuild: true
     peerDependencies:
       supports-color: '*'
     peerDependenciesMeta:
@@ -1004,8 +1005,8 @@ packages:
       mime-types: 2.1.35
     dev: true
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -1616,6 +1617,7 @@ packages:
   /pify@4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -1642,6 +1644,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -1722,7 +1725,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /run-parallel@1.2.0:
@@ -1737,6 +1740,7 @@ packages:
 
   /sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -1754,6 +1758,7 @@ packages:
   /semver@5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2077,7 +2082,7 @@ packages:
       resolve: 1.22.1
       rollup: 3.10.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vitest@0.27.2(jsdom@21.0.0)(less@4.1.3):
