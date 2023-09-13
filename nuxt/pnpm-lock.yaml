@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.16.1
-    version: 2.16.1
+    specifier: ^2.16.4
+    version: 2.16.4
   '@varlet/ui':
-    specifier: ^2.16.1
-    version: 2.16.1(vue@3.3.4)
+    specifier: ^2.16.4
+    version: 2.16.4(vue@3.3.4)
 
 devDependencies:
   nuxt:
     specifier: ^3.5.3
-    version: 3.5.3(@types/node@20.5.9)
+    version: 3.5.3(@types/node@20.6.0)
   prettier:
     specifier: ^2.5.1
     version: 2.8.3
@@ -715,7 +715,7 @@ packages:
     resolution: {integrity: sha512-PjVETP7+iZXAs5Q8O4ivl4t6qjWZMZqwiTVogUXHoHGZZcw7GZW3u3tzfYfE1HbzyYJfr236IXqQ02MeR8Fz2w==}
     dev: true
 
-  /@nuxt/vite-builder@3.5.3(@types/node@20.5.9)(vue@3.3.4):
+  /@nuxt/vite-builder@3.5.3(@types/node@20.6.0)(vue@3.3.4):
     resolution: {integrity: sha512-7zEKpGh3iWGRDwbWUa8eRxdLMxZtPzetelmdmXPjtYKGwUebZOcBhpeJ+VgJKOIf4OEj9E7BZS+it/Ji9UG9qw==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
@@ -752,8 +752,8 @@ packages:
       strip-literal: 1.0.1
       ufo: 1.1.2
       unplugin: 1.3.1
-      vite: 4.3.9(@types/node@20.5.9)
-      vite-node: 0.31.4(@types/node@20.5.9)
+      vite: 4.3.9(@types/node@20.6.0)
+      vite-node: 0.31.4(@types/node@20.6.0)
       vite-plugin-checker: 0.6.0(vite@4.3.9)
       vue: 3.3.4
       vue-bundle-renderer: 1.0.3
@@ -940,8 +940,8 @@ packages:
     resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
     dev: true
 
-  /@types/node@20.5.9:
-    resolution: {integrity: sha512-PcGNd//40kHAS3sTlzKB9C9XL4K0sTup8nbG5lC14kzEteTNuAFh9u5nA0o5TWnSG2r/JNPRXFVcHJIIeRlmqQ==}
+  /@types/node@20.6.0:
+    resolution: {integrity: sha512-najjVq5KN2vsH2U/xyh2opaSEz6cZMR2SetLIlxlj08nOcmPOemJmUK2o4kUzfLqfrWE0PIrNeE16XhYDd3nqg==}
     dev: true
 
   /@types/resolve@1.20.2:
@@ -987,38 +987,38 @@ packages:
       vue: 3.3.4
     dev: true
 
-  /@varlet/icons@2.16.1:
-    resolution: {integrity: sha512-7e/hx/36Qqj7rfCrVW8RD0GCk7dKFNpjQIQJ7R1DH1i72cU7W5FEspIHl0klvpLorhN/wAn+pog66Nfw/7sbbQ==}
+  /@varlet/icons@2.16.4:
+    resolution: {integrity: sha512-Gul72HKpFSK6NDzmcZoxuurz79XOyoR92WCT4HmSJrr6HPpp/wE+E8IOtEiE4mQXszuh7lrJPK6GcQaX7nhi6g==}
     dev: false
 
-  /@varlet/shared@2.16.1:
-    resolution: {integrity: sha512-DfE1+yFTEkvFTcRFR9MWLbiBCkrmZLQ8oKs+pZw0VzwZ+YREarukphBcz4VYFc6EzmDJML0IDlWIQYBUxM1TTQ==}
+  /@varlet/shared@2.16.4:
+    resolution: {integrity: sha512-0dEUmNfK37JPiNRFykzYyDXq2QURyuOJ6nATRrikEydma7VddiQloY2aT+09ALkBGlL+dsTW37rNq1lUKqgYIA==}
     dev: false
 
-  /@varlet/touch-emulator@2.16.1:
-    resolution: {integrity: sha512-nCgfLyjz67JzTH85v9HYjMDVoHgK/WoWUEdjEhtN+akDIoWkSBh7VCm6zrQ8qaI5CjZGZAIFa8fRcgQQdVVhHw==}
+  /@varlet/touch-emulator@2.16.4:
+    resolution: {integrity: sha512-8KVfFU3LGrq0zyLnSmJd+KgHOVbNPNB0k8TuJ1swH4l6/bgE7ZXbU3dGwDjeMsUeXVzRemOdW8XF8reKyVKhtA==}
     dev: false
 
-  /@varlet/ui@2.16.1(vue@3.3.4):
-    resolution: {integrity: sha512-ttJkG7iHqJCO+3Iih8A5LIi9iFNvb+AqIynKowpdkWwX7bHIwiz9RsTwJn7y/SblalEb3bmBkPvTUYVUZfX0Wg==}
+  /@varlet/ui@2.16.4(vue@3.3.4):
+    resolution: {integrity: sha512-IwiE30ce2x3qa/56OPHZYNH+F6TE9pM3LgzhsNH4sUy2V9n3aAyrE45bkrQ+BOG5JpyDUKiTjC1mo8K7Gm3iDA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.7
-      '@varlet/icons': 2.16.1
-      '@varlet/shared': 2.16.1
-      '@varlet/use': 2.16.1(vue@3.3.4)
+      '@varlet/icons': 2.16.4
+      '@varlet/shared': 2.16.4
+      '@varlet/use': 2.16.4(vue@3.3.4)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.3.4
     dev: false
 
-  /@varlet/use@2.16.1(vue@3.3.4):
-    resolution: {integrity: sha512-RdliDBs1bPO/2aQc79Ibs+csQqEKNdDPUZjVjS82QR+pIYnRD8IOsN9GIOjaUsaNX6xS5j1nHtFpzou2BvWd6A==}
+  /@varlet/use@2.16.4(vue@3.3.4):
+    resolution: {integrity: sha512-nD6VaML64Z0jQBpFod1Mk+VBAaBGrnblU+0ZrxOBsLKI/QYAjOnOmW0S2G4U0AnvrQCi7t0tlV8Zv0eWTZp2gg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.16.1
+      '@varlet/shared': 2.16.4
       vue: 3.3.4
     dev: false
 
@@ -1053,7 +1053,7 @@ packages:
       '@babel/core': 7.21.4
       '@babel/plugin-transform-typescript': 7.20.7(@babel/core@7.21.4)
       '@vue/babel-plugin-jsx': 1.1.1(@babel/core@7.21.4)
-      vite: 4.3.9(@types/node@20.5.9)
+      vite: 4.3.9(@types/node@20.6.0)
       vue: 3.3.4
     transitivePeerDependencies:
       - supports-color
@@ -1066,7 +1066,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9(@types/node@20.5.9)
+      vite: 4.3.9(@types/node@20.6.0)
       vue: 3.3.4
     dev: true
 
@@ -3190,7 +3190,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /nuxt@3.5.3(@types/node@20.5.9):
+  /nuxt@3.5.3(@types/node@20.6.0):
     resolution: {integrity: sha512-fG39BZ5N5ATtmx2vuxN8APQPSlSsCDpfkJ0k581gMc7eFztqrBzPncZX5w3RQLW7AiGBE2yYEfqiwC6AVODBBg==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
@@ -3206,8 +3206,8 @@ packages:
       '@nuxt/schema': 3.5.3
       '@nuxt/telemetry': 2.2.0
       '@nuxt/ui-templates': 1.1.1
-      '@nuxt/vite-builder': 3.5.3(@types/node@20.5.9)(vue@3.3.4)
-      '@types/node': 20.5.9
+      '@nuxt/vite-builder': 3.5.3(@types/node@20.6.0)(vue@3.3.4)
+      '@types/node': 20.6.0
       '@unhead/ssr': 1.1.27
       '@unhead/vue': 1.1.27(vue@3.3.4)
       '@vue/shared': 3.3.4
@@ -4628,7 +4628,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite-node@0.31.4(@types/node@20.5.9):
+  /vite-node@0.31.4(@types/node@20.6.0):
     resolution: {integrity: sha512-uzL377GjJtTbuc5KQxVbDu2xfU/x0wVjUtXQR2ihS21q/NK6ROr4oG0rsSkBBddZUVCwzfx22in76/0ZZHXgkQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -4638,7 +4638,7 @@ packages:
       mlly: 1.3.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.3.9(@types/node@20.5.9)
+      vite: 4.3.9(@types/node@20.6.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4693,14 +4693,14 @@ packages:
       semver: 7.5.2
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
-      vite: 4.3.9(@types/node@20.5.9)
+      vite: 4.3.9(@types/node@20.6.0)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
       vscode-uri: 3.0.7
     dev: true
 
-  /vite@4.3.9(@types/node@20.5.9):
+  /vite@4.3.9(@types/node@20.6.0):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4725,7 +4725,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.5.9
+      '@types/node': 20.6.0
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: 3.25.1
