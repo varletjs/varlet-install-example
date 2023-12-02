@@ -1,6 +1,6 @@
 <template>
   <var-tooltip content="Hello">
-    <var-button type="primary" >Hello</var-button>
+    <var-button type="primary">Hello</var-button>
   </var-tooltip>
 </template>
 

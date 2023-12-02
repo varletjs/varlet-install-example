@@ -1,9 +1,10 @@
-import './index.css';
-import { createApp } from 'vue';
-import App from './App.vue';
-import { StyleProvider,Themes } from '@varlet/ui'
-import '@varlet/touch-emulator'
+import "./index.css";
+import { createApp } from "vue";
+import App from "./App.vue";
+import { StyleProvider, Themes, Tooltip, Button } from "@varlet/ui";
+import "@varlet/touch-emulator";
+import "@varlet/ui/es/style";
 
-StyleProvider(Themes.dark)
+StyleProvider(Themes.dark);
 
-createApp(App).mount('#root');
+createApp(App).use(Button).use(Tooltip).mount("#root");
