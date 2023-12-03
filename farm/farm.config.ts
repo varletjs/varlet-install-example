@@ -1,28 +1,14 @@
-import { defineConfig } from "@farmfe/core";
-import vue from "@vitejs/plugin-vue";
-import components from "unplugin-vue-components/vite";
-import autoImport from "unplugin-auto-import/vite";
-import { VarletUIResolver } from "unplugin-vue-components/resolvers";
-import { fileURLToPath, URL } from "node:url";
+import { defineConfig } from '@farmfe/core'
+import { fileURLToPath, URL } from 'node:url'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   compilation: {
     resolve: {
       alias: {
-        "@": fileURLToPath(new URL("./src", import.meta.url)),
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
       },
     },
   },
-  vitePlugins: [
-    vue(),
-
-    components({
-      resolvers: [VarletUIResolver()],
-    }),
-
-    autoImport({
-      imports: ["vue"],
-      resolvers: [VarletUIResolver({ autoImport: true })],
-    }),
-  ],
-});
+  vitePlugins: [vue()],
+})

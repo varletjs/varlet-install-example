@@ -1,11 +1,11 @@
 {
-  "name": "rsbuild-vue3-ts",
+  "name": "varlet-install-example-rsbuild",
   "private": true,
-  "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui"
   },
   "dependencies": {
     "@varlet/touch-emulator": "^2.19.3",
