@@ -6,4 +6,4 @@ import '@varlet/ui/es/style'
 
 StyleProvider(Themes.dark)
 
-createApp(App).use(Varlet).mount('#app')
+createApp(App).mount('#app')
