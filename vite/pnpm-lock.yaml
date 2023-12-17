@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: ^2.19.3
-    version: 2.19.3
+    specifier: ^2.20.2
+    version: 2.20.2
   '@varlet/ui':
-    specifier: ^2.19.3
-    version: 2.19.3(vue@3.2.47)
+    specifier: ^2.20.2
+    version: 2.20.2(vue@3.2.47)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -362,38 +362,38 @@ packages:
     resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
     dev: true
 
-  /@varlet/icons@2.19.3:
-    resolution: {integrity: sha512-GL/y3SGwZ4UfA4knNza3JYWQzMRTKYSzr13hsNa6cMYRlgDp0cZ1aa3T4w6iMpoUo0B412drE39ICJbQ1CTd7A==}
+  /@varlet/icons@2.20.2:
+    resolution: {integrity: sha512-lO6Q+Qz3LGtSRin1GY0KocG9RIvhpEkw0wdB5WEwYOl4U+OV4rtsk7ZMBH/LTDU87UUlYBzrQf4UC1Kp3WxBLA==}
     dev: false
 
-  /@varlet/shared@2.19.3:
-    resolution: {integrity: sha512-qU2D+HFtN6dVruX+kNTHm4Y94XSIoovU3A2xgFr7jgvTcKJrkOg8sRe9bBduuZqeqoTfmNVau6xLPmpFRYEufQ==}
+  /@varlet/shared@2.20.2:
+    resolution: {integrity: sha512-kwM2q1JPR0P8IHSbkahjDAb2ULoUX6wpL3sXOt0OnNCtZZlYvTtza142WpDjbVtdyd/mfmmW7hrG+7OX907gYA==}
     dev: false
 
-  /@varlet/touch-emulator@2.19.3:
-    resolution: {integrity: sha512-AkpLzXyNmzzJNt3QtPZWgxkLVN7m/LA0NHCOG/VSON24Ita2Nj78W7LGQLdnPK2AFvCVRAMaQrWMFCsNqhyj/Q==}
+  /@varlet/touch-emulator@2.20.2:
+    resolution: {integrity: sha512-3mFC4UpVsjkDagqcrbKj44ZPiEywmvJxXWwDV0gQNuqe2OmcfSIi8NLFqGW7yE3nEDiR57W0BgyaIVfPy/ZJWg==}
     dev: false
 
-  /@varlet/ui@2.19.3(vue@3.2.47):
-    resolution: {integrity: sha512-36LO53VyiMNSpwA88InchARDq7wbBzuNKWuyJY4KKCvh34gC0waky/t9fzajj6fp7YPeZooqlbbSHIidmMdiYA==}
+  /@varlet/ui@2.20.2(vue@3.2.47):
+    resolution: {integrity: sha512-Dbg7qKIk4WAgCa4YcA3eXIGN17gMLYHMy+RytjRuYVvJIfwWbtrvYbNy3TK+0/PFY0QmJh3OYBwudeTistxdig==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.7
-      '@varlet/icons': 2.19.3
-      '@varlet/shared': 2.19.3
-      '@varlet/use': 2.19.3(vue@3.2.47)
+      '@varlet/icons': 2.20.2
+      '@varlet/shared': 2.20.2
+      '@varlet/use': 2.20.2(vue@3.2.47)
       dayjs: 1.11.7
       decimal.js: 10.4.3
       vue: 3.2.47
     dev: false
 
-  /@varlet/use@2.19.3(vue@3.2.47):
-    resolution: {integrity: sha512-54GRr1lWUZZzY/ymhsPCUEMxQ+h8oKfAL2rv274IuZcwgqkUz0kAsJNYhQjI53xOsg/6rEIn6VSIgGzNC7BqsA==}
+  /@varlet/use@2.20.2(vue@3.2.47):
+    resolution: {integrity: sha512-E8u7Pee4av6r610OtUufGowGOiWFvtK/jbh28P824670bxGpTL+4QgRVI+PF8ypsqGe+4DjdYr1f3jcW27i+Iw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 2.19.3
+      '@varlet/shared': 2.20.2
       vue: 3.2.47
     dev: false
 
@@ -756,19 +756,6 @@ packages:
   /de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
     dev: true
-
-  /debug@3.2.7:
-    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
-    requiresBuild: true
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-    dependencies:
-      ms: 2.1.2
-    dev: true
-    optional: true
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -1375,10 +1362,8 @@ packages:
       image-size: 0.5.5
       make-dir: 2.1.0
       mime: 1.6.0
-      needle: 3.2.0
+      needle: 3.3.1
       source-map: 0.6.1
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /levn@0.3.0:
@@ -1503,17 +1488,14 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /needle@3.2.0:
-    resolution: {integrity: sha512-oUvzXnyLiVyVGoianLijF9O/RecZUf7TkBfimjGrLM4eQhXyeJwM6GeAWccwfQ9aa4gMCZKqhAOuLaMIcQxajQ==}
+  /needle@3.3.1:
+    resolution: {integrity: sha512-6k0YULvhpw+RoLNiQCRKOl09Rv1dPLr8hHnVjHqdolKwDrdNyk+Hmrthi4lIGPPz3r39dLx0hsF5s40sZ3Us4Q==}
     engines: {node: '>= 4.4.x'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      debug: 3.2.7
       iconv-lite: 0.6.3
       sax: 1.2.4
-    transitivePeerDependencies:
-      - supports-color
     dev: true
     optional: true
 
