@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@varlet/touch-emulator": "^2.20.2",
-    "@varlet/ui": "^2.20.2",
+    "@varlet/touch-emulator": "^2.20.3",
+    "@varlet/ui": "^2.20.3",
     "core-js": "^3.30.1",
     "vue": "^3.3.4"
   },
