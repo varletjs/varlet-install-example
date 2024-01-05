@@ -8,12 +8,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui"
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui --latest"
   },
   "dependencies": {
     "@astrojs/vue": "^2.0.0",
-    "@varlet/touch-emulator": "^2.20.3",
-    "@varlet/ui": "^2.20.3",
+    "@varlet/touch-emulator": "^2.20.5",
+    "@varlet/ui": "^2.20.5",
     "astro": "^2.0.2",
     "vue": "^3.2.45"
   },
