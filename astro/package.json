@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@astrojs/vue": "^2.0.0",
-    "@varlet/touch-emulator": "^2.20.5",
-    "@varlet/ui": "^2.20.5",
+    "@varlet/touch-emulator": "^2.22.2",
+    "@varlet/ui": "^2.22.2",
     "astro": "^2.0.2",
     "vue": "^3.2.45"
   },
