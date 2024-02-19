@@ -1,6 +1,6 @@
 import components from 'unplugin-vue-components/vite'
 import autoImport from 'unplugin-auto-import/vite'
-import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
+import { VarletImportResolver } from '@varlet/import-resolver'
 
 export default defineNuxtConfig({
   vite: {
@@ -10,11 +10,13 @@ export default defineNuxtConfig({
 
     plugins: [
       components({
-        resolvers: [VarletUIResolver()]
+        resolvers: [VarletImportResolver()],
+        dts: true
       }),
       
       autoImport({
-        resolvers: [VarletUIResolver({ autoImport: true })],
+        resolvers: [VarletImportResolver({ autoImport: true })],
+        dts: true
       })
     ]
   }

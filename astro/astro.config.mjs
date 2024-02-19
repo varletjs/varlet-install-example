@@ -1,7 +1,7 @@
 import vue from '@astrojs/vue';
 import components from 'unplugin-vue-components/vite'
 import autoImport from 'unplugin-auto-import/vite'
-import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
+import { VarletImportResolver } from '@varlet/import-resolver'
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
@@ -15,10 +15,10 @@ export default defineConfig({
 
     plugins: [
       components({
-        resolvers: [VarletUIResolver()]
+        resolvers: [VarletImportResolver()]
       }),
       autoImport({
-        resolvers: [VarletUIResolver({ autoImport: true })]
+        resolvers: [VarletImportResolver({ autoImport: true })]
       })
     ]
   }

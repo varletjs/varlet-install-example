@@ -4,6 +4,6 @@ import { createApp } from 'vue'
 import '@varlet/touch-emulator'
 import '@varlet/ui/es/style'
 
-StyleProvider(Themes.dark)
+StyleProvider(Themes.md3Dark)
 
 createApp(App).mount('#app')

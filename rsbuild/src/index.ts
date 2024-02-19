@@ -4,6 +4,6 @@ import Varlet, { StyleProvider, Themes } from '@varlet/ui'
 import '@varlet/touch-emulator'
 import '@varlet/ui/es/style'
 
-StyleProvider(Themes.dark)
+StyleProvider(Themes.md3Dark)
 
 createApp(App).use(Varlet).mount('#root')

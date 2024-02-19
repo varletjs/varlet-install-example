@@ -1,7 +1,7 @@
 import vue from '@vitejs/plugin-vue'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
-import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
+import { VarletImportResolver } from '@varlet/import-resolver'
 import { defineConfig } from '@farmfe/core'
 import { fileURLToPath, URL } from 'node:url'
 
@@ -16,14 +16,14 @@ export default defineConfig({
   vitePlugins: [
     vue(),
     components({
-      resolvers: [VarletUIResolver()],
+      resolvers: [VarletImportResolver()],
       dts: true,
     }),
 
     autoImport({
       imports: ['vue'],
       dts: true,
-      resolvers: [VarletUIResolver({ autoImport: true })],
+      resolvers: [VarletImportResolver({ autoImport: true })],
     }),
   ],
 })

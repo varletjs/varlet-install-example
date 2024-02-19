@@ -8,17 +8,18 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui --latest"
+    "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/import-resolver --latest"
   },
   "dependencies": {
     "@astrojs/vue": "^2.0.0",
-    "@varlet/touch-emulator": "^2.22.2",
-    "@varlet/ui": "^2.22.2",
+    "@varlet/touch-emulator": "^3.0.0",
+    "@varlet/ui": "^3.0.0",
     "astro": "^2.0.2",
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "unplugin-auto-import": "^0.12.2",
-    "unplugin-vue-components": "^0.24.1"
+    "@varlet/import-resolver": "3.0.0",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0"
   }
 }
