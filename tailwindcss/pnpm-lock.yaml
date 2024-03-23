@@ -5,11 +5,17 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@varlet/ui':
+    specifier: ^3.2.0
+    version: 3.2.0(vue@3.4.21)
   vue:
     specifier: ^3.4.21
     version: 3.4.21
 
 devDependencies:
+  '@varlet/preset-tailwindcss':
+    specifier: ^3.2.0
+    version: 3.2.0(tailwindcss@3.4.1)
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.2.2)(vue@3.4.21)
@@ -332,6 +338,10 @@ packages:
     dev: true
     optional: true
 
+  /@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
+
   /@rollup/rollup-android-arm-eabi@4.13.0:
     resolution: {integrity: sha512-5ZYPOuaAqEH/W3gYsRkxQATBW3Ii1MfaT4EQstTnLKViLi2gLSQmlmtTpGucNP3sXEpOiI5tdGhjdE111ekyEg==}
     cpu: [arm]
@@ -439,6 +449,45 @@ packages:
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
+
+  /@varlet/icons@3.2.0:
+    resolution: {integrity: sha512-ptjM5qBQf9Bg1R7h6f6sFrsN4yUOn718PoOUOIZsBvkmENUKILl+YOmgZL2b1CGlxwrP89i8XMfE5rKWXhC0mw==}
+    dev: false
+
+  /@varlet/preset-tailwindcss@3.2.0(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-E8eZ9J5VS80bXjyyZb/AQiGnV1YsYadPHOyNl/b70y/WNxIxYMp+uDGVaKX3G0C2zHT6iRJGWluRSmwXYqhxug==}
+    peerDependencies:
+      tailwindcss: ^3.4.1
+    dependencies:
+      tailwindcss: 3.4.1
+    dev: true
+
+  /@varlet/shared@3.2.0:
+    resolution: {integrity: sha512-voLcQnUBtY4WMSj7KnjAL8/jj9z7H1Yhlg34HK1CYiBiQhBYGkGNkhNH0rAxiVa5TbKkIh/zcKRlBITn2Z2Lrw==}
+    dev: false
+
+  /@varlet/ui@3.2.0(vue@3.4.21):
+    resolution: {integrity: sha512-4uAptsB8Ewriy03Z+z5um4Zlpgj6qQqCIy9RkYZowhy+1lzHIGVuSINh4Q9ZcsAG8gnfdJXYrD+SiE/zmgOJ5w==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@popperjs/core': 2.11.8
+      '@varlet/icons': 3.2.0
+      '@varlet/shared': 3.2.0
+      '@varlet/use': 3.2.0(vue@3.4.21)
+      dayjs: 1.11.10
+      decimal.js: 10.4.3
+      vue: 3.4.21
+    dev: false
+
+  /@varlet/use@3.2.0(vue@3.4.21):
+    resolution: {integrity: sha512-ZH7Qrzr2+RixrQ9KlqE4sr/KQ+DaisV09YtWqRCj/zulnIpAN0OuJnktQ16NTu44PYhZ7pVw8NpDly7uIDeDOQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@varlet/shared': 3.2.0
+      vue: 3.4.21
+    dev: false
 
   /@vitejs/plugin-vue@5.0.4(vite@5.2.2)(vue@3.4.21):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
@@ -659,6 +708,14 @@ packages:
 
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+    dev: false
+
+  /decimal.js@10.4.3:
+    resolution: {integrity: sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==}
+    dev: false
 
   /didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
