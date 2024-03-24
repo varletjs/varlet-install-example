@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@varlet/ui':
-    specifier: ^3.2.0
-    version: 3.2.0(vue@3.4.21)
+    specifier: ^3.2.1
+    version: 3.2.1(vue@3.4.21)
   vue:
     specifier: ^3.4.21
     version: 3.4.21
 
 devDependencies:
   '@varlet/preset-tailwindcss':
-    specifier: ^3.2.0
-    version: 3.2.0(tailwindcss@3.4.1)
+    specifier: ^3.2.1
+    version: 3.2.1(tailwindcss@3.4.1)
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.2.2)(vue@3.4.21)
@@ -450,42 +450,42 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@varlet/icons@3.2.0:
-    resolution: {integrity: sha512-ptjM5qBQf9Bg1R7h6f6sFrsN4yUOn718PoOUOIZsBvkmENUKILl+YOmgZL2b1CGlxwrP89i8XMfE5rKWXhC0mw==}
+  /@varlet/icons@3.2.1:
+    resolution: {integrity: sha512-ZQPMPirUaKzpu+o5XjbrKH+mJl+vRA87m48iTDipwEuvkEIOFb5ajtp3IQJS0qLvpmSzxEm2TaX5Xjp+GeNFzg==}
     dev: false
 
-  /@varlet/preset-tailwindcss@3.2.0(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-E8eZ9J5VS80bXjyyZb/AQiGnV1YsYadPHOyNl/b70y/WNxIxYMp+uDGVaKX3G0C2zHT6iRJGWluRSmwXYqhxug==}
+  /@varlet/preset-tailwindcss@3.2.1(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-WBnGn/PC/G/36aryvdoLw7gtkKtgV1g/4TCRHfnzwxMRApFC0FD+6onTV5Qe9/fb+BBLHZl/q6zccHMbFoPfNA==}
     peerDependencies:
       tailwindcss: ^3.4.1
     dependencies:
       tailwindcss: 3.4.1
     dev: true
 
-  /@varlet/shared@3.2.0:
-    resolution: {integrity: sha512-voLcQnUBtY4WMSj7KnjAL8/jj9z7H1Yhlg34HK1CYiBiQhBYGkGNkhNH0rAxiVa5TbKkIh/zcKRlBITn2Z2Lrw==}
+  /@varlet/shared@3.2.1:
+    resolution: {integrity: sha512-j/ZHsPAOZfzevSBAdGBjrl2YFUasTHe/PmeL4heX5y2lfTKnCBFin7OpPe4SPlrqsbTljtTYVnEbP39Xnh/YUQ==}
     dev: false
 
-  /@varlet/ui@3.2.0(vue@3.4.21):
-    resolution: {integrity: sha512-4uAptsB8Ewriy03Z+z5um4Zlpgj6qQqCIy9RkYZowhy+1lzHIGVuSINh4Q9ZcsAG8gnfdJXYrD+SiE/zmgOJ5w==}
+  /@varlet/ui@3.2.1(vue@3.4.21):
+    resolution: {integrity: sha512-q7DMbS5489bUBvhOS1y6DyTWX/it/Gg9udWm2cFIhiRsVy+cyRFxxV3rTjmbGyPhQDK4U7VsMKcD/2hFBW7e5g==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 3.2.0
-      '@varlet/shared': 3.2.0
-      '@varlet/use': 3.2.0(vue@3.4.21)
+      '@varlet/icons': 3.2.1
+      '@varlet/shared': 3.2.1
+      '@varlet/use': 3.2.1(vue@3.4.21)
       dayjs: 1.11.10
       decimal.js: 10.4.3
       vue: 3.4.21
     dev: false
 
-  /@varlet/use@3.2.0(vue@3.4.21):
-    resolution: {integrity: sha512-ZH7Qrzr2+RixrQ9KlqE4sr/KQ+DaisV09YtWqRCj/zulnIpAN0OuJnktQ16NTu44PYhZ7pVw8NpDly7uIDeDOQ==}
+  /@varlet/use@3.2.1(vue@3.4.21):
+    resolution: {integrity: sha512-satEF73RBG5L9pHL0929RJMJEASDrHCv8QKCofkp3tevl4YhKwuWqAHS/bOUN3Hq60QC7b81agvAqIFrdNekkQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 3.2.0
+      '@varlet/shared': 3.2.1
       vue: 3.4.21
     dev: false
 

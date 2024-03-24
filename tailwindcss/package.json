@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@varlet/ui": "^3.2.0",
+    "@varlet/ui": "^3.2.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@varlet/preset-tailwindcss": "^3.2.0",
+    "@varlet/preset-tailwindcss": "^3.2.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
