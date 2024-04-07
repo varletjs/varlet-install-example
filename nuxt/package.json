@@ -7,18 +7,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/import-resolver --latest"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@varlet/import-resolver": "3.1.2",
-    "nuxt": "^3.10.2",
-    "prettier": "^2.5.1",
-    "unplugin-auto-import": "^0.17.5",
-    "unplugin-vue-components": "^0.26.0"
+    "@varlet/nuxt": "^0.1.2",
+    "nuxt": "^3.11.2",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.1.2",
-    "@varlet/ui": "3.1.2"
+    "@varlet/touch-emulator": "3.1.3",
+    "@varlet/ui": "3.1.3"
   }
 }

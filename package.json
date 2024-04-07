@@ -5,12 +5,10 @@
   "scripts": {
     "bump:vite": "pnpm --dir ./vite bump",
     "bump:astro": "pnpm --dir ./astro bump",
-    "bump:nuxt": "pnpm --dir ./nuxt bump",
     "bump:vue-cli": "pnpm --dir ./vue-cli bump",
     "bump:rsbuild": "pnpm --dir ./rsbuild bump",
     "bump:farm": "pnpm --dir ./farm bump",
-    "bump:tailwindcss": "pnpm --dir ./tailwindcss bump",
-    "bootstrap": "pnpm --dir ./vite install & pnpm --dir ./astro install & pnpm --dir ./nuxt install & pnpm --dir ./vue-cli install & pnpm --dir ./farm install & pnpm --dir ./rsbuild install && pnpm --dir ./tailwindcss install",
-    "bump": "pnpm bump:vite & pnpm bump:astro & pnpm bump:nuxt & pnpm bump:vue-cli & pnpm bump:rsbuild & pnpm bump:farm && pnpm bump:tailwindcss"
+    "bootstrap": "pnpm --dir ./vite install & pnpm --dir ./astro install & pnpm --dir ./nuxt install & pnpm --dir ./vue-cli install & pnpm --dir ./farm install & pnpm --dir ./rsbuild install",
+    "bump": "pnpm bump:vite & pnpm bump:astro & pnpm bump:vue-cli & pnpm bump:rsbuild & pnpm bump:farm"
   }
 }

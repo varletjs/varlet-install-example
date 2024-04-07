@@ -8,16 +8,16 @@
     "type-check": "vue-tsc --noEmit",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/use @varlet/import-resolver --latest"
+    "bump": "pnpm update @varlet/* --latest"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.1.2",
-    "@varlet/ui": "3.1.2",
+    "@varlet/touch-emulator": "3.2.3",
+    "@varlet/ui": "3.2.3",
     "vue": "^3.2.47"
   },
   "devDependencies": {
     "@types/node": "^16.11.68",
-    "@varlet/import-resolver": "3.1.2",
+    "@varlet/import-resolver": "3.2.3",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/test-utils": "^2.2.7",
     "@vue/tsconfig": "^0.1.3",

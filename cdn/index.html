@@ -15,12 +15,27 @@
     <script>
       const app = Vue.createApp({
         template: `
-<var-tooltip content="Say Hello">
-  <var-button @click="handleClick">
-    Say Hello
-    <var-icon name="xml" />
-  </var-button>
-</var-tooltip>
+        <var-table>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>数学</th>
+        <th>英语</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>耗子君</td>
+        <td>124</td>
+        <td>38</td>
+      </tr>
+      <tr>
+        <td>火猫桑</td>
+        <td>100</td>
+        <td>135</td>
+      </tr>
+    </tbody>
+  </var-table>
 `,
         setup() {
           const handleClick = () => {

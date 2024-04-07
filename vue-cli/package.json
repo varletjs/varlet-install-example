@@ -5,16 +5,16 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui @varlet/import-resolver --latest"
+    "bump": "pnpm update @varlet/* --latest"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.1.2",
-    "@varlet/ui": "3.1.2",
+    "@varlet/touch-emulator": "3.2.3",
+    "@varlet/ui": "3.2.3",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@varlet/import-resolver": "3.1.2",
+    "@varlet/import-resolver": "3.2.3",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",

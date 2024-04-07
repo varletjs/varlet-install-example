@@ -5,11 +5,11 @@
     "dev": "rsbuild dev",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "bump": "pnpm update @varlet/touch-emulator @varlet/ui --latest"
+    "bump": "pnpm update @varlet/* --latest"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.1.2",
-    "@varlet/ui": "3.1.2",
+    "@varlet/touch-emulator": "3.2.3",
+    "@varlet/ui": "3.2.3",
     "core-js": "^3.33.3",
     "vue": "^3.3.4"
   },
