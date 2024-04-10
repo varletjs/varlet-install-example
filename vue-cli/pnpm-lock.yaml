@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@varlet/touch-emulator':
-    specifier: 3.2.3
-    version: 3.2.3
+    specifier: 3.2.4
+    version: 3.2.4
   '@varlet/ui':
-    specifier: 3.2.3
-    version: 3.2.3(vue@3.2.45)
+    specifier: 3.2.4
+    version: 3.2.4(vue@3.2.45)
   core-js:
     specifier: ^3.8.3
     version: 3.27.2
@@ -20,8 +20,8 @@ dependencies:
 
 devDependencies:
   '@varlet/import-resolver':
-    specifier: 3.2.3
-    version: 3.2.3
+    specifier: 3.2.4
+    version: 3.2.4
   '@vue/cli-plugin-babel':
     specifier: ~5.0.0
     version: 5.0.8(@vue/cli-service@5.0.8)(core-js@3.27.2)(vue@3.2.45)
@@ -1783,43 +1783,43 @@ packages:
       '@types/node': 18.11.18
     dev: true
 
-  /@varlet/icons@3.2.3:
-    resolution: {integrity: sha512-nwsm0X4l6YHZaenysEEaLWuY56OMVFg7RgyrVZ9jk0n78lYC81hXndXXSCyXlmMoDXzvVt6bb2XsUYq45Gn08A==}
+  /@varlet/icons@3.2.4:
+    resolution: {integrity: sha512-3DCA0tGPYP0n+ZXw47EeA4jaUYE9sK9KSh9h5BLU6XRf8ruSgIzFW54psm3nLMujzxk8mNdRb1bKBHFJnVzs4g==}
     dev: false
 
-  /@varlet/import-resolver@3.2.3:
-    resolution: {integrity: sha512-F4pSL436LvBabMQTQhXpOMm0xmqlklDMXXN3JNDOFbYqGCW5ppYUSjgNPejC5YoNoztvXpt3gyEPNnUAQsap8g==}
+  /@varlet/import-resolver@3.2.4:
+    resolution: {integrity: sha512-ttvOY++zKNedRzSEHYdnd1o37gHSh3KVIqVyP0rcKUOWaOWyLQ7ZVHrgGla6qu5II2N7CIkA3bj/fSWJxkJItg==}
     dependencies:
-      '@varlet/shared': 3.2.3
+      '@varlet/shared': 3.2.4
     dev: true
 
-  /@varlet/shared@3.2.3:
-    resolution: {integrity: sha512-5yhGQtmuPAJE2Gcf/IkJRnvRGiM/SP51t5+pBSS/gx6+v747+1Z6bn7tGC9PS/Ci4yOAdp4n6ihFteGgC6GE9Q==}
+  /@varlet/shared@3.2.4:
+    resolution: {integrity: sha512-lEY1k0+TovNDT3oyOZ5suYbn9McGnymmVOQK6RgY17mvM0le9QgvwmsPw73gRsSEbRm2f2Lb6gKLiPWkas7OBg==}
 
-  /@varlet/touch-emulator@3.2.3:
-    resolution: {integrity: sha512-17I7H6/2tMy68L3rBX5QsTLKJCSJUDeoAyDX/6SGv2XWQ+7YgD82po+1W6JL/Cd2+ouTjqR0QA/Ef7PVusigTA==}
+  /@varlet/touch-emulator@3.2.4:
+    resolution: {integrity: sha512-+9Yaq+OVSCexBaT0Xk5cgXYALFSnpTtsTI+MyFlFF0a2hAziZDhCvn0RX8A++Y4kWBDcaCDI6xJ0jMsCG76Jxg==}
     dev: false
 
-  /@varlet/ui@3.2.3(vue@3.2.45):
-    resolution: {integrity: sha512-bC/H1RV0qSUJpgdg3Uy4EYCQoE2697QEAFJ5ryLaj0Kqdm2m2bCM4wAm4KeIDz/5lO5rF9T8RXVj2mLzpXBiDQ==}
+  /@varlet/ui@3.2.4(vue@3.2.45):
+    resolution: {integrity: sha512-0l+hWW+SvQp6Fbqcxt8SYadMLjlKp6yDUbK90ef63z9SSEZY/2+q55zirmOdHufnKsNr7bYDXO7dJ/caFDMd0g==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 3.2.3
-      '@varlet/shared': 3.2.3
-      '@varlet/use': 3.2.3(vue@3.2.45)
+      '@varlet/icons': 3.2.4
+      '@varlet/shared': 3.2.4
+      '@varlet/use': 3.2.4(vue@3.2.45)
       dayjs: 1.11.10
       decimal.js: 10.4.3
       vue: 3.2.45
     dev: false
 
-  /@varlet/use@3.2.3(vue@3.2.45):
-    resolution: {integrity: sha512-Xn0UrWP6xw1tGzjrd+82CyfXII0oBDWyCw+cG5+OePiFk6MxxpY8G1VOU9aTSXvDseJLcFvN3Glrd6cS48fW3g==}
+  /@varlet/use@3.2.4(vue@3.2.45):
+    resolution: {integrity: sha512-Bjq3PrdRe5TwpizVzyj1rzAe56+hmMiIurXdWQ588f61bwIcSEuXwuqTHXk3x7SwrU9LpD/Dx0v3kqT05LHuaA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 3.2.3
+      '@varlet/shared': 3.2.4
       vue: 3.2.45
     dev: false
 
@@ -2829,8 +2829,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001606
-      electron-to-chromium: 1.4.729
+      caniuse-lite: 1.0.30001608
+      electron-to-chromium: 1.4.731
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: true
@@ -2898,8 +2898,8 @@ packages:
     resolution: {integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==}
     dev: true
 
-  /caniuse-lite@1.0.30001606:
-    resolution: {integrity: sha512-LPbwnW4vfpJId225pwjZJOgX1m9sGfbw/RKJvw/t0QhYOOaTXHvkjVGFGPpvwEzufrjvTlsULnVTxdy4/6cqkg==}
+  /caniuse-lite@1.0.30001608:
+    resolution: {integrity: sha512-cjUJTQkk9fQlJR2s4HMuPMvTiRggl0rAVMtthQuyOlDWuqHXqN8azLq+pi8B2TjwKJ32diHjUqRIKeFX4z1FoA==}
     dev: true
 
   /case-sensitive-paths-webpack-plugin@2.4.0:
@@ -3701,8 +3701,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: true
 
-  /electron-to-chromium@1.4.729:
-    resolution: {integrity: sha512-bx7+5Saea/qu14kmPTDHQxkp2UnziG3iajUQu3BxFvCOnpAJdDbMV4rSl+EqFDkkpNNVUFlR1kDfpL59xfy1HA==}
+  /electron-to-chromium@1.4.731:
+    resolution: {integrity: sha512-+TqVfZjpRz2V/5SPpmJxq9qK620SC5SqCnxQIOi7i/U08ZDcTpKbT7Xjj9FU5CbXTMUb4fywbIr8C7cGv4hcjw==}
     dev: true
 
   /emoji-regex@8.0.0:
