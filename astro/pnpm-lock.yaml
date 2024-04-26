@@ -9,11 +9,11 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0(@babel/core@7.24.4)(astro@2.0.2)(vite@4.5.3)(vue@3.2.45)
   '@varlet/touch-emulator':
-    specifier: ^3.2.5
-    version: 3.2.5
+    specifier: ^3.2.6
+    version: 3.2.6
   '@varlet/ui':
-    specifier: ^3.2.5
-    version: 3.2.5(vue@3.2.45)
+    specifier: ^3.2.6
+    version: 3.2.6(vue@3.2.45)
   astro:
     specifier: ^2.0.2
     version: 2.0.2
@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@varlet/import-resolver':
-    specifier: 3.2.5
-    version: 3.2.5
+    specifier: 3.2.6
+    version: 3.2.6
   unplugin-auto-import:
     specifier: ^0.17.5
     version: 0.17.5
@@ -1268,43 +1268,43 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: false
 
-  /@varlet/icons@3.2.5:
-    resolution: {integrity: sha512-AM3mstPhTZVlN8AJ1iYbJLRJxV2O3ZK5hwuSp77sHJtNJ6dT4//l6XlXBKexGZFtNotmj8u/W/Wi5ureVdxSMg==}
+  /@varlet/icons@3.2.6:
+    resolution: {integrity: sha512-704qo8x5jkbSqJMcspeai9grumEJ4Ri0WfSnfNJyNZ+8bEtNW7wZd/pppG8abJk9zxqBPHsFhcWEBGKbWSZ5DQ==}
     dev: false
 
-  /@varlet/import-resolver@3.2.5:
-    resolution: {integrity: sha512-FMql/Dr3xvRCS1a8T+BbbreBEQNFlAAvJ25wkj7T6zOWFaAxedzuRtqvtdBe6W9Sh1vnw0mmeKDEl93vNjChQA==}
+  /@varlet/import-resolver@3.2.6:
+    resolution: {integrity: sha512-nk216kM/G+5VSY4wZk1j5M3pd61QhP5gQvK3h8DMyaGLHmHQN3MUsESnvKxPiZuAiQU58YX76HUh4QdT8EQEpA==}
     dependencies:
-      '@varlet/shared': 3.2.5
+      '@varlet/shared': 3.2.6
     dev: true
 
-  /@varlet/shared@3.2.5:
-    resolution: {integrity: sha512-xbXh5Di8x0MsJqy+cSaRzp885l+UlaBV/3ZC7jjert6+5bwg4ElTb6O8j2tEdSQ/W7YuSe7WJXS4q9lTGf/pqQ==}
+  /@varlet/shared@3.2.6:
+    resolution: {integrity: sha512-P4QL6Ys4cgih0yvcTAjpLc/QiVWSWPN9FPDUfxqPfEP0PtBbI6SUEClOFbLGXDzewCfsUkA+U2qXcKxcuknllA==}
 
-  /@varlet/touch-emulator@3.2.5:
-    resolution: {integrity: sha512-m0dNaGliLqzsttawK+6ha3JfiQG1zhgnNJUX//TJd31yXFDC1VvKGeQh0gRxL5YHOEX8PcGQxNiygNpysgf4bQ==}
+  /@varlet/touch-emulator@3.2.6:
+    resolution: {integrity: sha512-yvJx4Mj1GgkMibh3Yu3LEQZDaP4iWeE/wzxwY5Q+J/TCyR1GunAETwTre7IS+lY10/wVmga5NXpFHPEBIbQp8Q==}
     dev: false
 
-  /@varlet/ui@3.2.5(vue@3.2.45):
-    resolution: {integrity: sha512-KkMDu9C9FIT94Eb9uqA7UGT/jkQFPb0ul8tkeIuM54cpkEPr6pP+7HC/8Zs0gKVy+msID32jNForShMUA7AY3w==}
+  /@varlet/ui@3.2.6(vue@3.2.45):
+    resolution: {integrity: sha512-o8gvbWXY3T133S8gakqRL7lmsulUKJcJOVtTNFbO6bgA/Ch7Z4SuDXyVDdpMIEdEw/AzRpqVepfXfciGfzPO3g==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 3.2.5
-      '@varlet/shared': 3.2.5
-      '@varlet/use': 3.2.5(vue@3.2.45)
+      '@varlet/icons': 3.2.6
+      '@varlet/shared': 3.2.6
+      '@varlet/use': 3.2.6(vue@3.2.45)
       dayjs: 1.11.10
       decimal.js: 10.4.3
       vue: 3.2.45
     dev: false
 
-  /@varlet/use@3.2.5(vue@3.2.45):
-    resolution: {integrity: sha512-s3LfVnoo7N2lQr2KWLKuJrOnS0fEmsSCEXqvzhS4tVtpOATCCuhtz+KZiqqRwmWK9Fc8Ddc+WBSLz00/BtZxEg==}
+  /@varlet/use@3.2.6(vue@3.2.45):
+    resolution: {integrity: sha512-mDX3gVmK3v0C4Lukjw9vko90gb8TzFbYRpSrftu9McwuZfvo06+CLixIgNBjp/tOfCUHJP8xfYKQmk7/VIvarw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/shared': 3.2.5
+      '@varlet/shared': 3.2.6
       vue: 3.2.45
     dev: false
 
@@ -1659,8 +1659,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001611
-      electron-to-chromium: 1.4.744
+      caniuse-lite: 1.0.30001612
+      electron-to-chromium: 1.4.749
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: false
@@ -1688,8 +1688,8 @@ packages:
     resolution: {integrity: sha512-CPB+UL9XMT/Av+pJxCKGhdx+yg1hzplvFJQlJ2n68PyQGMz9L/E2zCyLdOL8uasbouTUgnPl+y0tccI/se+BEw==}
     dev: false
 
-  /caniuse-lite@1.0.30001611:
-    resolution: {integrity: sha512-19NuN1/3PjA3QI8Eki55N8my4LzfkMCRLgCVfrl/slbSAchQfV0+GwjPrK3rq37As4UCLlM/DHajbKkAqbv92Q==}
+  /caniuse-lite@1.0.30001612:
+    resolution: {integrity: sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g==}
     dev: false
 
   /ccount@2.0.1:
@@ -1898,8 +1898,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: false
 
-  /electron-to-chromium@1.4.744:
-    resolution: {integrity: sha512-nAGcF0yeKKfrP13LMFr5U1eghfFSvFLg302VUFzWlcjPOnUYd52yU5x6PBYrujhNbc4jYmZFrGZFK+xasaEzVA==}
+  /electron-to-chromium@1.4.749:
+    resolution: {integrity: sha512-LRMMrM9ITOvue0PoBrvNIraVmuDbJV5QC9ierz/z5VilMdPOVMjOtpICNld3PuXuTZ3CHH/UPxX9gHhAPwi+0Q==}
     dev: false
 
   /emmet@2.3.6:
