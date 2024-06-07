@@ -11,12 +11,12 @@
     "bump": "pnpm update @varlet/* --latest"
   },
   "devDependencies": {
-    "@varlet/nuxt": "^0.1.2",
+    "@varlet/nuxt": "^0.1.3",
     "nuxt": "^3.11.2",
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.2.6",
-    "@varlet/ui": "3.2.6"
+    "@varlet/touch-emulator": "3.2.14",
+    "@varlet/ui": "3.2.14"
   }
 }
