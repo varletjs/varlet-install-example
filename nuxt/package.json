@@ -10,7 +10,7 @@
     "bump": "pnpm update @varlet/* --latest"
   },
   "devDependencies": {
-    "@varlet/nuxt": "0.1.4",
+    "@varlet/nuxt": "0.1.5",
     "nuxt": "^3.11.2",
     "prettier": "^2.5.1"
   },

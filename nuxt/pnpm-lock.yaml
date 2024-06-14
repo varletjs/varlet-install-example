@@ -16,8 +16,8 @@ importers:
         version: 3.3.0(vue@3.4.21)
     devDependencies:
       '@varlet/nuxt':
-        specifier: 0.1.4
-        version: 0.1.4(@varlet/ui@3.3.0(vue@3.4.21))(rollup@4.14.0)(vite@5.2.8(@types/node@20.14.2)(terser@5.31.1))(vue@3.4.21)
+        specifier: 0.1.5
+        version: 0.1.5(@varlet/ui@3.3.0(vue@3.4.21))(rollup@4.14.0)(vite@5.2.8(@types/node@20.14.2)(terser@5.31.1))(vue@3.4.21)
       nuxt:
         specifier: ^3.11.2
         version: 3.11.2(@parcel/watcher@2.4.1)(@types/node@20.14.2)(@unocss/reset@0.61.0)(axios@1.7.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.1(rollup@4.14.0))(vue@3.4.21))(ioredis@5.3.2)(rollup@4.14.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.14.0)(vite@5.2.8(@types/node@20.14.2)(terser@5.31.1)))(vite@5.2.8(@types/node@20.14.2)(terser@5.31.1))
@@ -1172,8 +1172,8 @@ packages:
   '@varlet/icons@3.3.0':
     resolution: {integrity: sha512-SaVPEQVWp+fafmDXCOq4O+vH5Dhb7Sj/EekFqNo7GzDhfOqXk0FlQuVSf63Br8YX0RP3sl9KS2jqzl8hiZUulA==}
 
-  '@varlet/nuxt@0.1.4':
-    resolution: {integrity: sha512-kJnYyvgKa4SO5scCahi/Omvp+rytpuzJBKkf2bWUPuuLakUVJY5oRYkZTBYT255ewjhADDRxOed62jpx6R6Jzg==}
+  '@varlet/nuxt@0.1.5':
+    resolution: {integrity: sha512-9rizPdoaF4CcFDzi0s3fbcp41leBjszH9hvKLEg2ENJKaZfbunMnLvppEj20sEXpo3Y5tp3T4Hhg28z7sfJzBA==}
     peerDependencies:
       '@varlet/ui': latest
 
@@ -5589,7 +5589,7 @@ snapshots:
 
   '@varlet/icons@3.3.0': {}
 
-  '@varlet/nuxt@0.1.4(@varlet/ui@3.3.0(vue@3.4.21))(rollup@4.14.0)(vite@5.2.8(@types/node@20.14.2)(terser@5.31.1))(vue@3.4.21)':
+  '@varlet/nuxt@0.1.5(@varlet/ui@3.3.0(vue@3.4.21))(rollup@4.14.0)(vite@5.2.8(@types/node@20.14.2)(terser@5.31.1))(vue@3.4.21)':
     dependencies:
       '@nuxt/kit': 3.12.1(rollup@4.14.0)
       '@varlet/ui': 3.3.0(vue@3.4.21)
