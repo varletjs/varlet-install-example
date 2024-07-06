@@ -9,7 +9,8 @@
     "bump:rsbuild": "pnpm --dir ./rsbuild bump",
     "bump:farm": "pnpm --dir ./farm bump",
     "bump:nuxt": "pnpm --dir ./nuxt bump",
-    "bootstrap": "pnpm --dir ./vite install & pnpm --dir ./astro install & pnpm --dir ./nuxt install & pnpm --dir ./vue-cli install & pnpm --dir ./farm install & pnpm --dir ./rsbuild install",
-    "bump": "pnpm bump:vite & pnpm bump:astro & pnpm bump:nuxt & pnpm bump:vue-cli & pnpm bump:rsbuild & pnpm bump:farm"
+    "bump:tw": "pnpm --dir ./tailwindcss bump",
+    "bootstrap": "pnpm --dir ./vite install & pnpm --dir ./astro install & pnpm --dir ./nuxt install & pnpm --dir ./vue-cli install & pnpm --dir ./farm install & pnpm --dir ./rsbuild install & pnpm --dir ./tailwindcss install",
+    "bump": "pnpm bump:vite & pnpm bump:astro & pnpm bump:nuxt & pnpm bump:vue-cli & pnpm bump:rsbuild & pnpm bump:farm & pnpm bump:nuxt"
   }
 }

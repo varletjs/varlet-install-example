@@ -11,13 +11,13 @@
     "bump": "pnpm update @varlet/* --latest"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.3.0",
-    "@varlet/ui": "3.3.0",
+    "@varlet/touch-emulator": "3.3.4",
+    "@varlet/ui": "3.3.4",
     "vue": "^3.2.47"
   },
   "devDependencies": {
     "@types/node": "^16.11.68",
-    "@varlet/import-resolver": "3.3.0",
+    "@varlet/import-resolver": "3.3.4",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/test-utils": "^2.2.7",
     "@vue/tsconfig": "^0.1.3",

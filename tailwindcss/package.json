@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "bump": "pnpm update @varlet/* --latest"
   },
   "dependencies": {
     "@varlet/ui": "^3.2.1",
