@@ -50,13 +50,13 @@ function setLocale(value: string) {
         <div class="popup-example-block">
           <var-swipe class="swipe-example" :autoplay="1000">
             <var-swipe-item>
-              <img class="swipe-example-image" src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
+              <img class="swipe-example-image" src="https://varletjs.org/cat.jpg" />
             </var-swipe-item>
             <var-swipe-item>
-              <img class="swipe-example-image" src="https://varlet.gitee.io/varlet-ui/cat2.jpg" />
+              <img class="swipe-example-image" src="https://varletjs.org/cat2.jpg" />
             </var-swipe-item>
             <var-swipe-item>
-              <img class="swipe-example-image" src="https://varlet.gitee.io/varlet-ui/cat3.jpg" />
+              <img class="swipe-example-image" src="https://varletjs.org/cat3.jpg" />
             </var-swipe-item>
           </var-swipe>
         </div>
