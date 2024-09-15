@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@astrojs/vue": "^2.0.0",
-    "@varlet/touch-emulator": "^3.4.0",
-    "@varlet/ui": "^3.4.0",
+    "@varlet/touch-emulator": "^3.5.0",
+    "@varlet/ui": "^3.5.0",
     "astro": "^2.0.2",
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@varlet/import-resolver": "3.4.0",
+    "@varlet/import-resolver": "3.5.0",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0"
   }
