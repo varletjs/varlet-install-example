@@ -8,13 +8,13 @@
     "bump": "pnpm update @varlet/* --latest"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.5.0",
-    "@varlet/ui": "3.5.0",
+    "@varlet/touch-emulator": "3.5.2",
+    "@varlet/ui": "3.5.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@varlet/import-resolver": "3.5.0",
+    "@varlet/import-resolver": "3.5.2",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
