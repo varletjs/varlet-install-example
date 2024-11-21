@@ -15,7 +15,7 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "3.6.1",
-    "@varlet/ui": "3.6.1"
+    "@varlet/touch-emulator": "3.7.0",
+    "@varlet/ui": "3.7.0"
   }
 }

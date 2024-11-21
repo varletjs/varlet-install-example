@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@varlet/touch-emulator':
-        specifier: 3.6.1
-        version: 3.6.1
+        specifier: 3.7.0
+        version: 3.7.0
       '@varlet/ui':
-        specifier: 3.6.1
-        version: 3.6.1(vue@3.3.9(typescript@5.3.2))
+        specifier: 3.7.0
+        version: 3.7.0(vue@3.3.9(typescript@5.3.2))
       core-js:
         specifier: ^3.33.3
         version: 3.33.3
@@ -157,22 +157,22 @@ packages:
   '@types/node@20.10.2':
     resolution: {integrity: sha512-37MXfxkb0vuIlRKHNxwCkb60PNBpR94u4efQuN4JgIAm66zfCDXGSAFCef9XUWFovX2R1ok6Z7MHhtdVXXkkIw==}
 
-  '@varlet/icons@3.6.1':
-    resolution: {integrity: sha512-8ibwr8lhGPoeCZOi7911FTHam1xTJMBW+z6eNlww7jSYkWJ5YatQ0xvEACYDr5HlG9zY7RtDqOS8ThuR0ZMWwg==}
+  '@varlet/icons@3.7.0':
+    resolution: {integrity: sha512-wB/UwkTkNDEEBpJihmbngv0vVvtt4iP9W7qYV2vx5Dto3wkwqpyyudVomLSbmrMAprpfXhHShEMfrTqymCLAZg==}
 
-  '@varlet/shared@3.6.1':
-    resolution: {integrity: sha512-1UYk/rrYcZmxv9DPXY6UfPNMaJZkkC3jr0rrMSZAN+FZAtPsudP7cODxePykMmSNh9Osfwzz33S2BamNKwoNYA==}
+  '@varlet/shared@3.7.0':
+    resolution: {integrity: sha512-tJ4U78iOOJ72Icq9zdpqVivE9TSBxc+HURm5d3kLlmEjwO/dfbgEm5+/TGUzt/1i72gXjrKq9AwCtmfafR/fqg==}
 
-  '@varlet/touch-emulator@3.6.1':
-    resolution: {integrity: sha512-EhkMz6nKBNyw8myDR27j9YA5WeX3UlF1O2xgl1PwSYdB2vvgCRZlsxs9lnMEDCZPX+FeYyPVpmdxFQi3sylpXA==}
+  '@varlet/touch-emulator@3.7.0':
+    resolution: {integrity: sha512-qRxlTXy2DXrh42/q6zkMqdY6ISerVFZoQdJnIBiv/mBGvVq5XxAz/mI6f8wvf5n5S0yrBHZ3VMrjnyqiy9BHLg==}
 
-  '@varlet/ui@3.6.1':
-    resolution: {integrity: sha512-hpAVcjwJtXlk5rYMkJRxFfOkTLFYeHw9AgG+vmNCY+KH+VzNF/gAESBV+ZWQqShHZstJBY2jXCLG7TJ1foxSvA==}
+  '@varlet/ui@3.7.0':
+    resolution: {integrity: sha512-yr3V1Kxiv1HMWukosArzm0LiGxFGr7sYCGx7vTnWEg2mKtLm3vMlK7YUn0+rEAqmu+S/mXMjbJltMV6tY+EEsw==}
     peerDependencies:
       vue: ^3.2.0
 
-  '@varlet/use@3.6.1':
-    resolution: {integrity: sha512-PFYuS5PxWiTPWqB6rM8XWsQEstUOG1YY3KgDNzgEsMF0kPUeCibfKPW80evTC6EFzKqOSYwodRO9vSNYEFhHTQ==}
+  '@varlet/use@3.7.0':
+    resolution: {integrity: sha512-PLlWhUh1pnSxHMb4gBt88UwqmGOWu5bZ4a2gEnCryQMSFguq7FcLc2YGTAt4tYMfVE60tg5Dh1/ZBuu99mkGVg==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -447,6 +447,9 @@ packages:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
     engines: {node: '>= 0.6'}
 
+  mitt@3.0.1:
+    resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
+
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -475,6 +478,10 @@ packages:
 
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
+
+  rattail@1.0.14:
+    resolution: {integrity: sha512-PWwwg843q7awJltAziDbET54VtIJ5JKm57QfMb6G6p1dTMJ+/BPcUaVRJXAqhqvWKdmZBplBt6SCC8qwCjqHzQ==}
+    engines: {pnpm: '>=9.0'}
 
   react-refresh@0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
@@ -767,25 +774,27 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@varlet/icons@3.6.1': {}
+  '@varlet/icons@3.7.0': {}
 
-  '@varlet/shared@3.6.1': {}
+  '@varlet/shared@3.7.0':
+    dependencies:
+      rattail: 1.0.14
 
-  '@varlet/touch-emulator@3.6.1': {}
+  '@varlet/touch-emulator@3.7.0': {}
 
-  '@varlet/ui@3.6.1(vue@3.3.9(typescript@5.3.2))':
+  '@varlet/ui@3.7.0(vue@3.3.9(typescript@5.3.2))':
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 3.6.1
-      '@varlet/shared': 3.6.1
-      '@varlet/use': 3.6.1(vue@3.3.9(typescript@5.3.2))
+      '@varlet/icons': 3.7.0
+      '@varlet/shared': 3.7.0
+      '@varlet/use': 3.7.0(vue@3.3.9(typescript@5.3.2))
       dayjs: 1.11.13
       decimal.js: 10.4.3
       vue: 3.3.9(typescript@5.3.2)
 
-  '@varlet/use@3.6.1(vue@3.3.9(typescript@5.3.2))':
+  '@varlet/use@3.7.0(vue@3.3.9(typescript@5.3.2))':
     dependencies:
-      '@varlet/shared': 3.6.1
+      '@varlet/shared': 3.7.0
       vue: 3.3.9(typescript@5.3.2)
 
   '@vue/compiler-core@3.3.9':
@@ -1084,6 +1093,8 @@ snapshots:
     dependencies:
       mime-db: 1.52.0
 
+  mitt@3.0.1: {}
+
   nanoid@3.3.7: {}
 
   neo-async@2.6.2: {}
@@ -1109,6 +1120,10 @@ snapshots:
   randombytes@2.1.0:
     dependencies:
       safe-buffer: 5.2.1
+
+  rattail@1.0.14:
+    dependencies:
+      mitt: 3.0.1
 
   react-refresh@0.14.0: {}
 
